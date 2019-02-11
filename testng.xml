@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="My Test Suite">
+
+    <test name="HomePage">
+
+        <classes>
+
+            <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Test Execution Report</title>
+	
+	<script type='text/javascript' src='http://code.jquery.com/jquery-1.10.1.min.js'></script>
+	<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+	<script src="http://cdn.rawgit.com/noelboss/featherlight/1.0.4/release/featherlight.min.js" type="text/javascript" charset="utf-8"></script>
+	<script type="text/javascript" src="TER.js"></script>
+	
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600|Raleway:500' rel='stylesheet' type='text/css' />
+	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet" />
+	<link href="http://cdn.rawgit.com/noelboss/featherlight/1.0.4/release/featherlight.min.css" type="text/css" rel="stylesheet" />
+    <!--<link rel="stylesheet" href="global.css" type="text/css" />-->
+    <!--[if IE]>
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    
+    <style type='text/css'>
+    html {
+				overflow-y: scroll;}
+			body {
+				color: #022b37;
+				font-family: 'Open Sans', Calibri;
+				font-size: 14px;
+				margin: 0;
+			}
+			a {
+				color: #507fd6;
+				text-decoration: none;
+			}
+			#extent-container {
+				width: 100%;
+			}
+			.topbar, .title, .menu, .dashboard, .filters, .content, .footer, .testset {
+				margin: 0 auto;
+				width: 1100px;
+			}
+			#topbar {
+				background-color: #f1f1f1;
+				min-height: 30px;
+			}
+			.topbar {
+				font-size: 11px;
+				padding: 4px 0;
+			}
+			.topbar-items-right {
+				float: right;
+			}
+			.topbar-items-right span {
+				border-left: 1px solid #ccc;
+				padding: 0px 10px;
+				vertical-align: sub;
+			} .topbar-items-right span:first-child {
+				border-left: none;
+			}
+			.headline {
+				color: #777;
+			}
+			#title {
+				margin: 25px 0 30px;
+			}
+			.logo {
+				font-family: Raleway;
+				font-size: 16px;
+				letter-spacing: 1px;
+			}
+			.menu-items {
+				margin-top: -35px;
+				margin-left: -200px;
+				float: left;
+			}
+			.menu ul li {
+				display: inline;
+				list-style-image: none;
+				list-style-position: outside;
+				padding: 10px 10px 45px;
+			}			
+			.menu span {
+				color: #507fd6;
+				cursor: pointer;
+				font-family: raleway;
+				font-size: 12px;
+				text-transform: uppercase;
+			}
+			.menu-item-selected {
+				background-color: #f9f9f9;
+			}
+			#dashboard {
+				background-color: #f9f9f9;
+				border-bottom: 1px solid #dbdbdb;
+				max-height: 320px !important;
+				height: 320px !important;
+				margin-top: 20px;
+			}
+			.dashboard {
+				padding: 40px 0;
+			}
+			#tabs-2, #tabs-3 {
+				display: none;
+			}
+			.graphs {
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+			}
+			.graphs div {
+				display: inline-block;
+				margin-bottom: -40px;
+			}
+			.summary-items {
+				margin: 0 auto 20px;
+				width: 1000px;
+			}
+			.summary-item {
+				border: 1px solid #b4bfc3;
+				display: inline-block;
+				margin: 10px;
+				padding: 15px 0 30px;
+				position: relative;
+				text-align: center;
+				width: 220px;
+			}
+			.summary-item span {
+				display: block;
+			}
+			.item-value {
+				color: #a4afb3;
+				font-size: 24px;
+				line-height: 40px;
+			}
+			.item-name {
+				color: #022b36;
+				font-size: 13px;
+			}
+			.filters {
+				margin: 50px auto 25px !important;
+			}
+			.by-status {
+				margin-right: 40px;
+			}
+			.by-status, .by-feature {
+				display: inline-block;
+			}
+			.content {
+				margin: 20px auto 100px !important;
+			}
+			.test {
+				border: 1px solid #b4bfc3;
+				color: #507fd6;
+				cursor: pointer;
+				margin: 5px 0;
+				padding: 20px;
+			}
+			.testset {
+				border: 2px solid #b4bfc3;
+				color: black; /*#507fd6;*/
+				background-color: #f7f7f7;
+				cursor: pointer;
+				margin: 10px auto 35px !important;
+				padding: 20px;
+			}
+			
+			.passline {
+				/*background-color: #32cd32 !important;*/
+				border: 2px solid #32cd32;
+			}
+			
+			.failline {
+				/*background-color: #FF0000 !important;*/
+				border: 2px solid red;
+			}
+				
+			#testsetstatus .pass {
+				background-color: #32cd32 !important;
+				color: #fff !important;
+				text-transform: uppercase;
+				padding: 2px 10px;
+				font-family: Raleway;
+				font-size: 12px;
+				text-align: center;
+				border: 1px solid #32cd32;
+			}
+			
+			#testsetstatus .fail {
+				background-color: red !important;
+				color: #fff !important;
+				text-transform: uppercase;
+				padding: 2px 10px;
+				font-family: Raleway;
+				font-size: 12px;
+				text-align: center;
+				border: 1px solid red;
+			}
+
+			.test-expanded {
+				border: 1px solid #6b767a;
+				color: #444;
+			}
+			.name {
+				font-size: 14px;
+			}
+			.test-info {
+				float: left;
+				margin-right: 30px;
+				margin-top: -15px;
+				
+			}
+			.test-info-time {
+				float: right;
+				margin-right: 30px;
+				margin-top: -15px;
+				text-transform: uppercase;
+			}
+			.test-status, .startedAt, .endedAt {
+				font-family: Verdana, "Lucida Grande", Raleway, 'Open Sans';
+				font-size: 11px;
+				padding: 4px 10px;
+			}
+			.test-status {
+				text-transform: uppercase;
+				color: #fff !important;
+			}
+			.startedAt, .endedAt {
+				border: 1px solid #507fd6;
+				color: #121212;
+			}
+			.toggle-span {
+				float: right;
+				margin-top: 0px;
+				margin-left: 6px;
+			}
+			.toggle-span i {
+				color: black;
+				font-size: 22px;
+			}
+			.description {
+				background-color: #f7f7f7;
+				color: #444;
+				margin-top: 15px;
+				padding: 10px 15px;
+			}
+			.description-title {
+				font-size: 12px;
+				font-weight: 600;
+				text-transform: uppercase;
+			}
+			.test-header {
+				/*background-color: #fdfeff;*/
+				margin: -20px;
+				padding: 20px;
+			}
+			.exec-info {
+				display: none;
+				margin-top: 25px;
+			}
+			.extent-table {
+				border: 1px solid #ddd;
+				border-collapse: collapse;
+				width: 100%;
+			}
+			.extent-table tr:hover {
+				background-color: #f9fafc;
+			}
+			.extent-table th {
+				background: #f5f6f8;
+			    border-bottom: 1px solid #ddd;
+			    color: #242533;
+			    font-size: 8pt;
+			    font-weight: 600;
+			    padding: 12px 10px;
+				text-align: left;
+			    text-transform: uppercase;
+			}
+			.extent-table td {
+				padding: 7px 10px;
+				border-bottom: 1px solid #e9e9e9;
+				word-break: break-all;
+			}
+			.extent-table td:first-child {
+				width: 70px;
+			}
+			.extent-table td:nth-child(2) {
+				font-size: 12px;
+				text-align: center;
+				width: 50px;
+			}
+			.extent-table td:nth-child(3) {
+				min-width: 300px;
+				/*width: 530px;*/
+			}
+			.extent-table td:nth-child(4) {
+				max-width: 400px;
+				/*width: 450px;*/
+			}
+			.extent-button {
+				border: 1px solid;
+				cursor: pointer;
+				display: inline;
+				font-family: Raleway, 'Open Sans';
+				font-size: 11px;
+				text-transform: uppercase;
+				text-decoration: none;
+				line-height: 13.4667px;
+				padding: 6px 18px;
+				text-align: center;
+				transition: all 0.2s ease-in-out 0s;
+				vertical-align: middle;
+			}
+			.extent-button i {
+				padding-right: 5px;
+			}
+			.extent-button-green {
+				border-color: #5cb85c;
+				color: #5cb85c;
+			}
+			.extent-button-green:hover {
+				background-color: #5cb85c;
+				color: white;
+			}
+			.extent-button-red {
+				border-color: #d9534f;
+				color: #d9534f;
+			}
+			.extent-button-red:hover {
+				background-color: #d9534f;
+				color: white;
+			}
+			.extent-button-orange {
+				border-color: #f0ad4e;
+				color: #f0ad4e;
+			}
+			.extent-button-orange:hover {
+				background-color: #f0ad4e;
+				color: white;
+			}
+			.extent-button-lightblack {
+				border-color:  #999;
+				color: #999;
+			}
+			.extent-button-lightblack:hover {
+				background-color: #999;
+				color: white;
+			}
+			.extent-button-lightred {
+				border-color: #e67672;
+				color: #e67672;
+			}
+			.extent-button-lightred:hover {
+				background-color: #e67672;
+				color: white;
+			}
+			.status {
+				font-family: Raleway;
+				font-size: 12px;
+				text-align: center;
+			}
+			.statu
