@@ -16,7 +16,7 @@ Feature: Goya OMS Login Functionality
   Scenario: 2.Valid user with valid password - Sales Author
 
     When User enter username as "salesauthor1"
-    And User enter password as "Pwd1@salesauthor1"
+    And User enter password as "ForceFail"
     And User click login button
     Then Home page should display
 
@@ -29,10 +29,16 @@ Feature: Goya OMS Login Functionality
     Then Login error message should display
 
     Examples:
-      |UserName      |Password     |
-      |013506        |Pwd@013506X  |
-      |013506X       |Pwd@013506   |
-      |013506X       |Pwd@013506X  |
-      |013506        |             |
-      |              |Pwd@013506   |
-      |              |             |
+      |UserName      |Password         |
+      |013506        |invalid          |
+      |invalid       |Pwd@013506       |
+      |invalid       |invalid          |
+      |013506        |                 |
+      |              |Pwd@013506       |
+      |              |                 |
+      |salesauthor1  |invalid          |
+      |invalid       |Pwd@salesauthor1 |
+      |invalid       |invalid          |
+      |salesauthor1  |                 |
+      |              |Pwd@salesauthor1 |
+      |              |                 |

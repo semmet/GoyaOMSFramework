@@ -35,8 +35,12 @@ public class HomePageTestNG extends ScriptBase {
     @Test
     public void checkLinks() {
 
-        homePage.brokenLinks();
+        //homePage.brokenLinks();
+
     }
+
+
+
 
 
 }

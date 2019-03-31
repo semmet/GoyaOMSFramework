@@ -14,6 +14,7 @@ public class BeforeAfterHook extends StepBase {
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
         driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
         driver.manage().timeouts().setScriptTimeout(10, TimeUnit.SECONDS);
+        driver.manage().deleteAllCookies();
     }
 
     @After

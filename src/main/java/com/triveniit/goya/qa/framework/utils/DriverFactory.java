@@ -17,8 +17,8 @@ public class DriverFactory {
     private static DriverFactory instance = null;
 
 
-    public static final String USERNAME = "";
-    public static final String AUTOMATE_KEY = "";
+    public static final String USERNAME = "steveemmet1";
+    public static final String AUTOMATE_KEY = "iNtzP7DphwtmGfqeypik";
     public static final String URL = "";
     public static final String LOCAL_GRID_URL = "";
 
@@ -118,8 +118,12 @@ public class DriverFactory {
         @Override
         protected WebDriver initialValue()
         {
-            ChromeDriverManager.getInstance().setup();
-            return new ChromeDriver();
+            //ChromeDriverManager.getInstance().setup();
+            //return new ChromeDriver();
+            FirefoxDriverManager.getInstance().setup();
+            return  new FirefoxDriver();
+            
+
         }
     };
 
