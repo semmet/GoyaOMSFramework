@@ -43,23 +43,22 @@ public class CatalogPage extends PageBase {
 
     }
 
-    public void addItemToOrder() throws InterruptedException {
+    public void verifyCatalogPage(){
+        delayFor(2000);
+        String title = driver.getCurrentUrl();
+        org.junit.Assert.assertEquals("https://portal.goya.com/omsdev/#/search-item?EOR=&custID=", title);
+    }
 
-        /*Actions actions = new Actions(driver);
-        actions.moveToElement(searchItemCode);
-        actions.sendKeys("1107");
-        actions.sendKeys(Keys.ENTER);
-        Thread.sleep(2000);
-        addItem.click(); */
+    public void addItemToOrder() {
 
         searchItemCode.sendKeys("1105");
-        Thread.sleep(2000);
+        delayFor(2000);
         addItem.click();
 
     }
 
     public void verifyQtyWindowPopUp() {
-        // WebElement
+        waitForVisibilityOfElement(qtyPopUp);
         Assert.assertEquals(true, qtyPopUp.isDisplayed());
 
     }
@@ -69,6 +68,7 @@ public class CatalogPage extends PageBase {
     }
 
     public void verifyOneItemInCart() {
+        delayFor(1000);
 
         verifyText(By.xpath("//div[@id='cart']//button[@type='button']"), "1 Items");
 
@@ -79,11 +79,7 @@ public class CatalogPage extends PageBase {
     }
 
 
-    public void urlVerify() {
 
-        String title = driver.getCurrentUrl();
-        assertThat(title, startsWith("https://portal.goya.com/omsdev/#/order-entry-addinfo"));
-    }
 
 
 

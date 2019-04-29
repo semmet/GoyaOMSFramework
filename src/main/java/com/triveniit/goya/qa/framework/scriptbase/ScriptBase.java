@@ -19,6 +19,7 @@ import java.util.concurrent.TimeUnit;
         protected WebElementUtils webElementUtils;
         protected HomePage homePage;
         protected LoginPage loginPage;
+        protected CatalogPage catalogPage;
         protected CreateOrderPage createOrderPage;
         protected CreditAppPage creditAppPage;
         protected CustomersPage customersPage;
@@ -56,6 +57,9 @@ import java.util.concurrent.TimeUnit;
             loginPage = new LoginPage();
             creditAppPage = new CreditAppPage();
             createOrderPage = new CreateOrderPage();
+            customersPage = new CustomersPage();
+            catalogPage = new CatalogPage();
+            smartOrderPage = new SmartOrderPage();
 
 
             driver.get("https://portal.goya.com/omsdev/#/login");
@@ -72,6 +76,10 @@ import java.util.concurrent.TimeUnit;
             webElementUtils = null;
             homePage = null;
             loginPage = null;
+            catalogPage = null;
+            creditAppPage = null;
+            createOrderPage = null;
+
             DriverFactory.getInstance().removeDriver();
         }
 

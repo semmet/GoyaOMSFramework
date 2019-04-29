@@ -14,6 +14,7 @@ import java.util.Arrays;
 import java.net.URL;
 import java.util.List;
 import java.util.Set;
+import java.util.concurrent.TimeUnit;
 
 import static org.hamcrest.CoreMatchers.containsString;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -35,16 +36,29 @@ public class CreateOrderPage extends PageBase{
     @FindBy(xpath = "//*[@title='Submit order']")
     private WebElement submitOrder;
     @FindBy(xpath = "//*[@value='DELETE ALL']")
-    private WebElement deleteOrder;
+    private WebElement deleteAll;
     @FindBy(xpath = "//*[@id='pickUp']")
     private WebElement pickUpCheckbox;
     @FindBy(xpath = "//*[@name='searchitem']")
     private WebElement searchItemBox;
     @FindBy(xpath = "//button[contains(text(),'Submit')]")
     private WebElement submitConfirm;
-
-
-
+    @FindBy(xpath = "//*[@name='deleteItem']")
+    private WebElement deleteItem;
+    @FindBy(xpath = "//div[contains(text(),'$10 delivery charge')]")
+    private WebElement deliverySurchargeAlert;
+    @FindBy(xpath = "//*[@name='amount']")
+    private WebElement collectionAmount;
+    @FindBy(xpath = "//*[@class='col-md-8 newpad ng-binding'][contains(text(),'$100.00')]")
+    private WebElement collectionAmountAlert;
+    @FindBy(xpath =    "//*[@id='qk-remove-space']/ul/li[4]/div/div/div[1]/input")
+    private WebElement promoCodeBox;
+    @FindBy(xpath = "//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]")
+    private WebElement promoCodeAlert;
+    @FindBy(xpath = "//*[@id='selectday']")
+    private WebElement selectDay;
+    @FindBy(xpath = "//*[@id='selectnotday']")
+    private WebElement selectNotDay;
 
 
     public CreateOrderPage() {
@@ -52,6 +66,12 @@ public class CreateOrderPage extends PageBase{
         PageFactory.initElements(driver,this);
     }
 
+
+    public void verifyOrderPageDisplay(){
+        delayFor(2000);
+        String url = driver.getCurrentUrl();
+        assertThat(url, CoreMatchers.containsString("https://portal.goya.com/omsdev/#/order-entry"));
+    }
 
 
     public void selectCustomer() {
@@ -61,7 +81,7 @@ public class CreateOrderPage extends PageBase{
         Actions actions = new Actions(driver);
         actions.moveToElement(customerSelect);
         actions.click();
-        actions.sendKeys("712450");
+        actions.sendKeys("712457");
         actions.sendKeys(Keys.ENTER);
         actions.build().perform();
 
@@ -69,14 +89,12 @@ public class CreateOrderPage extends PageBase{
 
     public void enterItemCode(){
         typeText(itemCodeTextBox, "1105");
-
     }
 
     public void enterRestrictedItem(){
         typeText(itemCodeTextBox, "1107");
 
     }
-
 
     public void enterInvalidItemCode() {
         typeText(itemCodeTextBox, "XXXX");
@@ -86,37 +104,42 @@ public class CreateOrderPage extends PageBase{
         click(addItem);
     }
 
+    public void enterInvalidItemQty(){
+        typeText(itemCaseQty,"-10");
+    }
+
+    public void addAnotherItem(){
+        typeText(itemCodeTextBox,"2161");
+        click(addItem);
+    }
+
+    public void deleteItem(){click(deleteItem);}
+
     public void verifyItemAdded(){
-
+        delayFor(1000);
         String alertText = alertMsg.getText();
-        WebDriverWait wait = new WebDriverWait(driver,5);
-        wait.until(ExpectedConditions.visibilityOf(alertMsg));
-
         assertThat(alertText, CoreMatchers.containsString("Added !"));
-
-        System.out.println("Item successfully added!");
     }
 
     public void verifyItemNotFound(){
-
         String alertText = alertMsg.getText();
         Assert.assertEquals(alertText, "Item Not Found.");
     }
 
     public void verifyRestrictedItem() {
-
+        delayFor(1000);
         String alertText = alertMsg.getText();
         assertThat(alertText, CoreMatchers.containsString("Restricted Item"));
-
     }
 
-    public void searchItem(){
+    public void clickSearchItem(){
         searchItemBox.click();
     }
 
+
     public void verifyItemInTable() {
 
-        //String expectedItem = "1105";
+        delayFor(2000);
         WebElement table = driver.findElement(By.xpath("//*[@class='table over-x']"));
         String tableText[][] = getCellTextArray(table);
         String actualItem = tableText[0][1];
@@ -132,10 +155,120 @@ public class CreateOrderPage extends PageBase{
         submitConfirm.click();
     }
 
+    public void verifyDeliverySurchargeAlert(){
+        delayFor(1000);
+        String alertText = deliverySurchargeAlert.getText();
+        assertThat(alertText, CoreMatchers.containsString("$10 delivery charge"));
+    }
 
+    public void confirmOrderSubmitted(){
+        delayFor(2000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Submitted Successfully"));
+        delayFor(1000);
+        alert.accept();
+    }
 
+    public void confirmNoItemsAdded(){
+        delayFor(3000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("No Items added."));
+        delayFor(2000);
+        alert.accept();
+    }
+
+    public void noCustomerSelected(){
+        delayFor(3000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Please select customer."));
+        delayFor(2000);
+        alert.accept();
+    }
+
+    public void deleteAllItems(){
+        click(deleteAll);
+    }
+
+    public void confirmDeleteAll(){
+        delayFor(3000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Delete All Items?"));
+        delayFor(2000);
+        alert.accept();
+    }
+
+    public void collectBalance(){
+        typeText(collectionAmount,"100.00");
+    }
+
+    public void verifyCorrectAmountCollected(){
+        waitForElementTextToBe(By.xpath("//*[@class='col-md-8 newpad ng-binding'][contains(text(),'$100.00')]"),"$100.00");
+        String collectedAmt = collectionAmountAlert.getText();
+        Assert.assertEquals(collectedAmt,"$100.00");
+    }
+
+    public void enterPromoCode(){
+        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", promoCodeBox);
+
+        Actions actions = new Actions(driver);
+        actions.moveToElement(promoCodeBox);
+        actions.click();
+        actions.sendKeys("25");
+        actions.sendKeys(Keys.ENTER);
+        actions.build().perform();
+    }
+
+    public void confirmPromoAdded(){
+        //waitForElementTextToBe(By.xpath("//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]"),"25");
+        delayFor(2000);
+        String promoType = promoCodeAlert.getText();
+        assertThat(promoType,CoreMatchers.containsString("25"));
+    }
+
+    public void selectDeliveryDay(){
+        WebElement element1 = selectDay;
+
+        Select select = new Select(element1);
+        select.selectByVisibleText("Mon");
+    }
+
+    public void selectNotDeliveryDay() {
+        WebElement element1 = selectNotDay;
+
+        Select select = new Select(element1);
+        select.selectByVisibleText("Mon");
 
     }
+
+    public void deliveryDayOptionAlert(){
+        delayFor(2000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Day and Not Day can not be Same."));
+        delayFor(2000);
+        alert.accept();
+    }
+
+    public void verifyInvalidQtyAlert(){
+        delayFor(2000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Please enter valid quantity."));
+        delayFor(2000);
+        alert.accept();
+    }
+
+
+}
+
+
+
+
+
 
 
 

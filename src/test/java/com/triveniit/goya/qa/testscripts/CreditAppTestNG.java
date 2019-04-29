@@ -64,7 +64,7 @@ public class CreditAppTestNG extends ScriptBase {
 
 
     @Test(dataProvider = "creditAppExcelData")
-    public void dataDrivenCreditAppNegTest(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
+    public void verifyCantSubmitCreditAppWithReqDataMissing(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
                                   String yearsBus, String inc, String insCo, String policy, String address,
                                   String city, String state, String zip ){
 

@@ -2,6 +2,7 @@ package com.triveniit.goya.qa.framework.pages;
 
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -34,6 +35,9 @@ public class HomePage extends PageBase {
     private WebElement smartOrderLink;
 
 
+
+
+
     String url = "";
     HttpURLConnection huc = null;
     int respCode = 200;
@@ -52,7 +56,7 @@ public class HomePage extends PageBase {
 
     public void navigateToCreateOrderPage() {
 
-        delayFor(2000);
+        delayFor(1000);
         createOrderLink.click();
     }
 
@@ -64,6 +68,15 @@ public class HomePage extends PageBase {
         smartOrderLink.click();
     }
 
+    public void confirmSmartOrderAlert(){
+        delayFor(1000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString("Please select Customer"));
+        //delayFor(2000);
+        alert.accept();
+    }
+
     public void navigateToCustomersPage() {
         waitForVisibilityOfElement(customersLink);
         customersLink.click();
@@ -71,7 +84,7 @@ public class HomePage extends PageBase {
 
     public void verifyCustomerInfo() {
         String customerInfo = customerBanner.getText();
-        assertThat(customerInfo, CoreMatchers.containsString("712450"));
+        assertThat(customerInfo, CoreMatchers.containsString("712457"));
     }
 
 

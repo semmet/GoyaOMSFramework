@@ -1,6 +1,7 @@
 package com.triveniit.goya.qa.framework.utils;
 
 import io.github.bonigarcia.wdm.ChromeDriverManager;
+import io.github.bonigarcia.wdm.DriverManagerType;
 import io.github.bonigarcia.wdm.FirefoxDriverManager;
 import org.openqa.selenium.Platform;
 import org.openqa.selenium.WebDriver;
@@ -38,12 +39,12 @@ public class DriverFactory {
         }
 
         if(browserName.equalsIgnoreCase("chrome")){
-            ChromeDriverManager.getInstance().setup();
+            ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
             instance.driver.set(new ChromeDriver());
         }
 
         else if (browserName.equalsIgnoreCase("firefox")){
-            FirefoxDriverManager.getInstance().setup();
+            FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
             instance.driver.set(new FirefoxDriver());
         }
 
@@ -113,25 +114,24 @@ public class DriverFactory {
 
     }
 
-         ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
+    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
     {
         @Override
-        protected WebDriver initialValue()
-        {
-            //ChromeDriverManager.getInstance().setup();
-            //return new ChromeDriver();
-            FirefoxDriverManager.getInstance().setup();
-            return  new FirefoxDriver();
-            
+        protected WebDriver initialValue() {
+            ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+            return new ChromeDriver();
+            //FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
+            //return new FirefoxDriver();
+
 
         }
     };
 
-    public WebDriver getDriver(){
+    public WebDriver getDriver() {
         return driver.get();
     }
 
-    public void removeDriver(){
+    public void removeDriver() {
         driver.get().quit();
         driver.remove();
 
@@ -139,3 +139,4 @@ public class DriverFactory {
 
 
 }
+

@@ -6,11 +6,12 @@ import org.junit.runner.RunWith;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-        tags = { "@debug" },
+        //tags = { "@debug" },
 
           features =  {//"src/test/resources/features/LoginFunctionality.feature" ,
                        //"src/test/resources/features/CreateOrder.feature",
                        "src/test/resources/features/SmartOrder.feature"
+
                        },
 
           glue =      {"com.triveniit.goya.qa.framework.steps"},

@@ -23,7 +23,7 @@ public class CustomersPage extends PageBase{
     }
 
 
-    public void verifyCustomersPageUrl() throws Throwable{
+    public void verifyCustomersPageUrl() {
 
     delayFor(2000);
     String title = driver.getCurrentUrl();
@@ -32,7 +32,7 @@ public class CustomersPage extends PageBase{
 
    public void selectCustomer(){
 
-       WebElement element = driver.findElement(By.xpath("//*[@class='fixed_headers table tclass']/tbody/tr[1]/td[1]"));
+       WebElement element = driver.findElement(By.xpath("(//*[@type='radio'][@name='1'])[4]"));
        element.click();
    }
 

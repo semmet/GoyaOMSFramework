@@ -70,7 +70,7 @@ public class CreateOrderSteps extends StepBase {
 
     @When("^User clicks on Search Item button$")
     public void user_click_on_Search_Item_button() throws Throwable{
-        CreateOrderPage.searchItem();
+        CreateOrderPage.clickSearchItem();
     }
 
     @Then("^Catalog page should display$")
@@ -109,7 +109,7 @@ public class CreateOrderSteps extends StepBase {
     @Then("^User should be directed back to Create Order page$")
     public void user_should_be_directed_back_to_Create_Order_page() throws Throwable{
         delayFor(2000);
-        CatalogPage.urlVerify();
+        CreateOrderPage.verifyOrderPageDisplay();
 
 
     }

@@ -1,6 +1,7 @@
 package com.triveniit.goya.qa.framework.utils;
 
 import cucumber.api.java.eo.Se;
+import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -62,6 +63,12 @@ public class WebElementUtils extends SeleniumUtils {
            String actualText = element.getText();
            assertThat(actualText,equalTo(textToVerify));
        }
+
+       public void verifyItemQty(By by, String textToVerify){
+           WebElement element = waitForElementDisplayed(by, 10);
+           String actualText = element.getText();
+           assertThat(actualText, CoreMatchers.containsString(textToVerify));
+    }
 
     public String[][] getCellTextArray(WebElement table){
         String[][] tableText = null;

@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="79.548601">
+    <testcase classname="Goya OMS Smart Order" name="1. Confirmation correct customer info is displayed" time="28.119972">
+        <system-out>
+            <![CDATA[Given Not a validated user..................................................passed
+When User browse to website.................................................passed
+Then Login page should display..............................................passed
+When User enter username as "013506"........................................passed
+And User enter password as "Pwd@013506".....................................passed
+And User click login button.................................................passed
+Then Home page should display...............................................passed
+When User clicks on Customers...............................................passed
+Then Customers page should display..........................................passed
+When User selects customer..................................................passed
+And User clicks Select button...............................................passed
+And User accepts Confirm Alert..............................................passed
+Then User should be direct back to Homepage.................................passed
+And Customer info should display at top.....................................passed
+When User clicks on Smart Order.............................................passed
+Then Smart Order page should display........................................passed
+And Correct customer info should display in field box.......................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Goya OMS Smart Order" name="2. User adds one item to order" time="24.715709">
+        <failure message="org.openqa.selenium.NoSuchElementException: Unable to locate element: (//button[contains(text(),'+')])[2]&#10;For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'DESKTOP-HB18O22', ip: '192.168.1.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'&#10;Driver info: org.openqa.selenium.firefox.FirefoxDriver&#10;Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6608, moz:profile: C:\Users\Steve Emmet\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}&#10;Session ID: d4dff4be-006e-4f7f-9324-83c5533b1817&#10;*** Element info: {Using=xpath, value=(//button[contains(text(),'+')])[2]}&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)&#13;&#10;&#9;at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)&#13;&#10;&#9;at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)&#13;&#10;&#9;at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)&#13;&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#13;&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#13;&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#13;&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#13;&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)&#13;&#10;&#9;at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)&#13;&#10;&#9;at com.sun.proxy.$Proxy21.click(Unknown Source)&#13;&#10;&#9;at com.triveniit.goya.qa.framework.pages.SmartOrderPage.addFirstItem(SmartOrderPage.java:58)&#13;&#10;&#9;at com.triveniit.goya.qa.framework.steps.SmartOrderSteps.when_user_adds_item_to_order(SmartOrderSteps.java:31)&#13;&#10;&#9;at ✽.When User adds item to order(src/test/resources/features/SmartOrder.feature:30)&#13;&#10;">
+            <![CDATA[Given Not a validated user..................................................passed
+When User browse to website.................................................passed
+Then Login page should display..............................................passed
+When User enter username as "013506"........................................passed
+And User enter password as "Pwd@013506".....................................passed
+And User click login button.................................................passed
+Then Home page should display...............................................passed
+When User clicks on Customers...............................................passed
+Then Customers page should display..........................................passed
+When User selects customer..................................................passed
+And User clicks Select button...............................................passed
+And User accepts Confirm Alert..............................................passed
+Then User should be direct back to Homepage.................................passed
+And Customer info should display at top.....................................passed
+When User clicks on Smart Order.............................................passed
+Then Smart Order page should display........................................passed
+When User adds item to order................................................failed
+Then Item count should display as 1.........................................skipped
+And Case qty should display as 1............................................skipped
+And Item should display in Smart Order cart.................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: Unable to locate element: (//button[contains(text(),'+')])[2]
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB18O22', ip: '192.168.1.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.firefox.FirefoxDriver
+Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 66.0.2, javascriptEnabled: true, moz:accessibilityChecks: false, moz:geckodriverVersion: 0.24.0, moz:headless: false, moz:processID: 6608, moz:profile: C:\Users\Steve Emmet\AppDat..., moz:shutdownTimeout: 60000, moz:useNonSpecCompliantPointerOrigin: false, moz:webdriverClick: true, pageLoadStrategy: normal, platform: WINDOWS, platformName: WINDOWS, platformVersion: 10.0, rotatable: false, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify}
+Session ID: d4dff4be-006e-4f7f-9324-83c5533b1817
+*** Element info: {Using=xpath, value=(//button[contains(text(),'+')])[2]}
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy21.click(Unknown Source)
+	at com.triveniit.goya.qa.framework.pages.SmartOrderPage.addFirstItem(SmartOrderPage.java:58)
+	at com.triveniit.goya.qa.framework.steps.SmartOrderSteps.when_user_adds_item_to_order(SmartOrderSteps.java:31)
+	at ✽.When User adds item to order(src/test/resources/features/SmartOrder.feature:30)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="Goya OMS Smart Order" name="3. User adds multiple items to order" time="26.71292">
+        <failure message="java.lang.AssertionError: &#10;Expected: a string containing &quot;2&quot;&#10;     but: was &quot;Item Count: 0&quot;&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)&#13;&#10;&#9;at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)&#13;&#10;&#9;at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyItemCount2(SmartOrderPage.java:77)&#13;&#10;&#9;at com.triveniit.goya.qa.framework.steps.SmartOrderSteps.item_count_should_display_as_2(SmartOrderSteps.java:63)&#13;&#10;&#9;at ✽.Then Item count should display as 2(src/test/resources/features/SmartOrder.feature:41)&#13;&#10;">
+            <![CDATA[Given Not a validated user..................................................passed
+When User browse to website.................................................passed
+Then Login page should display..............................................passed
+When User enter username as "013506"........................................passed
+And User enter password as "Pwd@013506".....................................passed
+And User click login button.................................................passed
+Then Home page should display...............................................passed
+When User clicks on Customers...............................................passed
+Then Customers page should display..........................................passed
+When User selects customer..................................................passed
+And User clicks Select button...............................................passed
+And User accepts Confirm Alert..............................................passed
+Then User should be direct back to Homepage.................................passed
+And Customer info should display at top.....................................passed
+When User clicks on Smart Order.............................................passed
+Then Smart Order page should display........................................passed
+When User adds 2 case of first item.........................................passed
+And User adds 1 case of second item.........................................passed
+Then Item count should display as 2.........................................failed
+And Case qty should display as 3............................................skipped
+
+StackTrace:
+java.lang.AssertionError: 
+Expected: a string containing "2"
+     but: was "Item Count: 0"
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+	at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyItemCount2(SmartOrderPage.java:77)
+	at com.triveniit.goya.qa.framework.steps.SmartOrderSteps.item_count_should_display_as_2(SmartOrderSteps.java:63)
+	at ✽.Then Item count should display as 2(src/test/resources/features/SmartOrder.feature:41)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
