@@ -33,10 +33,19 @@ public class HomePageTestNG extends ScriptBase {
 
 
     @Test
-    public void checkLinks() {
+    public void checkBrokenLinks() {
 
-        homePage.brokenLinks();
+        //homePage.brokenLinks();
     }
+
+    @Test
+    public void smartOrderNotEnabledWithoutCustomer(){
+        homePage.navigateToSmartOrderPage();
+        homePage.confirmSmartOrderAlert();
+    }
+
+
+
 
 
 }

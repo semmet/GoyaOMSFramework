@@ -53,9 +53,8 @@ public class LoginSteps extends StepBase {
 
     @Then("^Home page should display$")
     public void home_page_should_display() throws Throwable {
-        Thread.sleep(2000);
-        String URL = driver.getCurrentUrl();
-        Assert.assertEquals("https://portal.goya.com/omsdev/#/home", URL);
+        delayFor(2000);
+        HomePage.verifyHomePageURL();
 
     }
 

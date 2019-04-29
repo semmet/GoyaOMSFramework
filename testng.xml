@@ -1,11 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="My Test Suite">
+<suite name="Goya QA Suite">
 
-    <test name="HomePage">
+    <test name="Goya">
 
         <classes>
 
             <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
+            <class name="com.triveniit.goya.qa.testscripts.CreateOrder"/>
+            <class name="com.triveniit.goya.qa.testscripts.CreditAppTestNG"/>
 
         </classes>
     </test>

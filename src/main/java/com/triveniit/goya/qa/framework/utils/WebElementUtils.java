@@ -1,8 +1,12 @@
 package com.triveniit.goya.qa.framework.utils;
 
 import cucumber.api.java.eo.Se;
+import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+
+import java.util.List;
+
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -59,5 +63,31 @@ public class WebElementUtils extends SeleniumUtils {
            String actualText = element.getText();
            assertThat(actualText,equalTo(textToVerify));
        }
+
+       public void verifyItemQty(By by, String textToVerify){
+           WebElement element = waitForElementDisplayed(by, 10);
+           String actualText = element.getText();
+           assertThat(actualText, CoreMatchers.containsString(textToVerify));
+    }
+
+    public String[][] getCellTextArray(WebElement table){
+        String[][] tableText = null;
+        List<WebElement> rows = table.findElements(By.xpath("./tbody/tr"));
+        tableText = new String[rows.size()][];
+        for(int i = 0 ; i < rows.size(); i++){
+            WebElement row = rows.get(i);
+            List<WebElement> cols = row.findElements(By.tagName("td"));
+            tableText[i] = new String[cols.size()];
+            for(int j = 0; j < cols.size(); j++){
+                WebElement col = cols.get(j);
+                String text = col.getText();
+                tableText[i][j]=text;
+                //System.out.println("Cell text [" + i + "," + j + "]: " + text);
+            }
+        }
+
+        return  tableText;
+    }
+
 
 }
