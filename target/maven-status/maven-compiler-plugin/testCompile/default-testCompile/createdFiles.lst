@@ -1,0 +1,6 @@
+com\triveniit\goya\qa\testscripts\CreateOrder.class
+com\triveniit\goya\qa\testscripts\SmartOrderTest.class
+com\triveniit\goya\qa\testscripts\HomePageTestNG.class
+com\triveniit\goya\qa\restAPI\GoyaAPITest.class
+com\triveniit\goya\qa\testscripts\CreditAppTestNG.class
+com\triveniit\goya\qa\cucumber\BDTRunnerJunit.class

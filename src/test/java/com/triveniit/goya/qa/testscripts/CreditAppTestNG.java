@@ -26,7 +26,7 @@ public class CreditAppTestNG extends ScriptBase {
 
 
     @Test
-    public void submitCreditApp() throws Throwable {
+    public void submitCreditApp()  {
 
         creditAppPage.enterCorpName();
         creditAppPage.enterStoreName();
@@ -45,9 +45,10 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.billingSame();
         creditAppPage.deliverySame();
         creditAppPage.businessType();
-        //creditAppPage.creditFormButton();
+        creditAppPage.creditFormButton();
         creditAppPage.termsScroll();
         creditAppPage.guaranteeScroll();
+        delayFor(3000);
         creditAppPage.submitDate();
         creditAppPage.creditManager();
         creditAppPage.corpName();
@@ -55,10 +56,12 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.ownerName();
         creditAppPage.guarantorName();
         creditAppPage.salesBroker();
-        creditAppPage.submitApp();
-        creditAppPage.acceptAlert();
-
         creditAppPage.verifySubmitButtonNotEnabled();
+
+        //creditAppPage.submitApp();
+        //creditAppPage.acceptAlert();
+
+
 
     }
 
