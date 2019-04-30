@@ -167,23 +167,29 @@
                <version>2.20.1</version>
 
                <configuration>
-                  <includes>
-                      <include>**/BDDRunner.java</include>
-                  </includes>
 
-              </configuration>
+
+
+                   <suiteXmlFiles>
+                       <suiteXmlFile>testng.xml</suiteXmlFile>
+                   </suiteXmlFiles>
+
+
+               </configuration>
            </plugin>
            <plugin>
               <groupId>net.masterthought</groupId>
               <artifactId>maven-cucumber-reporting</artifactId>
                <version>3.8.0</version>
-              <executions>
+
+               <executions>
                    <execution>
                        <id>execution</id>
                        <phase>verify</phase>
                        <goals>
                            <goal>generate</goal>
                        </goals>
+
                        <configuration>
                            <projectName>GoyaOMSFramework</projectName>
                            <outputDirectory>target/cucumber-test-report/advanced-reports</outputDirectory>
