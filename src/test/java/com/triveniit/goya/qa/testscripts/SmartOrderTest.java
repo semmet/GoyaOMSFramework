@@ -1,8 +1,12 @@
 package com.triveniit.goya.qa.testscripts;
 
 import com.triveniit.goya.qa.framework.scriptbase.ScriptBase;
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+
+import java.util.List;
 
 public class SmartOrderTest extends ScriptBase {
 
@@ -33,12 +37,13 @@ public class SmartOrderTest extends ScriptBase {
     }
 
     @Test
-    public void addTwoDifferentItems(){
+    public void addTwoDifferentItemsDiffQty(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(2000);
         smartOrderPage.clearUPCSearch();
         smartOrderPage.addItemByUPC("1107");
         delayFor(2000);
+        smartOrderPage.increaseItemQty();
         smartOrderPage.verifyItemCount("2");
         smartOrderPage.verifyCaseTotal("3");
         smartOrderPage.verifyCartQty("3");
@@ -70,15 +75,39 @@ public class SmartOrderTest extends ScriptBase {
     }
 
     @Test
-    public void verifyCorrectItemInCart(){
+    public void verifyCorrectItemInCart() {
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.openCart();
         smartOrderPage.verifyCartItem("1105");
     }
 
     @Test
-    public void verifyMinusKeyDisabledWhenCartEmpty(){
+    public void verifyUserCanSubmitOrder(){
+        smartOrderPage.addItemByUPC("1105");
+        delayFor(1000);
+        smartOrderPage.submitOrder();
+        delayFor(1000);
+        smartOrderPage.submitOrderAlert();
+        delayFor(1000);
+        smartOrderPage.confirmSubmit();
+        delayFor(1000);
+        smartOrderPage.closeSubmitSuccessAlert();
+    }
+
+    @Test
+    public void verifyMinusKeyDisabledWhenLandingOnSmartOrderPage(){
         smartOrderPage.verifyMinusKeyDisabled();
+    }
+
+    @Test
+    public void verifyMinusKeyDisabledAfterDeletingAllItemsFromCart(){
+        smartOrderPage.addItemByUPC("1105");
+        smartOrderPage.verifyMinusKeyEnabled();
+        smartOrderPage.openCart();
+        smartOrderPage.deleteItemfromCart();
+        delayFor(1000);
+        smartOrderPage.verifyMinusKeyDisabled();
+
     }
 
     @Test
@@ -90,4 +119,47 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyMinusKeyDisabled();
     }
 
+    @Test
+    public void verifyDeliveryChargeAlert(){
+        smartOrderPage.addItemByUPC("1105");
+        delayFor(1000);
+        smartOrderPage.submitOrder();
+        delayFor(1000);
+        smartOrderPage.confirmDeliveryCharge();
+    }
+
+    @Test
+    public void verifySwitchCustAlert(){
+        smartOrderPage.changeNewCustomer();
+        smartOrderPage.switchCustAlert();
+    }
+
+    @Test
+    public void verifySubmitOrderButtonDisableWhenLandingOnSOPage(){
+        smartOrderPage.submitOrderButtonDisabled();
+    }
+
+    @Test
+    public void verifySubmitOrderButtonDisableWhenCartEmpty(){
+        smartOrderPage.addItemByUPC("1105");
+        delayFor(1000);
+        smartOrderPage.submitOrderButtonEnabled();
+        smartOrderPage.openCart();
+        smartOrderPage.deleteItemfromCart();
+        delayFor(1000);
+        smartOrderPage.submitOrderButtonDisabled();
+    }
+
+
+
+
+
+
+
+
+
 }
+
+
+
+

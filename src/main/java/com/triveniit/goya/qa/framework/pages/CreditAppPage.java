@@ -2,13 +2,14 @@ package com.triveniit.goya.qa.framework.pages;
 
 
 
+import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
+
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
 
@@ -74,53 +75,114 @@ public class CreditAppPage extends PageBase {
     private WebElement deliveryAddress;
     @FindBy(xpath = "//*[@ng-model='second']")
     private WebElement individOwner;
-    @FindBy(css = "#submitbutton")
-    private WebElement submitApp;
-    @FindBy(xpath = "//*[@id='submitbutton1']")
-    private WebElement alertConfirm;
-    @FindBy (xpath = "//*[@id='btncredit']")
+    @FindBy(xpath = "//*[@id='btncredit']")
     private WebElement creditFormButton;
+    @FindBy(xpath = "//*[@id='submitbutton']")
+    private WebElement saveButton;
+    @FindBy(xpath = "//*[@id='submitbutton1']")
+    private WebElement alertConfirmSubmit;
+
+
 
 
     public CreditAppPage() {
         super();
-        PageFactory.initElements(driver,this);
+        PageFactory.initElements(driver, this);
     }
 
 
-    public void enterCorpName(){typeText(corporateName,"Auto Test");}
-    public void enterStoreName() {typeText(tradeStoreName,"Auto Test");}
-    public void enterTaxId(){typeText(taxIdNo,"123456789");}
-    public void enterTelNo() {typeText(storeTelNo,"2121231234");}
-    public void email() {typeText(email, "autotest@gmail.com");}
-    public void yearsAtLocation(){typeText(yearsAtLocation,"5 years");}
-    public void yearsInBusiness(){typeText(yearsInBusiness,"5 years");}
-    public void yearInc(){typeText(yearInc,"2014");}
-    public void insuranceCo(){typeText(insuranceCo,"Best Insurance");}
-    public void policyName(){typeText(policyName,"Best Policy");}
-    public void streetAddress(){typeText(streetAddress,"71 Union Ave.");}
-    public void coCity(){typeText(coCity,"Rutherford");}
-    public void coState(){typeText(coState,"New Jersey");}
-    public void coZip(){typeText(coZip,"07070");}
-    public void creditManager(){typeText(creditManager,"Manager");}
-    public void corpName(){typeText(corpName2,"Auto Test");}
-    public void guarantor(){typeText(guarantor,"Guarantor");}
-    public void ownerName(){typeText(ownerName,"Owner");}
-    public void guarantorName(){typeText(guarantorName,"Guarantor");}
-    public void salesBroker(){typeText(brokerName,"Sales Broker");}
+    public void enterCorpName() {
+        typeText(corporateName, "Auto Test");
+    }
+
+    public void enterStoreName() {
+        typeText(tradeStoreName, "Auto Test");
+    }
+
+    public void enterTaxId() {
+        typeText(taxIdNo, "123456789");
+    }
+
+    public void enterTelNo() {
+        typeText(storeTelNo, "2121231234");
+    }
+
+    public void email() {
+        typeText(email, "autotest@gmail.com");
+    }
+
+    public void yearsAtLocation() {
+        typeText(yearsAtLocation, "5 years");
+    }
+
+    public void yearsInBusiness() {
+        typeText(yearsInBusiness, "5 years");
+    }
+
+    public void yearInc() {
+        typeText(yearInc, "2014");
+    }
+
+    public void insuranceCo() {
+        typeText(insuranceCo, "Best Insurance");
+    }
+
+    public void policyName() {
+        typeText(policyName, "Best Policy");
+    }
+
+    public void streetAddress() {
+        typeText(streetAddress, "71 Union Ave.");
+    }
+
+    public void coCity() {
+        typeText(coCity, "Rutherford");
+    }
+
+    public void coState() {
+        typeText(coState, "New Jersey");
+    }
+
+    public void coZip() {
+        typeText(coZip, "07070");
+    }
+
+    public void creditManager() {
+        typeText(creditManager, "Manager");
+    }
+
+    public void corpName() {
+        typeText(corpName2, "Auto Test");
+    }
+
+    public void guarantor() {
+        typeText(guarantor, "Guarantor");
+    }
+
+    public void ownerName() {
+        typeText(ownerName, "Owner");
+    }
+
+    public void guarantorName() {
+        typeText(guarantorName, "Guarantor");
+    }
+
+    public void salesBroker() {
+        typeText(brokerName, "Sales Broker");
+    }
 
 
     public void termsScroll() {
 
-            WebElement element = driver.findElement(By.xpath("//*[@id='Terms']"));
-            scrollToElement(element);
-            Actions action = new Actions(driver);
-            action.moveToElement(element).perform();
-            JavascriptExecutor js = ((JavascriptExecutor) driver);
-            js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
-            driver.findElement(By.id("agree")).click();
+        WebElement element = driver.findElement(By.xpath("//*[@id='Terms']"));
+        scrollToElement(element);
+        Actions action = new Actions(driver);
+        action.moveToElement(element).perform();
+        JavascriptExecutor js = ((JavascriptExecutor) driver);
+        js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
+        driver.findElement(By.id("agree")).click();
 
-        }
+    }
 
 
     public void guaranteeScroll() {
@@ -131,22 +193,16 @@ public class CreditAppPage extends PageBase {
         action.moveToElement(element).perform();
         JavascriptExecutor js = ((JavascriptExecutor) driver);
         js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
-        driver.findElement(By.xpath("//*[@id='agree']")).click();
+        driver.findElement(By.id("personalchk")).click();
     }
 
-    public void billingSame(){
-        billingAddress.click();
-    }
+    public void billingSame() { billingAddress.click(); }
 
-    public void deliverySame(){
-        deliveryAddress.click();
-    }
+    public void deliverySame() { deliveryAddress.click(); }
 
-    public void businessType(){
-        individOwner.click();
-    }
+    public void businessType() { individOwner.click(); }
 
-    public void creditFormButton(){creditFormButton.click();}
+    public void creditFormButton() { creditFormButton.click(); }
 
     public void submitDate() {
 
@@ -168,21 +224,16 @@ public class CreditAppPage extends PageBase {
 
     }
 
-    public void submitApp() {
-
-        submitApp.click();
-
-
-    }
+    public void submitApp() { saveButton.click(); }
 
     public void acceptAlert() {
 
-        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", alertConfirm);
+        ((JavascriptExecutor) driver).executeScript("arguments[0].click();", alertConfirmSubmit);
     }
 
     public void creditExcelData(String corpName, String storeName, String taxID, String telNo, String yearsLoc, String yearsBus,
-                          String inc, String insCo, String policy, String address, String city, String state,
-                          String zip) {
+                                String inc, String insCo, String policy, String address, String city, String state,
+                                String zip) {
         typeText(corporateName, corpName);
         typeText(tradeStoreName, storeName);
         typeText(taxIdNo, taxID);
@@ -199,29 +250,12 @@ public class CreditAppPage extends PageBase {
 
     }
 
-    public void verifySubmitButtonNotEnabled(){
-        /*Boolean element = driver.findElement(By.cssSelector("#submitbutton")).isEnabled();
-        if (element = true){
-            System.out.println("Test is false...");
-        }
-        else if (element = false){
-            System.out.println("Test is accurate...");
-        } */
-
-        WebElement element = driver.findElement(By.cssSelector("#submitbutton"));
-        //Assert.assertFalse(element.isEnabled());
-        Boolean checkEnabled = element.isEnabled();
-
-        if (checkEnabled == true) {
-            System.out.println("Button is enabled...Test failed.");
-        }
-        else {
-            System.out.println("Button is disabled...assertion is valid.");
-        }
+    public void verifySubmitButtonNotEnabled() {
+        Boolean buttonEnabled = saveButton.isEnabled();
+        Assert.assertFalse(buttonEnabled);
     }
+
 }
-
-
 
 
 

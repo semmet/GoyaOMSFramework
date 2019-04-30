@@ -1,13 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<suite name="Goya QA Suite">
+<suite name="Goya QA Full Test Suite">
 
-    <test name="Goya">
+    <test name="Goya Full Test Suite">
 
         <classes>
 
             <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
             <class name="com.triveniit.goya.qa.testscripts.CreateOrder"/>
-            <class name="com.triveniit.goya.qa.testscripts.CreditAppTestNG"/>
+
+            <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest"/>
 
         </classes>
     </test>

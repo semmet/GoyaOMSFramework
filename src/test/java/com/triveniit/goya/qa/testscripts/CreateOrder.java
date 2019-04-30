@@ -131,6 +131,7 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.addItem();
         createOrderPage.verifyItemAdded();
         createOrderPage.submitOrder();
+        delayFor(1000);
         createOrderPage.confirmPromoAdded();
     }
 
