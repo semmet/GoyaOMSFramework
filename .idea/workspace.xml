@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="2b543a0a-e0c4-4c9f-842a-e8dc2989fab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/extent.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" afterDir="false" />
@@ -53,7 +54,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
+            <state relative-caret-position="68">
               <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -65,7 +66,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1700">
+            <state relative-caret-position="1683">
               <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -77,8 +78,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+            <state relative-caret-position="255">
+              <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
             </state>
           </provider>
         </entry>
@@ -160,8 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -178,54 +177,6 @@
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="pages" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="scriptbase" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="framework" type="462c0819:PsiDirectoryNode" />
-              <item name="utils" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="test" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -242,15 +193,6 @@
               <item name="test" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="qa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="qa" type="462c0819:PsiDirectoryNode" />
-              <item name="cucumber" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
@@ -264,27 +206,27 @@
             <path>
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="images" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
+              <item name="target" type="462c0819:PsiDirectoryNode" />
+              <item name="surefire-reports" type="462c0819:PsiDirectoryNode" />
+              <item name="Goya QA Full Test Suite" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -440,7 +382,14 @@
       <option name="project" value="LOCAL" />
       <updated>1556647301912</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="updated testng suite in POM file">
+      <created>1556649853492</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1556649853492</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -475,7 +424,7 @@
       <configuration name="SmartOrderTest.addOneItemToOrder" configurationId="TestNG" />
     </history-entry>
   </component>
-  <component name="TodoView">
+  <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
       <is-autoscroll-to-source value="true" />
     </todo-panel>
@@ -487,7 +436,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2834008" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.28825912" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -500,8 +449,8 @@
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32874015" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32874015" />
+      <window_info active="true" anchor="bottom" id="TODO" order="6" visible="true" weight="0.3285968" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
       <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502834" side_tool="true" weight="0.46181172" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49916667" weight="0.32874015" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3268206" />
@@ -586,7 +535,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="CustomerPageSteps commit" />
     <MESSAGE value="updated java version in POM file" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated java version in POM file" />
+    <MESSAGE value="updated testng suite in POM file" />
+    <option name="LAST_COMMIT_MESSAGE" value="updated testng suite in POM file" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test-output/paxoreports/PaxoReport.html" />
@@ -867,13 +817,6 @@
         <state relative-caret-position="-102" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="25" selection-start-line="1" selection-start-column="25" selection-end-line="1" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreditAppPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1207">
@@ -891,6 +834,13 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="8" lean-forward="true" selection-start-line="14" selection-start-column="8" selection-end-line="14" selection-end-column="8" />
         </state>
       </provider>
     </entry>
@@ -922,7 +872,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
+        <state relative-caret-position="68">
           <caret line="10" column="48" selection-start-line="10" selection-start-column="48" selection-end-line="10" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -932,7 +882,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
+        <state relative-caret-position="1683">
           <caret line="109" column="13" selection-start-line="109" selection-start-column="13" selection-end-line="109" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -942,8 +892,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="170" lean-forward="true" selection-start-line="170" selection-end-line="170" />
+        <state relative-caret-position="255">
+          <caret line="171" lean-forward="true" selection-start-line="171" selection-end-line="171" />
         </state>
       </provider>
     </entry>
