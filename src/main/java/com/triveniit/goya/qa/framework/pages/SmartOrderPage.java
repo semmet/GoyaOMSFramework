@@ -151,7 +151,7 @@ public class SmartOrderPage extends PageBase {
     public void addItemQtyByText() {
         textItemQty.clear();
         textItemQty.sendKeys("9");
-        delayFor(2000);
+        delayFor(1000);
         addItem.click();
         delayFor(2000);
     }

@@ -43,13 +43,13 @@ public class CreateOrder extends ScriptBase {
     }
 
 
-    @Test
+    /*@Test
     public void userTriesToAddRestrictedItem(){
         createOrderPage.selectCustomer();
         createOrderPage.enterRestrictedItem();
         createOrderPage.addItem();
         createOrderPage.verifyRestrictedItem();
-    }
+    } */
 
     @Test
     public void userEntersInvalidUPCForItem(){
@@ -131,7 +131,7 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.addItem();
         createOrderPage.verifyItemAdded();
         createOrderPage.submitOrder();
-        delayFor(1000);
+        delayFor(2000);
         createOrderPage.confirmPromoAdded();
     }
 

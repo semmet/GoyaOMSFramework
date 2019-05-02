@@ -1,0 +1,813 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="29" passed="27" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2019-05-01T18:35:48Z" name="Goya QA Full Test Suite" finished-at="2019-05-01T18:47:19Z" duration-ms="691212">
+    <groups>
+    </groups>
+    <test started-at="2019-05-01T18:35:48Z" name="Goya Full Test Suite" finished-at="2019-05-01T18:47:19Z" duration-ms="691212">
+      <class name="com.triveniit.goya.qa.testscripts.CreateOrder">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:11Z" name="beforeClass" finished-at="2019-05-01T18:36:11Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:11Z" name="beforeMethod" finished-at="2019-05-01T18:36:24Z" duration-ms="12882" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:24Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:36:27Z" duration-ms="3079" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="addProgramTypePromoToOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:27Z" name="addProgramTypePromoToOrder" finished-at="2019-05-01T18:36:47Z" duration-ms="20240" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB18O22', ip: '192.168.1.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63254}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 6d03a9be763e5270692b985299e95566
+*** Element info: {Using=xpath, value=//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]"}
+  (Session info: chrome=73.0.3683.103)
+  (Driver info: chromedriver=2.46.628402 (536cd7adbad73a3783fdc2cab92ab2ba7ec361e1),platform=Windows NT 10.0.17134 x86_64) (WARNING: The server did not provide any stacktrace information)
+Command duration or timeout: 0 milliseconds
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'DESKTOP-HB18O22', ip: '192.168.1.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63254}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 6d03a9be763e5270692b985299e95566
+*** Element info: {Using=xpath, value=//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
+at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
+at org.openqa.selenium.remote.http.JsonHttpResponseCodec.reconstructValue(JsonHttpResponseCodec.java:40)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:80)
+at org.openqa.selenium.remote.http.AbstractHttpResponseCodec.decode(AbstractHttpResponseCodec.java:44)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy14.getText(Unknown Source)
+at com.triveniit.goya.qa.framework.pages.CreateOrderPage.confirmPromoAdded(CreateOrderPage.java:228)
+at com.triveniit.goya.qa.testscripts.CreateOrder.addProgramTypePromoToOrder(CreateOrder.java:135)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addProgramTypePromoToOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:47Z" name="afterMethod" finished-at="2019-05-01T18:36:48Z" duration-ms="960" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:36:48Z" name="beforeMethod" finished-at="2019-05-01T18:37:00Z" duration-ms="11359" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:00Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:37:05Z" duration-ms="5131" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="balanceOwedCollect()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:05Z" name="balanceOwedCollect" finished-at="2019-05-01T18:37:11Z" duration-ms="6512" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- balanceOwedCollect -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:11Z" name="afterMethod" finished-at="2019-05-01T18:37:12Z" duration-ms="778" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:12Z" name="beforeMethod" finished-at="2019-05-01T18:37:24Z" duration-ms="11750" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:24Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:37:27Z" duration-ms="3091" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="noCustomerSelected()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:27Z" name="noCustomerSelected" finished-at="2019-05-01T18:37:37Z" duration-ms="9551" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- noCustomerSelected -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:37Z" name="afterMethod" finished-at="2019-05-01T18:37:37Z" duration-ms="856" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:37Z" name="beforeMethod" finished-at="2019-05-01T18:37:49Z" duration-ms="11357" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:49Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:37:52Z" duration-ms="3112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="userAddsItemToOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:52Z" name="userAddsItemToOrder" finished-at="2019-05-01T18:37:58Z" duration-ms="6462" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddsItemToOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:58Z" name="afterMethod" finished-at="2019-05-01T18:37:59Z" duration-ms="760" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:37:59Z" name="beforeMethod" finished-at="2019-05-01T18:38:13Z" duration-ms="13461" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:13Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:38:16Z" duration-ms="3111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="userAddsItemUsingSearchFeature()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:16Z" name="userAddsItemUsingSearchFeature" finished-at="2019-05-01T18:38:32Z" duration-ms="15747" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userAddsItemUsingSearchFeature -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:32Z" name="afterMethod" finished-at="2019-05-01T18:38:32Z" duration-ms="790" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:32Z" name="beforeMethod" finished-at="2019-05-01T18:38:44Z" duration-ms="11375" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:44Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:38:47Z" duration-ms="3125" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="userEntersInvalidUPCForItem()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:47Z" name="userEntersInvalidUPCForItem" finished-at="2019-05-01T18:38:53Z" duration-ms="6684" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userEntersInvalidUPCForItem -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:53Z" name="afterMethod" finished-at="2019-05-01T18:38:54Z" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:38:54Z" name="beforeMethod" finished-at="2019-05-01T18:39:06Z" duration-ms="11480" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:06Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:39:11Z" duration-ms="5172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="userMustAddValidNumberItemCaseQty()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:11Z" name="userMustAddValidNumberItemCaseQty" finished-at="2019-05-01T18:39:20Z" duration-ms="8675" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userMustAddValidNumberItemCaseQty -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:20Z" name="afterMethod" finished-at="2019-05-01T18:39:20Z" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:20Z" name="beforeMethod" finished-at="2019-05-01T18:39:32Z" duration-ms="11598" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:32Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:39:38Z" duration-ms="5762" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="userSubmitsCustomerOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:38Z" name="userSubmitsCustomerOrder" finished-at="2019-05-01T18:39:46Z" duration-ms="8249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- userSubmitsCustomerOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:46Z" name="afterMethod" finished-at="2019-05-01T18:39:47Z" duration-ms="798" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:47Z" name="beforeMethod" finished-at="2019-05-01T18:39:58Z" duration-ms="11462" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:39:58Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:40:04Z" duration-ms="5340" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="verifyCannotSubmitEmptyOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:04Z" name="verifyCannotSubmitEmptyOrder" finished-at="2019-05-01T18:40:11Z" duration-ms="7088" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCannotSubmitEmptyOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:11Z" name="afterMethod" finished-at="2019-05-01T18:40:12Z" duration-ms="793" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:12Z" name="beforeMethod" finished-at="2019-05-01T18:40:23Z" duration-ms="11810" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:23Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:40:29Z" duration-ms="5644" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="verifyDeliveryDayNoDeliveryDayCannotMatch()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:29Z" name="verifyDeliveryDayNoDeliveryDayCannotMatch" finished-at="2019-05-01T18:40:35Z" duration-ms="6315" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeliveryDayNoDeliveryDayCannotMatch -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:35Z" name="afterMethod" finished-at="2019-05-01T18:40:36Z" duration-ms="824" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:36Z" name="beforeMethod" finished-at="2019-05-01T18:40:48Z" duration-ms="11653" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:48Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:40:51Z" duration-ms="3081" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="verifyNoSubmitalWhenAllItemsDeleted()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:40:51Z" name="verifyNoSubmitalWhenAllItemsDeleted" finished-at="2019-05-01T18:41:12Z" duration-ms="21014" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyNoSubmitalWhenAllItemsDeleted -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:41:12Z" name="afterMethod" finished-at="2019-05-01T18:41:13Z" duration-ms="813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:41:13Z" name="beforeMethod" finished-at="2019-05-01T18:41:24Z" duration-ms="11636" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToCreateOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:41:24Z" name="navigateToCreateOrderPage" finished-at="2019-05-01T18:41:29Z" duration-ms="4942" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToCreateOrderPage -->
+        <test-method signature="verifyUnder$200DeliverySurcharge()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:41:29Z" name="verifyUnder$200DeliverySurcharge" finished-at="2019-05-01T18:41:35Z" duration-ms="5951" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUnder$200DeliverySurcharge -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.CreateOrder@1fe8d51b]" started-at="2019-05-01T18:41:35Z" name="afterMethod" finished-at="2019-05-01T18:41:36Z" duration-ms="786" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.triveniit.goya.qa.testscripts.CreateOrder -->
+      <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:36Z" name="beforeClass" finished-at="2019-05-01T18:41:36Z" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:36Z" name="beforeMethod" finished-at="2019-05-01T18:41:47Z" duration-ms="11268" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:47Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:41:55Z" duration-ms="7972" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="addItemByTextQty()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:55Z" name="addItemByTextQty" finished-at="2019-05-01T18:41:59Z" duration-ms="3384" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[
+Expected: a string containing "10"
+     but: was "Case Total: 19"]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 
+Expected: a string containing "10"
+     but: was "Case Total: 19"
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
+at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
+at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyCaseTotal(SmartOrderPage.java:138)
+at com.triveniit.goya.qa.testscripts.SmartOrderTest.addItemByTextQty(SmartOrderTest.java:56)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
+at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addItemByTextQty -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:59Z" name="afterMethod" finished-at="2019-05-01T18:41:59Z" duration-ms="766" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:41:59Z" name="beforeMethod" finished-at="2019-05-01T18:42:11Z" duration-ms="11399" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:11Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:42:17Z" duration-ms="6180" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="addOneItemToOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:17Z" name="addOneItemToOrder" finished-at="2019-05-01T18:42:21Z" duration-ms="4369" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addOneItemToOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:21Z" name="afterMethod" finished-at="2019-05-01T18:42:22Z" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:22Z" name="beforeMethod" finished-at="2019-05-01T18:42:34Z" duration-ms="11629" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:34Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:42:40Z" duration-ms="6228" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="addTwoDifferentItemsDiffQty()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:40Z" name="addTwoDifferentItemsDiffQty" finished-at="2019-05-01T18:42:50Z" duration-ms="9587" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addTwoDifferentItemsDiffQty -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:50Z" name="afterMethod" finished-at="2019-05-01T18:42:50Z" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:42:50Z" name="beforeMethod" finished-at="2019-05-01T18:43:02Z" duration-ms="11644" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:02Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:43:08Z" duration-ms="6148" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="deletingItemUsingQtyButton()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:08Z" name="deletingItemUsingQtyButton" finished-at="2019-05-01T18:43:15Z" duration-ms="6721" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingItemUsingQtyButton -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:15Z" name="afterMethod" finished-at="2019-05-01T18:43:16Z" duration-ms="782" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:16Z" name="beforeMethod" finished-at="2019-05-01T18:43:27Z" duration-ms="11440" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:27Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:43:33Z" duration-ms="6105" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="deletingItemfromCart()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:33Z" name="deletingItemfromCart" finished-at="2019-05-01T18:43:40Z" duration-ms="6911" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- deletingItemfromCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:40Z" name="afterMethod" finished-at="2019-05-01T18:43:41Z" duration-ms="801" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:41Z" name="beforeMethod" finished-at="2019-05-01T18:43:52Z" duration-ms="11407" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:43:52Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:44:00Z" duration-ms="7963" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyCorrectCustomerInfo()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:00Z" name="verifyCorrectCustomerInfo" finished-at="2019-05-01T18:44:01Z" duration-ms="586" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectCustomerInfo -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:01Z" name="afterMethod" finished-at="2019-05-01T18:44:02Z" duration-ms="806" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:02Z" name="beforeMethod" finished-at="2019-05-01T18:44:13Z" duration-ms="11483" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:13Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:44:18Z" duration-ms="4661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyCorrectItemInCart()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:18Z" name="verifyCorrectItemInCart" finished-at="2019-05-01T18:44:19Z" duration-ms="1073" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyCorrectItemInCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:19Z" name="afterMethod" finished-at="2019-05-01T18:44:20Z" duration-ms="791" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:20Z" name="beforeMethod" finished-at="2019-05-01T18:44:31Z" duration-ms="11265" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:31Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:44:40Z" duration-ms="9101" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyDeliveryChargeAlert()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:40Z" name="verifyDeliveryChargeAlert" finished-at="2019-05-01T18:44:43Z" duration-ms="3172" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyDeliveryChargeAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:43Z" name="afterMethod" finished-at="2019-05-01T18:44:44Z" duration-ms="817" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:44Z" name="beforeMethod" finished-at="2019-05-01T18:44:55Z" duration-ms="11485" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:44:55Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:45:03Z" duration-ms="7257" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyMinusKeyCannotInputNeg()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:03Z" name="verifyMinusKeyCannotInputNeg" finished-at="2019-05-01T18:45:05Z" duration-ms="2526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMinusKeyCannotInputNeg -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:05Z" name="afterMethod" finished-at="2019-05-01T18:45:06Z" duration-ms="821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:06Z" name="beforeMethod" finished-at="2019-05-01T18:45:18Z" duration-ms="11581" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:18Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:45:23Z" duration-ms="4965" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyMinusKeyDisabledAfterDeletingAllItemsFromCart()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:23Z" name="verifyMinusKeyDisabledAfterDeletingAllItemsFromCart" finished-at="2019-05-01T18:45:28Z" duration-ms="5538" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMinusKeyDisabledAfterDeletingAllItemsFromCart -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:28Z" name="afterMethod" finished-at="2019-05-01T18:45:29Z" duration-ms="763" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:29Z" name="beforeMethod" finished-at="2019-05-01T18:45:40Z" duration-ms="11503" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:40Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:45:49Z" duration-ms="9012" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyMinusKeyDisabledWhenLandingOnSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:49Z" name="verifyMinusKeyDisabledWhenLandingOnSmartOrderPage" finished-at="2019-05-01T18:45:51Z" duration-ms="1501" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyMinusKeyDisabledWhenLandingOnSmartOrderPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:51Z" name="afterMethod" finished-at="2019-05-01T18:45:52Z" duration-ms="775" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:45:52Z" name="beforeMethod" finished-at="2019-05-01T18:46:03Z" duration-ms="11428" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:03Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:46:09Z" duration-ms="6234" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifySubmitOrderButtonDisableWhenCartEmpty()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:09Z" name="verifySubmitOrderButtonDisableWhenCartEmpty" finished-at="2019-05-01T18:46:14Z" duration-ms="4821" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitOrderButtonDisableWhenCartEmpty -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:14Z" name="afterMethod" finished-at="2019-05-01T18:46:15Z" duration-ms="797" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:15Z" name="beforeMethod" finished-at="2019-05-01T18:46:27Z" duration-ms="12145" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:27Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:46:32Z" duration-ms="4666" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifySubmitOrderButtonDisableWhenLandingOnSOPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:32Z" name="verifySubmitOrderButtonDisableWhenLandingOnSOPage" finished-at="2019-05-01T18:46:32Z" duration-ms="50" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySubmitOrderButtonDisableWhenLandingOnSOPage -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:32Z" name="afterMethod" finished-at="2019-05-01T18:46:33Z" duration-ms="780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:33Z" name="beforeMethod" finished-at="2019-05-01T18:46:44Z" duration-ms="11432" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:44Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:46:52Z" duration-ms="7665" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifySwitchCustAlert()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:52Z" name="verifySwitchCustAlert" finished-at="2019-05-01T18:46:53Z" duration-ms="1169" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifySwitchCustAlert -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:53Z" name="afterMethod" finished-at="2019-05-01T18:46:54Z" duration-ms="785" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:46:54Z" name="beforeMethod" finished-at="2019-05-01T18:47:05Z" duration-ms="11274" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method is-config="true" signature="navigateToSmartOrderPage()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:47:05Z" name="navigateToSmartOrderPage" finished-at="2019-05-01T18:47:13Z" duration-ms="7697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- navigateToSmartOrderPage -->
+        <test-method signature="verifyUserCanSubmitOrder()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:47:13Z" name="verifyUserCanSubmitOrder" finished-at="2019-05-01T18:47:18Z" duration-ms="5444" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyUserCanSubmitOrder -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.SmartOrderTest@781e7326]" started-at="2019-05-01T18:47:18Z" name="afterMethod" finished-at="2019-05-01T18:47:19Z" duration-ms="802" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.triveniit.goya.qa.testscripts.SmartOrderTest -->
+      <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG">
+        <test-method is-config="true" signature="beforeClass()[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:35:48Z" name="beforeClass" finished-at="2019-05-01T18:35:48Z" duration-ms="13" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeClass -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:35:48Z" name="beforeMethod" finished-at="2019-05-01T18:35:57Z" duration-ms="9223" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkBrokenLinks()[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:35:57Z" name="checkBrokenLinks" finished-at="2019-05-01T18:35:57Z" duration-ms="10" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkBrokenLinks -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:35:57Z" name="afterMethod" finished-at="2019-05-01T18:35:58Z" duration-ms="774" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod(java.lang.String)[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:35:58Z" name="beforeMethod" finished-at="2019-05-01T18:36:09Z" duration-ms="11628" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[grid_chrome_16]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="smartOrderNotEnabledWithoutCustomer()[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:36:09Z" name="smartOrderNotEnabledWithoutCustomer" finished-at="2019-05-01T18:36:11Z" duration-ms="1098" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- smartOrderNotEnabledWithoutCustomer -->
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:com.triveniit.goya.qa.testscripts.HomePageTestNG@41c07648]" started-at="2019-05-01T18:36:11Z" name="afterMethod" finished-at="2019-05-01T18:36:11Z" duration-ms="752" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- com.triveniit.goya.qa.testscripts.HomePageTestNG -->
+    </test> <!-- Goya Full Test Suite -->
+  </suite> <!-- Goya QA Full Test Suite -->
+</testng-results>
