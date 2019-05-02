@@ -150,7 +150,7 @@
 
     <build>
 
-        <defaultGoal>install</defaultGoal>
+        <defaultGoal>test</defaultGoal>
 
         <plugins>
            <plugin>

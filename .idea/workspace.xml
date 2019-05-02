@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="2b543a0a-e0c4-4c9f-842a-e8dc2989fab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,8 +61,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+            <state relative-caret-position="969">
+              <caret line="200" column="27" lean-forward="true" selection-start-line="199" selection-start-column="23" selection-end-line="201" selection-end-column="31" />
             </state>
           </provider>
         </entry>
@@ -406,13 +405,24 @@
       <option name="project" value="LOCAL" />
       <updated>1556810203724</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="changed maven-compiler to 3.6.0">
+      <created>1556815550708</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1556815550708</updated>
+    </task>
+    <task id="LOCAL-00010" summary="changed maven-compiler to 3.6.0">
+      <created>1556823507394</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1556823507394</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreditAppTestNG_submitCreditApp - 2019.04.30 at 10h 56m 08s.xml">
-      <configuration name="CreditAppTestNG.submitCreditApp" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="CreditAppTestNG_submitCreditApp - 2019.04.30 at 11h 02m 01s.xml">
       <configuration name="CreditAppTestNG.submitCreditApp" configurationId="TestNG" />
     </history-entry>
@@ -440,6 +450,9 @@
     <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.01 at 14h 57m 39s.xml">
       <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Steve_Emmet_IdeaProjects_GoyaOMSFramework_testng_xml - 2019.05.02 at 12h 44m 54s.xml">
+      <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -462,7 +475,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49716598" weight="0.36056837" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.36056837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -556,7 +569,8 @@
     <MESSAGE value="updated testng suite in POM file" />
     <MESSAGE value="updated surefire plugin in POM file" />
     <MESSAGE value="updated artifactid" />
-    <option name="LAST_COMMIT_MESSAGE" value="updated artifactid" />
+    <MESSAGE value="changed maven-compiler to 3.6.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="changed maven-compiler to 3.6.0" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/test-output/paxoreports/PaxoReport.html" />
@@ -911,8 +925,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="969">
+          <caret line="200" column="27" lean-forward="true" selection-start-line="199" selection-start-column="23" selection-end-line="201" selection-end-column="31" />
         </state>
       </provider>
     </entry>
