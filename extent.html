@@ -31,8 +31,7 @@
 		<!-- slideout menu -->
 		<ul id='slide-out' class='side-nav fixed hide-on-med-and-down'>
 			<li class='waves-effect active'><a href='#!' view='test-view' onclick="configureView(0);chartsView('test');"><i class='material-icons'>dashboard</i></a></li>
-						<li class='waves-effect'><a href='#!' view='exception-view' onclick="configureView(2)"><i class='material-icons'>bug_report</i></a></li>
-			<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
+						<li class='waves-effect'><a href='#!' onclick="configureView(-1);chartsView('dashboard');" view='dashboard-view'><i class='material-icons'>track_changes</i></i></a></li>
 		</ul>
 
 		<!-- report name -->
@@ -45,7 +44,7 @@
 		<ul id='nav-mobile' class='right hide-on-med-and-down nav-right'>
 			<li>
                 <a href='#!'>
-                    <span class='label suite-start-time blue darken-3'>Apr 30, 2019 04:54:57 PM</span>
+                    <span class='label suite-start-time blue darken-3'>May 1, 2019 02:57:16 PM</span>
 				</a>
 			</li>
 			<li>
@@ -71,7 +70,6 @@
 				</a>
 				<ul id='tests-toggle' class='dropdown-content'>
 											<li status='pass'><a href='#!'>Pass <i class='material-icons green-text'>check_circle</i></a></li>
-						<li status='fail'><a href='#!'>Fail <i class='material-icons red-text'>cancel</i></a></li>
 					<li class='divider'></li>
 					<li status='clear' clear='true'><a href='#!'>Clear Filters <i class='material-icons'>clear</i></a></li>
 				</ul>
@@ -120,545 +118,25 @@
 			<ul id='test-collection' class='test-collection'>
 				
 				
-				<li class='test displayed active has-leaf fail' status='fail' bdd='false' test-id='1'>
+				<li class='test displayed active has-leaf pass' status='pass' bdd='false' test-id='1'>
 					<div class='test-heading'>
-						<span class='test-name'>Goya QA Full Test Suite</span>
-						<span class='test-time'>Apr 30, 2019 04:54:57 PM</span>
-						<span class='test-status right fail'>fail</span>
+						<span class='test-name'>Default Suite</span>
+						<span class='test-time'>May 1, 2019 02:57:16 PM</span>
+						<span class='test-status right pass'>pass</span>
 					</div>
 					<div class='test-content hide'>
 <div class='test-time-info'>
-	<span class='label start-time'>Apr 30, 2019 04:54:57 PM</span>
-	<span class='label end-time'>Apr 30, 2019 05:06:57 PM</span>
-	<span class='label time-taken grey lighten-1 white-text'>0h 12m 0s+82ms</span>
+	<span class='label start-time'>May 1, 2019 02:57:16 PM</span>
+	<span class='label end-time'>May 1, 2019 02:57:37 PM</span>
+	<span class='label time-taken grey lighten-1 white-text'>0h 0m 21s+63ms</span>
 </div>
 	<ul class='collapsible node-list' data-collapsible='accordion'>
 		
 				<li class='node level-1 leaf pass' status='pass' test-id='2'>
 					<div class='collapsible-header'>
-						<div class='node-name'>checkBrokenLinks</div>						
-						<span class='node-time'>Apr 30, 2019 04:55:07 PM</span>
-						<span class='node-duration'>0h 0m 0s+4ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:55:07 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='3'>
-					<div class='collapsible-header'>
-						<div class='node-name'>smartOrderNotEnabledWithoutCustomer</div>						
-						<span class='node-time'>Apr 30, 2019 04:55:20 PM</span>
-						<span class='node-duration'>0h 0m 1s+154ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:55:21 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='4'>
-					<div class='collapsible-header'>
-						<div class='node-name'>addProgramTypePromoToOrder</div>						
-						<span class='node-time'>Apr 30, 2019 04:55:37 PM</span>
-						<span class='node-duration'>0h 0m 11s+301ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:55:48 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='5'>
-					<div class='collapsible-header'>
-						<div class='node-name'>balanceOwedCollect</div>						
-						<span class='node-time'>Apr 30, 2019 04:56:04 PM</span>
-						<span class='node-duration'>0h 0m 8s+514ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:56:12 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='6'>
-					<div class='collapsible-header'>
-						<div class='node-name'>noCustomerSelected</div>						
-						<span class='node-time'>Apr 30, 2019 04:56:28 PM</span>
-						<span class='node-duration'>0h 0m 9s+827ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:56:38 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='7'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userAddsItemToOrder</div>						
-						<span class='node-time'>Apr 30, 2019 04:56:56 PM</span>
-						<span class='node-duration'>0h 0m 5s+338ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:57:01 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='8'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userAddsItemUsingSearchFeature</div>						
-						<span class='node-time'>Apr 30, 2019 04:57:21 PM</span>
-						<span class='node-duration'>0h 0m 13s+392ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:57:35 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='9'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userEntersInvalidUPCForItem</div>						
-						<span class='node-time'>Apr 30, 2019 04:57:52 PM</span>
-						<span class='node-duration'>0h 0m 4s+470ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:57:56 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='10'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userMustAddValidNumberItemCaseQty</div>						
-						<span class='node-time'>Apr 30, 2019 04:58:13 PM</span>
-						<span class='node-duration'>0h 0m 9s+684ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:58:23 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='11'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userSubmitsCustomerOrder</div>						
-						<span class='node-time'>Apr 30, 2019 04:58:41 PM</span>
-						<span class='node-duration'>0h 0m 8s+843ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:58:50 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf fail' status='fail' test-id='12'>
-					<div class='collapsible-header'>
-						<div class='node-name'>userTriesToAddRestrictedItem</div>						
-						<span class='node-time'>Apr 30, 2019 04:59:08 PM</span>
-						<span class='node-duration'>0h 0m 5s+83ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>4:59:13 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-Expected: a string containing "Restricted Item"
-     but: was "Item #1107 Added !"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at com.triveniit.goya.qa.framework.pages.CreateOrderPage.verifyRestrictedItem(CreateOrderPage.java:132)
-	at com.triveniit.goya.qa.testscripts.CreateOrder.userTriesToAddRestrictedItem(CreateOrder.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='13'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyCannotSubmitEmptyOrder</div>						
-						<span class='node-time'>Apr 30, 2019 04:59:31 PM</span>
-						<span class='node-duration'>0h 0m 6s+855ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>4:59:37 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='14'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyDeliveryDayNoDeliveryDayCannotMatch</div>						
-						<span class='node-time'>Apr 30, 2019 04:59:55 PM</span>
-						<span class='node-duration'>0h 0m 6s+353ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:00:02 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='15'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyNoSubmitalWhenAllItemsDeleted</div>						
-						<span class='node-time'>Apr 30, 2019 05:00:17 PM</span>
-						<span class='node-duration'>0h 0m 20s+963ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:00:38 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='16'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyUnder$200DeliverySurcharge</div>						
-						<span class='node-time'>Apr 30, 2019 05:00:56 PM</span>
-						<span class='node-duration'>0h 0m 6s+479ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:01:02 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf fail' status='fail' test-id='17'>
-					<div class='collapsible-header'>
 						<div class='node-name'>addItemByTextQty</div>						
-						<span class='node-time'>Apr 30, 2019 05:01:21 PM</span>
-						<span class='node-duration'>0h 0m 6s+943ms</span>
-						<span class='test-status right fail'>fail</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='fail'>
-													<td class='status fail' title='fail' alt='fail'><i class='material-icons'>cancel</i></td>
-													<td class='timestamp'>5:01:28 PM</td>
-													<td class='step-details'><pre>java.lang.AssertionError: 
-Expected: a string containing "10"
-     but: was "Case Total: 20"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyCaseTotal(SmartOrderPage.java:138)
-	at com.triveniit.goya.qa.testscripts.SmartOrderTest.addItemByTextQty(SmartOrderTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='18'>
-					<div class='collapsible-header'>
-						<div class='node-name'>addOneItemToOrder</div>						
-						<span class='node-time'>Apr 30, 2019 05:01:48 PM</span>
-						<span class='node-duration'>0h 0m 3s+172ms</span>
+						<span class='node-time'>May 1, 2019 02:57:33 PM</span>
+						<span class='node-duration'>0h 0m 4s+349ms</span>
 						<span class='test-status right pass'>pass</span>
 					</div>
 						<div class='collapsible-body'>
@@ -674,371 +152,7 @@ Expected: a string containing "10"
 										<tbody>
 												<tr class='log' status='pass'>
 													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:01:51 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='19'>
-					<div class='collapsible-header'>
-						<div class='node-name'>addTwoDifferentItemsDiffQty</div>						
-						<span class='node-time'>Apr 30, 2019 05:02:12 PM</span>
-						<span class='node-duration'>0h 0m 8s+161ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:02:20 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='20'>
-					<div class='collapsible-header'>
-						<div class='node-name'>deletingItemUsingQtyButton</div>						
-						<span class='node-time'>Apr 30, 2019 05:02:40 PM</span>
-						<span class='node-duration'>0h 0m 5s+285ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:02:45 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='21'>
-					<div class='collapsible-header'>
-						<div class='node-name'>deletingItemfromCart</div>						
-						<span class='node-time'>Apr 30, 2019 05:03:04 PM</span>
-						<span class='node-duration'>0h 0m 6s+151ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:03:11 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='22'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyCorrectCustomerInfo</div>						
-						<span class='node-time'>Apr 30, 2019 05:03:33 PM</span>
-						<span class='node-duration'>0h 0m 0s+32ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:03:33 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='23'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyCorrectItemInCart</div>						
-						<span class='node-time'>Apr 30, 2019 05:03:53 PM</span>
-						<span class='node-duration'>0h 0m 1s+222ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:03:54 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='24'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyDeliveryChargeAlert</div>						
-						<span class='node-time'>Apr 30, 2019 05:04:15 PM</span>
-						<span class='node-duration'>0h 0m 2s+843ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:04:18 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='25'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyMinusKeyCannotInputNeg</div>						
-						<span class='node-time'>Apr 30, 2019 05:04:39 PM</span>
-						<span class='node-duration'>0h 0m 0s+841ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:04:40 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='26'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyMinusKeyDisabledAfterDeletingAllItemsFromCart</div>						
-						<span class='node-time'>Apr 30, 2019 05:05:01 PM</span>
-						<span class='node-duration'>0h 0m 1s+872ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:05:03 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='27'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyMinusKeyDisabledWhenLandingOnSmartOrderPage</div>						
-						<span class='node-time'>Apr 30, 2019 05:05:22 PM</span>
-						<span class='node-duration'>0h 0m 0s+303ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:05:22 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='28'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifySubmitOrderButtonDisableWhenCartEmpty</div>						
-						<span class='node-time'>Apr 30, 2019 05:05:44 PM</span>
-						<span class='node-duration'>0h 0m 2s+786ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:05:46 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='29'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifySubmitOrderButtonDisableWhenLandingOnSOPage</div>						
-						<span class='node-time'>Apr 30, 2019 05:06:05 PM</span>
-						<span class='node-duration'>0h 0m 0s+980ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:06:06 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='30'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifySwitchCustAlert</div>						
-						<span class='node-time'>Apr 30, 2019 05:06:29 PM</span>
-						<span class='node-duration'>0h 0m 0s+575ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:06:30 PM</td>
-													<td class='step-details'>Test passed</td>
-												</tr>
-										</tbody>
-									</table>
-								</div>
-						</div>
-				</li>
-				<li class='node level-1 leaf pass' status='pass' test-id='31'>
-					<div class='collapsible-header'>
-						<div class='node-name'>verifyUserCanSubmitOrder</div>						
-						<span class='node-time'>Apr 30, 2019 05:06:53 PM</span>
-						<span class='node-duration'>0h 0m 4s+924ms</span>
-						<span class='test-status right pass'>pass</span>
-					</div>
-						<div class='collapsible-body'>
-								<div class='node-steps'>
-									<table class='bordered table-results'>
-										<thead>
-											<tr>
-												<th>Status</th>
-												<th>Timestamp</th>
-												<th>Details</th>
-											</tr>
-										</thead>
-										<tbody>
-												<tr class='log' status='pass'>
-													<td class='status pass' title='pass' alt='pass'><i class='material-icons'>check_circle</i></td>
-													<td class='timestamp'>5:06:57 PM</td>
+													<td class='timestamp'>2:57:37 PM</td>
 													<td class='step-details'>Test passed</td>
 												</tr>
 										</tbody>
@@ -1082,10 +196,10 @@ Expected: a string containing "10"
 					<canvas id='parent-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='0%'><span class='strong'>0</span> suite(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> suite(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='100%'>1</span> suite(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> suite(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -1097,10 +211,10 @@ Expected: a string containing "10"
 					<canvas id='child-analysis' width='100' height='80'></canvas>
 				</div>
 				<div class='block text-small'>
-					<span class='tooltipped' data-position='top' data-tooltip='93.333%'><span class='strong'>28</span> test(s) passed</span>
+					<span class='tooltipped' data-position='top' data-tooltip='100%'><span class='strong'>1</span> test(s) passed</span>
 				</div>
 				<div class='block text-small'>
-					<span class='strong tooltipped' data-position='top' data-tooltip='6.667%'>2</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
+					<span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> test(s) failed, <span class='strong tooltipped' data-position='top' data-tooltip='0%'>0</span> others
 				</div>
 			</div>
 		</div>
@@ -1110,144 +224,6 @@ Expected: a string containing "10"
 </div>
 <!-- test view -->
 <!-- category view -->
-<div id='exception-view' class='view hide'>
-
-    <section id='controls'>
-        <div class='controls grey lighten-4'>
-            <!-- search -->
-            <div class='chip transparent' alt='Search Tests' title='Search Tests'>
-                <a href="#" class='search-div'>
-                    <i class='material-icons'>search</i> Search
-                </a>
-
-                <div class='input-field left hide'>
-                    <input id='search-tests' type='text' class='validate browser-default' placeholder='Search Tests...'>
-                </div>
-
-            </div>
-            <!-- search -->
-        </div>
-    </section>
-
-    <div class='subview-left left'>
-
-        <div class='view-summary'>
-            <h5>Exceptions</h3>
-                <ul id='exception-collection' class='exception-collection'>
-
-                        <li class='exception displayed active'>
-                            <div class='exception-heading'>
-                                <span class='exception-name'>java.lang.AssertionError</span>
-                                <span class='exception-count right'><span class='label red lighten-1 white-text'>2</span></span>
-                            </div>
-                            <div class='exception-content hide'>
-                                <div class='exception-tests'>
-                                    <table class='bordered table-results'>
-                                        <thead>
-                                        <tr>
-                                            <th>Timestamp</th>
-                                            <th>TestName</th>
-                                            <th>Status</th>
-                                        </tr>
-                                        </thead>
-                                        <tbody>
-                                                    <tr>
-                                                        <td>Apr 30, 2019 04:59:08 PM</td>
-                                                        <td class='linked' test-id='12'>Goya QA Full Test Suite.userTriesToAddRestrictedItem</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-Expected: a string containing "Restricted Item"
-     but: was "Item #1107 Added !"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at com.triveniit.goya.qa.framework.pages.CreateOrderPage.verifyRestrictedItem(CreateOrderPage.java:132)
-	at com.triveniit.goya.qa.testscripts.CreateOrder.userTriesToAddRestrictedItem(CreateOrder.java:51)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></pre></td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>Apr 30, 2019 05:01:21 PM</td>
-                                                        <td class='linked' test-id='17'>Goya QA Full Test Suite.addItemByTextQty</td>
-                                                        <td><pre><pre>java.lang.AssertionError: 
-Expected: a string containing "10"
-     but: was "Case Total: 20"
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyCaseTotal(SmartOrderPage.java:138)
-	at com.triveniit.goya.qa.testscripts.SmartOrderTest.addItemByTextQty(SmartOrderTest.java:56)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:648)
-	at org.testng.TestRunner.run(TestRunner.java:505)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:364)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
-	at org.testng.TestNG.runSuites(TestNG.java:1049)
-	at org.testng.TestNG.run(TestNG.java:1017)
-	at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:283)
-	at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:75)
-	at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:120)
-	at org.apache.maven.surefire.booter.ForkedBooter.invokeProviderInSameClassLoader(ForkedBooter.java:383)
-	at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:344)
-	at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:125)
-	at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:417)
-</pre></pre></td>
-                                                    </tr>
-                                        </tbody>
-                                    </table>
-                                </div>
-                            </div>
-                        </li>
-                </ul>
-        </div>
-    </div>
-
-    <div class='subview-right left'>
-        <div class='view-summary'>
-            <h5 class='exception-name'></h5>
-        </div>
-    </div>
-</div>
 <!-- exception view -->
 <div id='dashboard-view' class='view hide'>
 	<div class='card-panel transparent np-v'>
@@ -1263,7 +239,7 @@ Expected: a string containing "10"
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Tests
-					<div class='panel-lead'>30</div>
+					<div class='panel-lead'>1</div>
 				</div>
 			</div>
 			<div class='col s2'>
@@ -1275,19 +251,19 @@ Expected: a string containing "10"
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Start
-					<div class='panel-lead'>Apr 30, 2019 04:54:57 PM</div>
+					<div class='panel-lead'>May 1, 2019 02:57:16 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 			 		End
-			 		<div class='panel-lead'>Apr 30, 2019 05:06:58 PM</div>
+			 		<div class='panel-lead'>May 1, 2019 02:57:38 PM</div>
 				</div>
 			</div>
 			<div class='col s2'>
 				<div class='card-panel r'>
 					Time Taken
-					<div class='panel-lead'>721,003ms</div>
+					<div class='panel-lead'>22,015ms</div>
 				</div>
 			</div>
 		</div>
@@ -1300,22 +276,22 @@ Expected: a string containing "10"
 
 		<script>
 			var statusGroup = {
-				passParent: 0,
-				failParent: 1,
+				passParent: 1,
+				failParent: 0,
 				fatalParent: 0,
 				errorParent: 0,
 				warningParent: 0,
 				skipParent: 0,
-				exceptionsParent: 1,
+				exceptionsParent: 0,
 				
-				passChild: 28,
-				failChild: 2,
+				passChild: 1,
+				failChild: 0,
 				fatalChild: 0,
 				errorChild: 0,
 				warningChild: 0,
 				skipChild: 0,
 				infoChild: 0,
-				exceptionsChild: 2,
+				exceptionsChild: 0,
 				
 				passGrandChild: 0,
 				failGrandChild: 0,
