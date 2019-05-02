@@ -150,7 +150,9 @@
 
     <build>
 
-        <defaultGoal>test</defaultGoal>
+        <defaultGoal>install</defaultGoal>
+        <sourceDirectory>src</sourceDirectory>
+
 
         <plugins>
            <plugin>
