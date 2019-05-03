@@ -48,7 +48,7 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.creditFormButton();
         creditAppPage.termsScroll();
         creditAppPage.guaranteeScroll();
-        delayFor(3000);
+
         creditAppPage.submitDate();
         creditAppPage.creditManager();
         creditAppPage.corpName();
@@ -60,8 +60,6 @@ public class CreditAppTestNG extends ScriptBase {
 
         //creditAppPage.submitApp();
         //creditAppPage.acceptAlert();
-
-
 
     }
 

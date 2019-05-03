@@ -19,6 +19,7 @@ public class SmartOrderTest extends ScriptBase {
         customersPage.selectButton();
         customersPage.alertConfirm();
         homePage.verifyCustomerInfo();
+        delayFor(2000);
         homePage.navigateToSmartOrderPage();
         smartOrderPage.verifySmartOrderURL();
     }
