@@ -3,15 +3,6 @@
 <suite name="Failed suite [Goya QA Full Test Suite]" verbose="0">
   <test thread-count="5" name="Goya Full Test Suite(failed)" verbose="0">
     <classes>
-      <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest">
-        <methods>
-          <include name="afterMethod"/>
-          <include name="navigateToSmartOrderPage"/>
-          <include name="addItemByTextQty"/>
-          <include name="beforeClass"/>
-          <include name="beforeMethod"/>
-        </methods>
-      </class> <!-- com.triveniit.goya.qa.testscripts.SmartOrderTest -->
       <class name="com.triveniit.goya.qa.testscripts.CreateOrder">
         <methods>
           <include name="addProgramTypePromoToOrder"/>

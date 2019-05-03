@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 29, Failures: 2, Errors: 0, Skipped: 0, Time elapsed: 696.532 s <<< FAILURE! - in TestSuite
-addProgramTypePromoToOrder(com.triveniit.goya.qa.testscripts.CreateOrder)  Time elapsed: 20.28 s  <<< FAILURE!
+Tests run: 29, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 702.129 s <<< FAILURE! - in TestSuite
+addProgramTypePromoToOrder(com.triveniit.goya.qa.testscripts.CreateOrder)  Time elapsed: 21.91 s  <<< FAILURE!
 org.openqa.selenium.NoSuchElementException: 
 no such element: Unable to locate element: {"method":"xpath","selector":"//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]"}
   (Session info: chrome=73.0.3683.103)
@@ -12,15 +12,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'DESKTOP-HB18O22', ip: '192.168.1.225', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.2'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63254}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d03a9be763e5270692b985299e95566
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50521}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 970aa7ffd3aa8e1c0253b6c51658ab15
 *** Element info: {Using=xpath, value=//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]}
 	at com.triveniit.goya.qa.testscripts.CreateOrder.addProgramTypePromoToOrder(CreateOrder.java:135)
-
-addItemByTextQty(com.triveniit.goya.qa.testscripts.SmartOrderTest)  Time elapsed: 3.384 s  <<< FAILURE!
-java.lang.AssertionError: 
-
-Expected: a string containing "10"
-     but: was "Case Total: 19"
-	at com.triveniit.goya.qa.testscripts.SmartOrderTest.addItemByTextQty(SmartOrderTest.java:56)
 
