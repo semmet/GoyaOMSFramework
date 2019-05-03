@@ -193,7 +193,7 @@ public class CreditAppPage extends PageBase {
         action.moveToElement(element).perform();
         JavascriptExecutor js = ((JavascriptExecutor) driver);
         js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
-        driver.findElement(By.id("personalchk")).click();
+        personalAgree.click();
     }
 
     public void billingSame() { billingAddress.click(); }

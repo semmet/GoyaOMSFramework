@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 2 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">29 methods, 2 failed,   27 passed</span>
+                    <span class="method-stats">29 methods, 1 failed,   28 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -100,11 +100,6 @@
                       <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" class="show-methods failed suite-Goya_QA_Full_Test_Suite"> (show)</a> <!-- show-methods failed suite-Goya_QA_Full_Test_Suite -->
                     </span>
                     <div class="method-list-content failed suite-Goya_QA_Full_Test_Suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" title="com.triveniit.goya.qa.testscripts.SmartOrderTest" class="method navigator-link" hash-for-method="addItemByTextQty">addItemByTextQty</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="failed.png" width="3%"/>
                         <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" title="com.triveniit.goya.qa.testscripts.CreateOrder" class="method navigator-link" hash-for-method="addProgramTypePromoToOrder">addProgramTypePromoToOrder</a> <!-- method navigator-link -->
@@ -119,6 +114,11 @@
                       <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" class="show-methods passed suite-Goya_QA_Full_Test_Suite"> (show)</a> <!-- show-methods passed suite-Goya_QA_Full_Test_Suite -->
                     </span>
                     <div class="method-list-content passed suite-Goya_QA_Full_Test_Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" title="com.triveniit.goya.qa.testscripts.SmartOrderTest" class="method navigator-link" hash-for-method="addItemByTextQty">addItemByTextQty</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Goya_QA_Full_Test_Suite" title="com.triveniit.goya.qa.testscripts.SmartOrderTest" class="method navigator-link" hash-for-method="addOneItemToOrder">addOneItemToOrder</a> <!-- method navigator-link -->
@@ -269,30 +269,6 @@
           <div class="suite-Goya_QA_Full_Test_Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">com.triveniit.goya.qa.testscripts.SmartOrderTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="addItemByTextQty">
-                  </a> <!-- addItemByTextQty -->
-                  <span class="method-name">addItemByTextQty</span>
-                  <div class="stack-trace">java.lang.AssertionError: 
-Expected: a string containing &quot;10&quot;
-     but: was &quot;Case Total: 19&quot;
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:20)
-	at org.hamcrest.MatcherAssert.assertThat(MatcherAssert.java:8)
-	at com.triveniit.goya.qa.framework.pages.SmartOrderPage.verifyCaseTotal(SmartOrderPage.java:138)
-	at com.triveniit.goya.qa.testscripts.SmartOrderTest.addItemByTextQty(SmartOrderTest.java:56)
-... Removed 29 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Goya_QA_Full_Test_Suite-class-failed -->
-          <div class="suite-Goya_QA_Full_Test_Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
               <span class="class-name">com.triveniit.goya.qa.testscripts.CreateOrder</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
@@ -309,8 +285,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
 System info: host: &apos;DESKTOP-HB18O22&apos;, ip: &apos;192.168.1.225&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;11.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:63254}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
-Session ID: 6d03a9be763e5270692b985299e95566
+Capabilities {acceptInsecureCerts: false, acceptSslCerts: false, applicationCacheEnabled: false, browserConnectionEnabled: false, browserName: chrome, chrome: {chromedriverVersion: 2.46.628402 (536cd7adbad73a..., userDataDir: C:\Users\STEVEE~1\AppData\L...}, cssSelectorsEnabled: true, databaseEnabled: false, goog:chromeOptions: {debuggerAddress: localhost:50521}, handlesAlerts: true, hasTouchScreen: false, javascriptEnabled: true, locationContextEnabled: true, mobileEmulationEnabled: false, nativeEvents: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: XP, platformName: XP, proxy: Proxy(), rotatable: false, setWindowRect: true, strictFileInteractability: false, takesHeapSnapshot: true, takesScreenshot: true, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unexpectedAlertBehaviour: ignore, unhandledPromptBehavior: ignore, version: 73.0.3683.103, webStorageEnabled: true}
+Session ID: 970aa7ffd3aa8e1c0253b6c51658ab15
 *** Element info: {Using=xpath, value=//*[@class=&apos;col-md-8 newpad ng-binding&apos;][contains(text(),&apos;25&apos;)]}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:214)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:166)
@@ -341,6 +317,13 @@ Session ID: 6d03a9be763e5270692b985299e95566
               <span class="class-name">com.triveniit.goya.qa.testscripts.SmartOrderTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addItemByTextQty">
+                  </a> <!-- addItemByTextQty -->
+                  <span class="method-name">addItemByTextQty</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
                   <a name="addOneItemToOrder">
@@ -604,121 +587,121 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(29);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'verifyNoSubmitalWhenAllItemsDeleted')
+data.setCell(0, 1, 'addProgramTypePromoToOrder')
 data.setCell(0, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(0, 3, 21014);
+data.setCell(0, 3, 21884);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'addProgramTypePromoToOrder')
+data.setCell(1, 1, 'verifyNoSubmitalWhenAllItemsDeleted')
 data.setCell(1, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(1, 3, 20240);
+data.setCell(1, 3, 19352);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'userAddsItemUsingSearchFeature')
 data.setCell(2, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(2, 3, 15747);
+data.setCell(2, 3, 15629);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'addTwoDifferentItemsDiffQty')
-data.setCell(3, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(3, 3, 9587);
+data.setCell(3, 1, 'userMustAddValidNumberItemCaseQty')
+data.setCell(3, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
+data.setCell(3, 3, 11407);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'noCustomerSelected')
 data.setCell(4, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(4, 3, 9551);
+data.setCell(4, 3, 10093);
 data.setCell(5, 0, 5)
-data.setCell(5, 1, 'userMustAddValidNumberItemCaseQty')
+data.setCell(5, 1, 'userSubmitsCustomerOrder')
 data.setCell(5, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(5, 3, 8675);
+data.setCell(5, 3, 9586);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'userSubmitsCustomerOrder')
+data.setCell(6, 1, 'balanceOwedCollect')
 data.setCell(6, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(6, 3, 8249);
+data.setCell(6, 3, 8288);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'verifyCannotSubmitEmptyOrder')
+data.setCell(7, 1, 'verifyUnder$200DeliverySurcharge')
 data.setCell(7, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(7, 3, 7088);
+data.setCell(7, 3, 7639);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'deletingItemfromCart')
+data.setCell(8, 1, 'addTwoDifferentItemsDiffQty')
 data.setCell(8, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(8, 3, 6911);
+data.setCell(8, 3, 7502);
 data.setCell(9, 0, 9)
-data.setCell(9, 1, 'deletingItemUsingQtyButton')
+data.setCell(9, 1, 'verifyUserCanSubmitOrder')
 data.setCell(9, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(9, 3, 6721);
+data.setCell(9, 3, 7077);
 data.setCell(10, 0, 10)
-data.setCell(10, 1, 'userEntersInvalidUPCForItem')
+data.setCell(10, 1, 'verifyCannotSubmitEmptyOrder')
 data.setCell(10, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(10, 3, 6684);
+data.setCell(10, 3, 6960);
 data.setCell(11, 0, 11)
-data.setCell(11, 1, 'balanceOwedCollect')
-data.setCell(11, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(11, 3, 6512);
+data.setCell(11, 1, 'deletingItemfromCart')
+data.setCell(11, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
+data.setCell(11, 3, 6926);
 data.setCell(12, 0, 12)
-data.setCell(12, 1, 'userAddsItemToOrder')
-data.setCell(12, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(12, 3, 6462);
+data.setCell(12, 1, 'deletingItemUsingQtyButton')
+data.setCell(12, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
+data.setCell(12, 3, 6820);
 data.setCell(13, 0, 13)
 data.setCell(13, 1, 'verifyDeliveryDayNoDeliveryDayCannotMatch')
 data.setCell(13, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(13, 3, 6315);
+data.setCell(13, 3, 6028);
 data.setCell(14, 0, 14)
-data.setCell(14, 1, 'verifyUnder$200DeliverySurcharge')
+data.setCell(14, 1, 'userEntersInvalidUPCForItem')
 data.setCell(14, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
-data.setCell(14, 3, 5951);
+data.setCell(14, 3, 5626);
 data.setCell(15, 0, 15)
-data.setCell(15, 1, 'verifyMinusKeyDisabledAfterDeletingAllItemsFromCart')
+data.setCell(15, 1, 'verifyDeliveryChargeAlert')
 data.setCell(15, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(15, 3, 5538);
+data.setCell(15, 3, 5103);
 data.setCell(16, 0, 16)
-data.setCell(16, 1, 'verifyUserCanSubmitOrder')
+data.setCell(16, 1, 'addOneItemToOrder')
 data.setCell(16, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(16, 3, 5444);
+data.setCell(16, 3, 4738);
 data.setCell(17, 0, 17)
-data.setCell(17, 1, 'verifySubmitOrderButtonDisableWhenCartEmpty')
-data.setCell(17, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(17, 3, 4821);
+data.setCell(17, 1, 'userAddsItemToOrder')
+data.setCell(17, 2, 'com.triveniit.goya.qa.testscripts.CreateOrder')
+data.setCell(17, 3, 4659);
 data.setCell(18, 0, 18)
-data.setCell(18, 1, 'addOneItemToOrder')
+data.setCell(18, 1, 'addItemByTextQty')
 data.setCell(18, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(18, 3, 4369);
+data.setCell(18, 3, 4062);
 data.setCell(19, 0, 19)
-data.setCell(19, 1, 'addItemByTextQty')
+data.setCell(19, 1, 'verifySubmitOrderButtonDisableWhenCartEmpty')
 data.setCell(19, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(19, 3, 3384);
+data.setCell(19, 3, 3925);
 data.setCell(20, 0, 20)
-data.setCell(20, 1, 'verifyDeliveryChargeAlert')
+data.setCell(20, 1, 'verifyCorrectItemInCart')
 data.setCell(20, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(20, 3, 3172);
+data.setCell(20, 3, 2695);
 data.setCell(21, 0, 21)
-data.setCell(21, 1, 'verifyMinusKeyCannotInputNeg')
+data.setCell(21, 1, 'verifySwitchCustAlert')
 data.setCell(21, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(21, 3, 2526);
+data.setCell(21, 3, 2412);
 data.setCell(22, 0, 22)
-data.setCell(22, 1, 'verifyMinusKeyDisabledWhenLandingOnSmartOrderPage')
+data.setCell(22, 1, 'verifyMinusKeyDisabledAfterDeletingAllItemsFromCart')
 data.setCell(22, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(22, 3, 1501);
+data.setCell(22, 3, 2115);
 data.setCell(23, 0, 23)
-data.setCell(23, 1, 'verifySwitchCustAlert')
+data.setCell(23, 1, 'verifyMinusKeyCannotInputNeg')
 data.setCell(23, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(23, 3, 1169);
+data.setCell(23, 3, 1561);
 data.setCell(24, 0, 24)
 data.setCell(24, 1, 'smartOrderNotEnabledWithoutCustomer')
 data.setCell(24, 2, 'com.triveniit.goya.qa.testscripts.HomePageTestNG')
-data.setCell(24, 3, 1098);
+data.setCell(24, 3, 1107);
 data.setCell(25, 0, 25)
-data.setCell(25, 1, 'verifyCorrectItemInCart')
+data.setCell(25, 1, 'verifyMinusKeyDisabledWhenLandingOnSmartOrderPage')
 data.setCell(25, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(25, 3, 1073);
+data.setCell(25, 3, 1028);
 data.setCell(26, 0, 26)
-data.setCell(26, 1, 'verifyCorrectCustomerInfo')
+data.setCell(26, 1, 'verifySubmitOrderButtonDisableWhenLandingOnSOPage')
 data.setCell(26, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(26, 3, 586);
+data.setCell(26, 3, 927);
 data.setCell(27, 0, 27)
-data.setCell(27, 1, 'verifySubmitOrderButtonDisableWhenLandingOnSOPage')
+data.setCell(27, 1, 'verifyCorrectCustomerInfo')
 data.setCell(27, 2, 'com.triveniit.goya.qa.testscripts.SmartOrderTest')
-data.setCell(27, 3, 50);
+data.setCell(27, 3, 547);
 data.setCell(28, 0, 28)
 data.setCell(28, 1, 'checkBrokenLinks')
 data.setCell(28, 2, 'com.triveniit.goya.qa.testscripts.HomePageTestNG')
-data.setCell(28, 3, 10);
+data.setCell(28, 3, 2);
 window.suiteTableData['Goya_QA_Full_Test_Suite']= { tableData: data, tableDiv: 'times-div-Goya_QA_Full_Test_Suite'}
 return data;
 }
@@ -756,477 +739,475 @@ return data;
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">21 ms</span>
+                <span class="method-start">37 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">checkBrokenLinks</span>
-                <span class="method-start">9244 ms</span>
+                <span class="method-start">9556 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">9273 ms</span>
+                <span class="method-start">9563 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">10049 ms</span>
+                <span class="method-start">10321 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">smartOrderNotEnabledWithoutCustomer</span>
-                <span class="method-start">21677 ms</span>
+                <span class="method-start">22337 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">22776 ms</span>
+                <span class="method-start">23445 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.triveniit.goya.qa.testscripts.CreateOrder</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">23530 ms</span>
+                <span class="method-start">24207 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">23531 ms</span>
+                <span class="method-start">24208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">36413 ms</span>
+                <span class="method-start">35810 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">addProgramTypePromoToOrder</span>
-                <span class="method-start">39492 ms</span>
+                <span class="method-start">38953 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">59769 ms</span>
+                <span class="method-start">60863 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">60731 ms</span>
+                <span class="method-start">61657 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">72090 ms</span>
+                <span class="method-start">73329 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">balanceOwedCollect</span>
-                <span class="method-start">77221 ms</span>
+                <span class="method-start">76422 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">83734 ms</span>
+                <span class="method-start">84711 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">84513 ms</span>
+                <span class="method-start">85489 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">96263 ms</span>
+                <span class="method-start">97208 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">noCustomerSelected</span>
-                <span class="method-start">99355 ms</span>
+                <span class="method-start">100353 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">108907 ms</span>
+                <span class="method-start">110447 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">109764 ms</span>
+                <span class="method-start">111259 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">121121 ms</span>
+                <span class="method-start">122817 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userAddsItemToOrder</span>
-                <span class="method-start">124233 ms</span>
+                <span class="method-start">128109 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">130695 ms</span>
+                <span class="method-start">132768 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">131457 ms</span>
+                <span class="method-start">133590 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">144918 ms</span>
+                <span class="method-start">145305 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userAddsItemUsingSearchFeature</span>
-                <span class="method-start">148029 ms</span>
+                <span class="method-start">148424 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">163777 ms</span>
+                <span class="method-start">164054 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">164568 ms</span>
+                <span class="method-start">164853 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">175943 ms</span>
+                <span class="method-start">179120 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userEntersInvalidUPCForItem</span>
-                <span class="method-start">179068 ms</span>
+                <span class="method-start">182211 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">185753 ms</span>
+                <span class="method-start">187837 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">186574 ms</span>
+                <span class="method-start">188615 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">198054 ms</span>
+                <span class="method-start">200478 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userMustAddValidNumberItemCaseQty</span>
-                <span class="method-start">203226 ms</span>
+                <span class="method-start">203573 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">211903 ms</span>
+                <span class="method-start">214981 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">212690 ms</span>
+                <span class="method-start">216054 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">224288 ms</span>
+                <span class="method-start">227801 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">userSubmitsCustomerOrder</span>
-                <span class="method-start">230050 ms</span>
+                <span class="method-start">230881 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">238301 ms</span>
+                <span class="method-start">240469 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">239100 ms</span>
+                <span class="method-start">241263 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">250562 ms</span>
+                <span class="method-start">252680 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCannotSubmitEmptyOrder</span>
-                <span class="method-start">255902 ms</span>
+                <span class="method-start">258080 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">262991 ms</span>
+                <span class="method-start">265041 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">263785 ms</span>
+                <span class="method-start">265816 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">275595 ms</span>
+                <span class="method-start">277355 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDeliveryDayNoDeliveryDayCannotMatch</span>
-                <span class="method-start">281239 ms</span>
+                <span class="method-start">282176 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">287555 ms</span>
+                <span class="method-start">288205 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">288380 ms</span>
+                <span class="method-start">289065 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">300033 ms</span>
+                <span class="method-start">300496 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyNoSubmitalWhenAllItemsDeleted</span>
-                <span class="method-start">303114 ms</span>
+                <span class="method-start">305386 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">324129 ms</span>
+                <span class="method-start">324740 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">324943 ms</span>
+                <span class="method-start">325524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToCreateOrderPage</span>
-                <span class="method-start">336579 ms</span>
+                <span class="method-start">337197 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUnder$200DeliverySurcharge</span>
-                <span class="method-start">341521 ms</span>
+                <span class="method-start">340354 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">347472 ms</span>
+                <span class="method-start">347993 ms</span>
               </div> <!-- configuration-method after -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">com.triveniit.goya.qa.testscripts.SmartOrderTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">beforeClass</span>
-                <span class="method-start">348260 ms</span>
+                <span class="method-start">348779 ms</span>
               </div> <!-- configuration-class before -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">348261 ms</span>
+                <span class="method-start">348780 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">359529 ms</span>
+                <span class="method-start">360299 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">addItemByTextQty</span>
-                <span class="method-start">367501 ms</span>
+                <span class="method-start">368518 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">370886 ms</span>
+                <span class="method-start">372580 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">371653 ms</span>
+                <span class="method-start">373384 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">383052 ms</span>
+                <span class="method-start">384826 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addOneItemToOrder</span>
-                <span class="method-start">389232 ms</span>
+                <span class="method-start">391061 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">393601 ms</span>
+                <span class="method-start">395799 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">394377 ms</span>
+                <span class="method-start">396637 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">406006 ms</span>
+                <span class="method-start">407919 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">addTwoDifferentItemsDiffQty</span>
-                <span class="method-start">412234 ms</span>
+                <span class="method-start">416705 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">421821 ms</span>
+                <span class="method-start">424207 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">422585 ms</span>
+                <span class="method-start">424997 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">434229 ms</span>
+                <span class="method-start">437746 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deletingItemUsingQtyButton</span>
-                <span class="method-start">440377 ms</span>
+                <span class="method-start">443888 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">447099 ms</span>
+                <span class="method-start">450709 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">447881 ms</span>
+                <span class="method-start">451497 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">459321 ms</span>
+                <span class="method-start">463289 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">deletingItemfromCart</span>
-                <span class="method-start">465426 ms</span>
+                <span class="method-start">469780 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">472338 ms</span>
+                <span class="method-start">476706 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">473140 ms</span>
+                <span class="method-start">477497 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">484547 ms</span>
+                <span class="method-start">489053 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCorrectCustomerInfo</span>
-                <span class="method-start">492510 ms</span>
+                <span class="method-start">496632 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">493096 ms</span>
+                <span class="method-start">497179 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">493903 ms</span>
+                <span class="method-start">497974 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">505386 ms</span>
+                <span class="method-start">509460 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyCorrectItemInCart</span>
-                <span class="method-start">510047 ms</span>
+                <span class="method-start">515690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">511121 ms</span>
+                <span class="method-start">518386 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">511913 ms</span>
+                <span class="method-start">519186 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">523178 ms</span>
+                <span class="method-start">530611 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyDeliveryChargeAlert</span>
-                <span class="method-start">532280 ms</span>
+                <span class="method-start">536600 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">535453 ms</span>
+                <span class="method-start">541705 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">536271 ms</span>
+                <span class="method-start">542553 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">547756 ms</span>
+                <span class="method-start">553953 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMinusKeyCannotInputNeg</span>
-                <span class="method-start">555013 ms</span>
+                <span class="method-start">561690 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">557539 ms</span>
+                <span class="method-start">563252 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">558362 ms</span>
+                <span class="method-start">564068 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">569943 ms</span>
+                <span class="method-start">575619 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMinusKeyDisabledAfterDeletingAllItemsFromCart</span>
-                <span class="method-start">574908 ms</span>
+                <span class="method-start">583562 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">580447 ms</span>
+                <span class="method-start">585678 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">581211 ms</span>
+                <span class="method-start">586469 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">592714 ms</span>
+                <span class="method-start">597896 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyMinusKeyDisabledWhenLandingOnSmartOrderPage</span>
-                <span class="method-start">601726 ms</span>
+                <span class="method-start">604358 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">603228 ms</span>
+                <span class="method-start">605386 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">604004 ms</span>
+                <span class="method-start">606168 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">615432 ms</span>
+                <span class="method-start">617800 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySubmitOrderButtonDisableWhenCartEmpty</span>
-                <span class="method-start">621666 ms</span>
+                <span class="method-start">624166 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">626487 ms</span>
+                <span class="method-start">628092 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">627285 ms</span>
+                <span class="method-start">628878 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">639430 ms</span>
+                <span class="method-start">640245 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySubmitOrderButtonDisableWhenLandingOnSOPage</span>
-                <span class="method-start">644096 ms</span>
+                <span class="method-start">647245 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">644147 ms</span>
+                <span class="method-start">648173 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">644927 ms</span>
+                <span class="method-start">648985 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">656359 ms</span>
+                <span class="method-start">660524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifySwitchCustAlert</span>
-                <span class="method-start">664024 ms</span>
+                <span class="method-start">667735 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">665194 ms</span>
+                <span class="method-start">670148 ms</span>
               </div> <!-- configuration-method after -->
               <div class="configuration-method before">
                 <span class="method-name">beforeMethod(grid_chrome_16)</span>
-                <span class="method-start">665979 ms</span>
+                <span class="method-start">670921 ms</span>
               </div> <!-- configuration-method before -->
               <div class="configuration-method before">
                 <span class="method-name">navigateToSmartOrderPage</span>
-                <span class="method-start">677253 ms</span>
+                <span class="method-start">682184 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <span class="method-name">verifyUserCanSubmitOrder</span>
-                <span class="method-start">684950 ms</span>
+                <span class="method-start">688764 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-method after">
                 <span class="method-name">afterMethod</span>
-                <span class="method-start">690394 ms</span>
+                <span class="method-start">695841 ms</span>
               </div> <!-- configuration-method after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
