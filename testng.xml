@@ -5,8 +5,7 @@
 
         <classes>
 
-            <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
-            <class name="com.triveniit.goya.qa.testscripts.CreateOrder"/>
+
             <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest"/>
 
 
