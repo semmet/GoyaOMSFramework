@@ -51,8 +51,8 @@ public class SmartOrderTest extends ScriptBase {
 
     @Test
     public void addItemByTextQty(){
-        smartOrderPage.addItemByUPC("1105");
         smartOrderPage.addItemQtyByText();
+        delayFor(1000);
         smartOrderPage.verifyCaseTotal("10");
         smartOrderPage.verifyCartQty("10");
     }

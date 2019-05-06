@@ -149,11 +149,10 @@ public class SmartOrderPage extends PageBase {
     }
 
     public void addItemQtyByText() {
-        textItemQty.clear();
-        textItemQty.sendKeys("9");
-        delayFor(1000);
-        addItem.click();
-        delayFor(2000);
+        WebElement qtyText = driver.findElement(By.xpath("(//*[@ng-model='row.entity.Count'])[2]"));
+        qtyText.clear();
+        qtyText.sendKeys("9");
+        driver.findElement(By.xpath("(//button[contains(text(),'+')])[2]")).click();
     }
 
     public void openCart(){ cartButton.click(); }
