@@ -35,7 +35,8 @@ public class HomePage extends PageBase {
     private WebElement smartOrderLink;
     @FindBy(xpath = "//button[contains(text(),'013506')]")
     private WebElement brokerInfo;
-
+    @FindBy(xpath = "//button[contains(text(),'SalesAuthor1')]")
+    private WebElement salesAuthorInfo;
 
 
 
@@ -61,7 +62,7 @@ public class HomePage extends PageBase {
     }
 
     public void verifySalesAuthorInfo(){
-        String broker = brokerInfo.getText();
+        String broker = salesAuthorInfo.getText();
         assertThat(broker, CoreMatchers.containsString("SalesAuthor1"));
     }
 

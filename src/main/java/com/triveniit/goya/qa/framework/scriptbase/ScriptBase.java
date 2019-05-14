@@ -51,7 +51,6 @@ import java.util.concurrent.TimeUnit;
             driver.manage().window().maximize();
 
 
-
             webElementUtils = new WebElementUtils();
             homePage = new HomePage();
             loginPage = new LoginPage();
