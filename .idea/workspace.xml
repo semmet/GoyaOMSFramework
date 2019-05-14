@@ -2,10 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b543a0a-e0c4-4c9f-842a-e8dc2989fab6" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/extent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/com/triveniit/goya/qa/testscripts/SmartOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/triveniit/goya/qa/testscripts/SmartOrderTest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/images/acceptSubmitOrder.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/resources/images/verifyOrderSubmit.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/HomePage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/LoginPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LoginFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/LoginFunctionality.feature" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/images/acceptSubmitOrder.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/images/verifyOrderSubmit.PNG" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -21,43 +37,22 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="58" selection-start-line="58" selection-end-line="58" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="111">
-              <caret line="113" selection-start-line="113" selection-end-line="113" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
+            <state relative-caret-position="17">
+              <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2227">
-              <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+            <state relative-caret-position="230">
+              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -89,7 +84,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/restAPI/GoyaAPITest.java" />
         <option value="$PROJECT_DIR$/src/test/resources/features/CreateOrder.feature" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/CustomerPageSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/SeleniumUtils.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/HomePageSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/LoginSteps.java" />
@@ -103,22 +97,25 @@
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/StepBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/CreateOrderSteps.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CatalogPage.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/ExcelReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CustomersPage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/WebElementUtils.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/SmartOrderSteps.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreateOrder.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreditAppTestNG.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreditAppPage.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" />
+        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
+        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreateOrder.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" />
       </list>
     </option>
   </component>
@@ -140,7 +137,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -190,6 +187,15 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="framework" type="462c0819:PsiDirectoryNode" />
+              <item name="scriptbase" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="framework" type="462c0819:PsiDirectoryNode" />
               <item name="utils" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -225,6 +231,13 @@
             <path>
               <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
+              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
               <item name="target" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -236,7 +249,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -260,7 +273,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.SmartOrderTest.addItemByTextQty">
+  <component name="RunManager" selected="TestNG.C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml">
     <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoyaOMSFramework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -271,7 +284,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CreditAppTestNG.submitCreditApp" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateOrder.addProgramTypePromoToOrder" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoyaOMSFramework" />
       <extension name="coverage">
         <pattern>
@@ -280,8 +293,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.triveniit.goya.qa.testscripts" />
-      <option name="MAIN_CLASS_NAME" value="com.triveniit.goya.qa.testscripts.CreditAppTestNG" />
-      <option name="METHOD_NAME" value="submitCreditApp" />
+      <option name="MAIN_CLASS_NAME" value="com.triveniit.goya.qa.testscripts.CreateOrder" />
+      <option name="METHOD_NAME" value="addProgramTypePromoToOrder" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -289,7 +302,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmartOrderTest.addItemByTextQty" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="CreateOrder.userAddsItemUsingSearchFeature" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoyaOMSFramework" />
       <extension name="coverage">
         <pattern>
@@ -298,8 +311,8 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.triveniit.goya.qa.testscripts" />
-      <option name="MAIN_CLASS_NAME" value="com.triveniit.goya.qa.testscripts.SmartOrderTest" />
-      <option name="METHOD_NAME" value="addItemByTextQty" />
+      <option name="MAIN_CLASS_NAME" value="com.triveniit.goya.qa.testscripts.CreateOrder" />
+      <option name="METHOD_NAME" value="userAddsItemUsingSearchFeature" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -325,7 +338,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SmartOrderTest.verifyCorrectCustomerInfo" type="TestNG" temporary="true" nameIsGenerated="true">
+    <configuration name="SmartOrderTest.deletingItemUsingQtyButton" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoyaOMSFramework" />
       <extension name="coverage">
         <pattern>
@@ -335,7 +348,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="com.triveniit.goya.qa.testscripts" />
       <option name="MAIN_CLASS_NAME" value="com.triveniit.goya.qa.testscripts.SmartOrderTest" />
-      <option name="METHOD_NAME" value="verifyCorrectCustomerInfo" />
+      <option name="METHOD_NAME" value="deletingItemUsingQtyButton" />
       <option name="TEST_OBJECT" value="METHOD" />
       <properties />
       <listeners />
@@ -345,11 +358,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.SmartOrderTest.addItemByTextQty" />
-        <item itemvalue="TestNG.SmartOrderTest.addOneItemToOrder" />
-        <item itemvalue="TestNG.SmartOrderTest.verifyCorrectCustomerInfo" />
         <item itemvalue="TestNG.C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" />
-        <item itemvalue="TestNG.CreditAppTestNG.submitCreditApp" />
+        <item itemvalue="TestNG.CreateOrder.addProgramTypePromoToOrder" />
+        <item itemvalue="TestNG.CreateOrder.userAddsItemUsingSearchFeature" />
+        <item itemvalue="TestNG.SmartOrderTest.addOneItemToOrder" />
+        <item itemvalue="TestNG.SmartOrderTest.deletingItemUsingQtyButton" />
       </list>
     </recent_temporary>
   </component>
@@ -532,39 +545,60 @@
       <option name="project" value="LOCAL" />
       <updated>1557169109789</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="java version test">
+      <created>1557242586385</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1557242586385</updated>
+    </task>
+    <task id="LOCAL-00026" summary="java version test">
+      <created>1557242828483</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1557242828483</updated>
+    </task>
+    <task id="LOCAL-00027" summary="daily work save">
+      <created>1557517232471</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1557517232471</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 11h 50m 12s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="SmartOrderTest_addOneItemToOrder - 2019.05.13 at 17h 51m 05s.xml">
+      <configuration name="SmartOrderTest.addOneItemToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 10m 17s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="C__Users_Steve_Emmet_IdeaProjects_GoyaOMSFramework_testng_xml - 2019.05.14 at 10h 59m 18s.xml">
+      <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 11m 12s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_userAddsItemUsingSearchFeature - 2019.05.14 at 11h 26m 41s.xml">
+      <configuration name="CreateOrder.userAddsItemUsingSearchFeature" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 17m 08s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 30m 50s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 22m 15s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 36m 34s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 25m 46s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 37m 25s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 27m 08s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 38m 49s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 29m 21s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 42m 09s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 30m 02s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="CreateOrder_addProgramTypePromoToOrder - 2019.05.14 at 11h 42m 53s.xml">
+      <configuration name="CreateOrder.addProgramTypePromoToOrder" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="SmartOrderTest_addItemByTextQty - 2019.05.06 at 12h 30m 50s.xml">
-      <configuration name="SmartOrderTest.addItemByTextQty" configurationId="TestNG" />
+    <history-entry file="C__Users_Steve_Emmet_IdeaProjects_GoyaOMSFramework_testng_xml - 2019.05.14 at 12h 08m 21s.xml">
+      <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
@@ -579,7 +613,7 @@
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29959515" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33279353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -588,7 +622,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.36056837" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.36056837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -688,12 +722,11 @@
     <MESSAGE value="testing new jenkins server" />
     <MESSAGE value="changing to ff browser" />
     <MESSAGE value="chrome test" />
-    <option name="LAST_COMMIT_MESSAGE" value="chrome test" />
+    <MESSAGE value="java version test" />
+    <MESSAGE value="daily work save" />
+    <option name="LAST_COMMIT_MESSAGE" value="daily work save" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/test-output/htmlReport/PaxoReport_2019_03_20_10_19_00..html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/test-output/htmlReport/PaxoReport_2019_03_22_11_45_21..html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -730,13 +763,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/target/cucumber-test-report/index.html" />
     <entry file="file://$PROJECT_DIR$/target/cucumber-test-report/test-report.xml" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="23" column="13" selection-start-line="22" selection-start-column="4" selection-end-line="25" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/IntegraDashboardPage.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/IntegraLoginPage.java" />
     <entry file="file://$PROJECT_DIR$/src/test/resources/features/IntegraLogin.feature" />
@@ -771,13 +797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="23" selection-start-line="23" selection-end-line="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/PageBase.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="68">
@@ -795,12 +814,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/images/acceptSubmitOrder.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/resources/images/verifyOrderSubmit.PNG">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/images/acceptSubmitOrder.PNG" />
+    <entry file="file://$PROJECT_DIR$/src/test/resources/images/verifyOrderSubmit.PNG" />
     <entry file="jar://$MAVEN_REPOSITORY$/org/testng/testng/6.14.3/testng-6.14.3.jar!/org/testng/SuiteRunner.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="137">
@@ -863,13 +878,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/steps/CustomerPageSteps.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -887,13 +895,6 @@
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="42" column="44" lean-forward="true" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -931,27 +932,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="47" lean-forward="true" selection-start-line="8" selection-start-column="47" selection-end-line="8" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CustomersPage.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="143">
           <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="82" column="16" selection-start-line="76" selection-start-column="4" selection-end-line="87" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -966,15 +950,104 @@
     <entry file="file://$PROJECT_DIR$/target/surefire-reports/passed.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreateOrder.java">
+    <entry file="file://$PROJECT_DIR$/extent.html">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="349">
+          <caret line="21" lean-forward="true" selection-start-line="21" selection-end-line="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreditAppPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3179">
+          <caret line="239" column="36" selection-start-line="239" selection-start-column="36" selection-end-line="239" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreditAppTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-187">
+          <caret line="60" column="36" selection-start-line="60" selection-start-column="36" selection-end-line="60" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="37" column="27" selection-start-line="37" selection-start-column="27" selection-end-line="37" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="51" selection-start-line="51" selection-end-line="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="357">
-          <caret line="21" column="5" lean-forward="true" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+          <caret line="21" column="18" lean-forward="true" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="50" column="48" lean-forward="true" selection-start-line="50" selection-start-column="48" selection-end-line="50" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="196">
+          <caret line="66" selection-start-line="66" selection-end-line="66" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="218" column="37" lean-forward="true" selection-start-line="218" selection-start-column="37" selection-end-line="218" selection-end-column="37" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3272#3273#0" expanded="true" />
+            <element signature="e#3321#3322#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreateOrder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="130" column="34" lean-forward="true" selection-start-line="130" selection-start-column="34" selection-end-line="130" selection-end-column="34" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#userSubmitsCustomerOrder#0;class#CreateOrder#0" />
             <element signature="method#userEntersInvalidUPCForItem#0;class#CreateOrder#0" />
-            <element signature="method#userAddsItemUsingSearchFeature#0;class#CreateOrder#0" />
             <element signature="method#verifyUnder$200DeliverySurcharge#0;class#CreateOrder#0" />
             <element signature="method#verifyCannotSubmitEmptyOrder#0;class#CreateOrder#0" />
             <element signature="method#verifyNoSubmitalWhenAllItemsDeleted#0;class#CreateOrder#0" />
@@ -984,67 +1057,44 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreditAppPage.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2465">
-          <caret line="197" selection-start-line="197" selection-end-line="197" />
+        <state relative-caret-position="-419">
+          <caret line="54" column="5" lean-forward="true" selection-start-line="54" selection-start-column="5" selection-end-line="54" selection-end-column="5" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/CreditAppTestNG.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" selection-start-line="18" selection-end-line="18" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="13" column="8" lean-forward="true" selection-start-line="13" selection-start-column="8" selection-end-line="13" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/extent.html">
-      <provider selected="true" editor-type-id="text-editor" />
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="58" selection-start-line="58" selection-end-line="58" />
+        <state relative-caret-position="714">
+          <caret line="101" column="9" lean-forward="true" selection-start-line="101" selection-start-column="9" selection-end-line="101" selection-end-column="9" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#2852#2853#0" expanded="true" />
+            <element signature="e#2907#2908#0" expanded="true" />
+            <element signature="e#3988#3989#0" expanded="true" />
+            <element signature="e#4046#4047#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2227">
-          <caret line="148" column="5" selection-start-line="148" selection-start-column="5" selection-end-line="148" selection-end-column="5" />
+        <state relative-caret-position="17">
+          <caret line="6" column="32" selection-start-line="6" selection-start-column="32" selection-end-line="6" selection-end-column="32" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="111">
-          <caret line="113" selection-start-line="113" selection-end-line="113" />
+        <state relative-caret-position="230">
+          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="18" column="17" lean-forward="true" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
         </state>
       </provider>
     </entry>

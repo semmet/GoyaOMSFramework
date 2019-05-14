@@ -93,13 +93,12 @@ public class CreateOrderPage extends PageBase{
 
     public void enterRestrictedItem(){
         typeText(itemCodeTextBox, "1107");
-
     }
 
     public void enterInvalidItemCode() {
         typeText(itemCodeTextBox, "XXXX");
-
     }
+
     public void addItem(){
         click(addItem);
     }
@@ -216,7 +215,6 @@ public class CreateOrderPage extends PageBase{
 
         Actions actions = new Actions(driver);
         actions.moveToElement(promoCodeBox);
-        actions.click();
         actions.sendKeys("25");
         actions.sendKeys(Keys.ENTER);
         actions.build().perform();

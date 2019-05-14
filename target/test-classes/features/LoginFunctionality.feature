@@ -16,7 +16,7 @@ Feature: Goya OMS Login Functionality
   Scenario: 2.Valid user with valid password - Sales Author
 
     When User enter username as "salesauthor1"
-    And User enter password as "ForceFail"
+    And User enter password as "Pwd1@salesauthor1"
     And User click login button
     Then Home page should display
 
@@ -37,8 +37,8 @@ Feature: Goya OMS Login Functionality
       |              |Pwd@013506       |
       |              |                 |
       |salesauthor1  |invalid          |
-      |invalid       |Pwd@salesauthor1 |
+      |invalid       |Pwd1@salesauthor1 |
       |invalid       |invalid          |
       |salesauthor1  |                 |
-      |              |Pwd@salesauthor1 |
+      |              |Pwd1@salesauthor1 |
       |              |                 |

@@ -33,7 +33,8 @@ public class HomePage extends PageBase {
     private WebElement customersLink;
     @FindBy(xpath = "//*[@value='Smart Order']")
     private WebElement smartOrderLink;
-
+    @FindBy(xpath = "//button[contains(text(),'013506')]")
+    private WebElement brokerInfo;
 
 
 
@@ -47,12 +48,23 @@ public class HomePage extends PageBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void verifyHomePageURL() throws Throwable {
+    public void verifyHomePageURL() {
 
         delayFor(2000);
         String URL = driver.getCurrentUrl();
         Assert.assertEquals("https://portal.goya.com/omsdev/#/home", URL);
     }
+
+    public void verifyBrokerInfo(){
+        String broker = brokerInfo.getText();
+        assertThat(broker, CoreMatchers.containsString("013506"));
+    }
+
+    public void verifySalesAuthorInfo(){
+        String broker = brokerInfo.getText();
+        assertThat(broker, CoreMatchers.containsString("SalesAuthor1"));
+    }
+
 
     public void navigateToCreateOrderPage() {
 
@@ -73,7 +85,6 @@ public class HomePage extends PageBase {
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
         assertThat(alertText,CoreMatchers.containsString("Please select Customer"));
-        //delayFor(2000);
         alert.accept();
     }
 
@@ -89,53 +100,6 @@ public class HomePage extends PageBase {
 
 
 
-
-
-   /* public void brokenLinks() {
-
-
-        List<WebElement> links = driver.findElements(By.tagName("a"));
-        Iterator<WebElement> it = links.iterator();
-        while(it.hasNext()){
-
-            url = it.next().getAttribute("href");
-
-            System.out.println(url);
-
-            if(url == null || url.isEmpty()){
-                System.out.println("URL is either not configured for anchor tag or it is empty");
-                continue;
-            }
-
-              if(!url.startsWith(homePage)){
-                System.out.println("URL belongs to another domain, skipping it.");
-                continue;
-            }
-
-            try {
-                huc = (HttpURLConnection)(new URL(url).openConnection());
-
-                huc.connect();
-
-                respCode = huc.getResponseCode();
-
-                if(respCode >= 400){
-                    System.out.println(url+" is a broken link");
-                }
-                else{
-                    System.out.println(url+" is a valid link");
-                }
-
-            } catch (MalformedURLException e) {
-
-                e.printStackTrace();
-            } catch (IOException e) {
-
-                e.printStackTrace();
-            }
-        }
-
-    } */
 
 }
 

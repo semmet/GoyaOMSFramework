@@ -38,6 +38,13 @@ public class LoginPage extends PageBase {
         click(loginButton);
     }
 
+    public void loginExcelData(String name, String password){
+        typeText(userName, name);
+        typeText(passwordTextbox, password);
+        click(loginButton);
+    }
+
+
     public void verifyLoginNotSuccess(){
         String successText = getAlertMsg().getText();
         assertThat(successText, containsString("Incorrect"));
