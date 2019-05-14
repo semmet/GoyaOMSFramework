@@ -2,26 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2b543a0a-e0c4-4c9f-842a-e8dc2989fab6" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/extent.html" beforeDir="false" afterPath="$PROJECT_DIR$/extent.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/HomePage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/HomePageTestNG.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/resources/features/LoginFunctionality.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/images/acceptSubmitOrder.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/resources/images/verifyOrderSubmit.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/HomePage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/HomePage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/LoginPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/LoginPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/features/LoginFunctionality.feature" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/features/LoginFunctionality.feature" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/images/acceptSubmitOrder.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/test-classes/images/verifyOrderSubmit.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -48,8 +29,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="230">
-              <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+            <state relative-caret-position="196">
+              <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -566,7 +547,14 @@
       <option name="project" value="LOCAL" />
       <updated>1557517232471</updated>
     </task>
-    <option name="localTasksCounter" value="28" />
+    <task id="LOCAL-00028" summary="daily work save">
+      <created>1557851810397</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1557851810397</updated>
+    </task>
+    <option name="localTasksCounter" value="29" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -612,8 +600,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.33279353" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.33279353" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -622,13 +611,13 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3285968" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49716598" visible="true" weight="0.36056837" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49635628" visible="true" weight="0.36056837" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39964476" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.3285968" />
-      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.502834" side_tool="true" weight="0.46181172" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.50364375" side_tool="true" weight="0.36056837" />
       <window_info anchor="bottom" id="Version Control" order="9" sideWeight="0.49916667" weight="0.32874015" />
       <window_info anchor="bottom" id="Messages" order="10" weight="0.3268206" />
       <window_info anchor="bottom" id="GitHub Pull Requests" order="11" weight="0.3285968" />
@@ -1090,8 +1079,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/utils/DriverFactory.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="230">
-          <caret line="128" lean-forward="true" selection-start-line="128" selection-end-line="128" />
+        <state relative-caret-position="196">
+          <caret line="125" lean-forward="true" selection-start-line="125" selection-end-line="125" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
