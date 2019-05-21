@@ -21,6 +21,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 
 import java.io.IOException;
 import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -33,9 +34,9 @@ public class HomePageTestNG extends ScriptBase {
 
 
     @Test
-    public void checkBrokenLinks() {
-
-        //homePage.brokenLinks();
+    public void checkBrokenLinks() throws IOException,InterruptedException {
+        delayFor(3000);
+        homePage.checkForBrokenLinks();
     }
 
     @Test

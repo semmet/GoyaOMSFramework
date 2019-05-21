@@ -202,7 +202,7 @@ public class CreditAppPage extends PageBase {
 
     public void businessType() { individOwner.click(); }
 
-    public void creditFormButton() { creditFormButton.click(); }
+    public void clickCreditFormButton() { creditFormButton.click(); }
 
     public void submitDate() {
 

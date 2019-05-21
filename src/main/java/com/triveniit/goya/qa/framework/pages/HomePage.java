@@ -7,7 +7,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
-
+import org.openqa.selenium.support.ui.Select;
 import java.io.IOException;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -15,7 +15,6 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.Iterator;
 import java.util.List;
-
 import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
 
@@ -40,17 +39,34 @@ public class HomePage extends PageBase {
 
 
 
-    String url = "";
-    HttpURLConnection huc = null;
-    int respCode = 200;
+
 
     public HomePage() {
         super();
         PageFactory.initElements(driver, this);
     }
 
-    public void verifyHomePageURL() {
+    public void checkForBrokenLinks() throws IOException {
+        List<WebElement> linksList = driver.findElements(By.tagName("a"));
+        List<WebElement> activeLinks = new ArrayList<>();
 
+        for (int i = 0; i < linksList.size(); i++) {
+            //System.out.println(linksList.get(i).getAttribute("href"));
+            if (linksList.get(i).getAttribute("href") != null) {
+                activeLinks.add(linksList.get(i));
+            }
+        }
+
+        for (int j = 0; j < activeLinks.size(); j++) {
+            HttpURLConnection connection = (HttpURLConnection) new URL(activeLinks.get(j).getAttribute("href")).openConnection();
+            connection.connect();
+            String response = connection.getResponseMessage();
+            connection.disconnect();
+            System.out.println(activeLinks.get(j).getAttribute("href")+"-->"+ response);
+        }
+    }
+
+    public void verifyHomePageURL() {
         delayFor(2000);
         String URL = driver.getCurrentUrl();
         Assert.assertEquals("https://portal.goya.com/omsdev/#/home", URL);
@@ -97,6 +113,12 @@ public class HomePage extends PageBase {
     public void verifyCustomerInfo() {
         String customerInfo = customerBanner.getText();
         assertThat(customerInfo, CoreMatchers.containsString("712457"));
+    }
+
+    public void navigateToContactSupport(){
+        Select drpBroker = new Select(driver.findElement(By.xpath("//*[@class='btn-group']")));
+        drpBroker.selectByVisibleText("Contact Support");
+
     }
 
 

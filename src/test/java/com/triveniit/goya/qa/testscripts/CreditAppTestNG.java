@@ -45,10 +45,9 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.billingSame();
         creditAppPage.deliverySame();
         creditAppPage.businessType();
-        creditAppPage.creditFormButton();
+        creditAppPage.clickCreditFormButton();
         creditAppPage.termsScroll();
         creditAppPage.guaranteeScroll();
-
         creditAppPage.submitDate();
         creditAppPage.creditManager();
         creditAppPage.corpName();
@@ -56,10 +55,8 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.ownerName();
         creditAppPage.guarantorName();
         creditAppPage.salesBroker();
-        creditAppPage.verifySubmitButtonNotEnabled();
-
-        //creditAppPage.submitApp();
-        //creditAppPage.acceptAlert();
+        creditAppPage.submitApp();
+        creditAppPage.acceptAlert();
 
     }
 
@@ -74,7 +71,7 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.billingSame();
         creditAppPage.deliverySame();
         creditAppPage.businessType();
-        creditAppPage.creditFormButton();
+        creditAppPage.clickCreditFormButton();
         creditAppPage.termsScroll();
         creditAppPage.guaranteeScroll();
         creditAppPage.submitDate();

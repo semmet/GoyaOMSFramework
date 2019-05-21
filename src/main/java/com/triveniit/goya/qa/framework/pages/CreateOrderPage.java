@@ -170,11 +170,11 @@ public class CreateOrderPage extends PageBase{
     }
 
     public void confirmNoItemsAdded(){
-        delayFor(3000);
+        delayFor(2000);
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
         assertThat(alertText,CoreMatchers.containsString("No Items added."));
-        delayFor(2000);
+        //delayFor(2000);
         alert.accept();
     }
 
@@ -221,7 +221,6 @@ public class CreateOrderPage extends PageBase{
     }
 
     public void confirmPromoAdded(){
-        //waitForElementTextToBe(By.xpath("//*[@class='col-md-8 newpad ng-binding'][contains(text(),'25')]"),"25");
         delayFor(2000);
         String promoType = promoCodeAlert.getText();
         assertThat(promoType,CoreMatchers.containsString("25"));

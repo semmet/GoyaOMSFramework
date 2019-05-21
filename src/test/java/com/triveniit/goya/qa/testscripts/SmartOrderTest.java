@@ -5,8 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 import java.util.List;
+
+
 
 public class SmartOrderTest extends ScriptBase {
 
@@ -62,6 +63,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.verifyItemCount("1");
         smartOrderPage.reduceItemQty();
+        delayFor(1000);
         smartOrderPage.verifyItemCount("0");
     }
 
@@ -71,12 +73,14 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyItemCount("1");
         smartOrderPage.openCart();
         smartOrderPage.deleteItemfromCart();
+        delayFor(1000);
         smartOrderPage.verifyItemCount("0");
     }
 
     @Test
     public void verifyCorrectItemInCart() {
         smartOrderPage.addItemByUPC("1105");
+        delayFor(2000);
         smartOrderPage.openCart();
         smartOrderPage.verifyCartItem("1105");
     }
@@ -102,10 +106,11 @@ public class SmartOrderTest extends ScriptBase {
     @Test
     public void verifyMinusKeyDisabledAfterDeletingAllItemsFromCart(){
         smartOrderPage.addItemByUPC("1105");
+        delayFor(2000);
         smartOrderPage.verifyMinusKeyEnabled();
         smartOrderPage.openCart();
         smartOrderPage.deleteItemfromCart();
-        delayFor(1000);
+        delayFor(2000);
         smartOrderPage.verifyMinusKeyDisabled();
 
     }
@@ -131,6 +136,7 @@ public class SmartOrderTest extends ScriptBase {
     @Test
     public void verifySwitchCustAlert(){
         smartOrderPage.changeNewCustomer();
+        delayFor(1000);
         smartOrderPage.switchCustAlert();
     }
 
