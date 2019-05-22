@@ -63,7 +63,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.verifyItemCount("1");
         smartOrderPage.reduceItemQty();
-        delayFor(1000);
+        delayFor(2000);
         smartOrderPage.verifyItemCount("0");
     }
 
