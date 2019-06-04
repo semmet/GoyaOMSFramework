@@ -118,10 +118,10 @@ public class DriverFactory {
     {
         @Override
         protected WebDriver initialValue() {
-            //ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
-            //return new ChromeDriver();
-            FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
-            return new FirefoxDriver();
+            ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
+            return new ChromeDriver();
+            //FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
+            //return new FirefoxDriver();
 
 
         }

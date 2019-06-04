@@ -19,6 +19,7 @@ import static org.hamcrest.MatcherAssert.assertThat;
 import static org.hamcrest.CoreMatchers.containsString;
 
 
+
 public class HomePage extends PageBase {
 
 
@@ -32,10 +33,14 @@ public class HomePage extends PageBase {
     private WebElement customersLink;
     @FindBy(xpath = "//*[@value='Smart Order']")
     private WebElement smartOrderLink;
+    @FindBy(xpath = "//input[@value='Briefcase']")
+    private WebElement briefcaseLink;
     @FindBy(xpath = "//button[contains(text(),'013506')]")
     private WebElement brokerInfo;
     @FindBy(xpath = "//button[contains(text(),'SalesAuthor1')]")
     private WebElement salesAuthorInfo;
+    @FindBy(xpath = "(//*[@class='notify-count ng-binding ng-scope'])[1]")
+    private WebElement brokerNotice;
 
 
 
@@ -46,7 +51,7 @@ public class HomePage extends PageBase {
         PageFactory.initElements(driver, this);
     }
 
-    public void checkForBrokenLinks() throws IOException {
+    public void checkForBrokenLinks() throws Throwable {
         List<WebElement> linksList = driver.findElements(By.tagName("a"));
         List<WebElement> activeLinks = new ArrayList<>();
 
@@ -64,7 +69,9 @@ public class HomePage extends PageBase {
             connection.disconnect();
             System.out.println(activeLinks.get(j).getAttribute("href")+"-->"+ response);
         }
+
     }
+
 
     public void verifyHomePageURL() {
         delayFor(2000);
