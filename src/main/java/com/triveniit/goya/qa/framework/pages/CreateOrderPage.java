@@ -160,45 +160,11 @@ public class CreateOrderPage extends PageBase{
         assertThat(alertText, CoreMatchers.containsString("$10 delivery charge"));
     }
 
-    public void confirmOrderSubmitted(){
-        delayFor(2000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Submitted Successfully"));
-        delayFor(1000);
-        alert.accept();
-    }
-
-    public void confirmNoItemsAdded(){
-        delayFor(2000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("No Items added."));
-        //delayFor(2000);
-        alert.accept();
-    }
-
-    public void noCustomerSelected(){
-        delayFor(3000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Please select customer."));
-        delayFor(2000);
-        alert.accept();
-    }
 
     public void deleteAllItems(){
         click(deleteAll);
     }
 
-    public void confirmDeleteAll(){
-        delayFor(3000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Delete All Items?"));
-        delayFor(2000);
-        alert.accept();
-    }
 
     public void collectBalance(){
         typeText(collectionAmount,"100.00");
@@ -228,37 +194,16 @@ public class CreateOrderPage extends PageBase{
 
     public void selectDeliveryDay(){
         WebElement element1 = selectDay;
-
         Select select = new Select(element1);
         select.selectByVisibleText("Mon");
     }
 
     public void selectNotDeliveryDay() {
         WebElement element1 = selectNotDay;
-
         Select select = new Select(element1);
         select.selectByVisibleText("Mon");
 
     }
-
-    public void deliveryDayOptionAlert(){
-        delayFor(2000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Day and Not Day can not be Same."));
-        delayFor(2000);
-        alert.accept();
-    }
-
-    public void verifyInvalidQtyAlert(){
-        delayFor(2000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Please enter valid quantity."));
-        delayFor(2000);
-        alert.accept();
-    }
-
 
 }
 

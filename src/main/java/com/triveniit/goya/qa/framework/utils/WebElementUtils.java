@@ -2,6 +2,7 @@ package com.triveniit.goya.qa.framework.utils;
 
 import cucumber.api.java.eo.Se;
 import org.hamcrest.CoreMatchers;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
@@ -69,6 +70,16 @@ public class WebElementUtils extends SeleniumUtils {
            String actualText = element.getText();
            assertThat(actualText, CoreMatchers.containsString(textToVerify));
     }
+
+    public void verifyAlertMessage(String alertMessage){
+        delayFor(2000);
+        Alert alert = driver.switchTo().alert();
+        String alertText = alert.getText();
+        assertThat(alertText,CoreMatchers.containsString(alertMessage));
+        delayFor(2000);
+        alert.accept();
+    }
+
 
     public String[][] getCellTextArray(WebElement table){
         String[][] tableText = null;

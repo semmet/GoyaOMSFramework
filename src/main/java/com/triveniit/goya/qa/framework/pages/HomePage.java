@@ -100,9 +100,15 @@ public class HomePage extends PageBase {
         creditAppLink.click();
     }
 
-    public void navigateToSmartOrderPage() {
+    public void navigateToSmartOrderPage(){
         smartOrderLink.click();
     }
+
+    public void navigateToDocBriefcase(){
+        briefcaseLink.click();
+    }
+
+
 
     public void confirmSmartOrderAlert(){
         delayFor(1000);
@@ -125,8 +131,8 @@ public class HomePage extends PageBase {
     public void navigateToContactSupport(){
         Select drpBroker = new Select(driver.findElement(By.xpath("//*[@class='btn-group']")));
         drpBroker.selectByVisibleText("Contact Support");
-
     }
+
 
 
 

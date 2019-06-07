@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 
 
 
-public class CreateOrder extends ScriptBase {
+public class CreateOrderTest extends ScriptBase {
 
 
 
@@ -19,6 +19,14 @@ public class CreateOrder extends ScriptBase {
     public void navigateToCreateOrderPage() {
         homePage.navigateToCreateOrderPage();
         createOrderPage.verifyOrderPageDisplay();
+    }
+
+
+    @Test
+    public void userMustSelectCustomerToBeginOrder(){
+        createOrderPage.enterItemCode();
+        createOrderPage.addItem();
+        verifyAlertMessage("Please select customer.");
     }
 
 
@@ -38,7 +46,7 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.verifyItemAdded();
         createOrderPage.submitOrder();
         createOrderPage.confirmOrder();
-        createOrderPage.confirmOrderSubmitted();
+        verifyAlertMessage("Submitted Successfully");
 
     }
 
@@ -87,7 +95,7 @@ public class CreateOrder extends ScriptBase {
     public void verifyCannotSubmitEmptyOrder(){
         createOrderPage.selectCustomer();
         createOrderPage.submitOrder();
-        createOrderPage.confirmNoItemsAdded();
+        verifyAlertMessage("No Items added.");
     }
 
     @Test
@@ -99,17 +107,10 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.addAnotherItem();
         createOrderPage.verifyItemAdded();
         createOrderPage.deleteAllItems();
-        createOrderPage.confirmDeleteAll();
+        verifyAlertMessage("Delete All Items?");
         createOrderPage.submitOrder();
-        createOrderPage.confirmNoItemsAdded();
+        verifyAlertMessage("No Items added.");
 
-    }
-
-    @Test
-    public void noCustomerSelected(){
-        createOrderPage.enterItemCode();
-        createOrderPage.addItem();
-        createOrderPage.noCustomerSelected();
     }
 
     @Test
@@ -140,7 +141,7 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.selectCustomer();
         createOrderPage.selectDeliveryDay();
         createOrderPage.selectNotDeliveryDay();
-        createOrderPage.deliveryDayOptionAlert();
+        verifyAlertMessage("Day and Not Day can not be Same.");
     }
 
     @Test
@@ -149,7 +150,7 @@ public class CreateOrder extends ScriptBase {
         createOrderPage.enterItemCode();
         createOrderPage.enterInvalidItemQty();
         createOrderPage.addItem();
-        createOrderPage.verifyInvalidQtyAlert();
+        verifyAlertMessage("Please enter valid quantity.");
     }
 
 

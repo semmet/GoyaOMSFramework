@@ -10,7 +10,7 @@
             <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
             <class name ="com.triveniit.goya.qa.testscripts.LoginTest"/>
             <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest"/>
-            <class name="com.triveniit.goya.qa.testscripts.CreateOrder"/>
+            <class name="com.triveniit.goya.qa.testscripts.CreateOrderTest"/>
 
         </classes>
     </test>

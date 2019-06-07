@@ -4,8 +4,6 @@ import com.triveniit.goya.qa.framework.pages.*;
 import com.triveniit.goya.qa.framework.utils.*;
 import org.openqa.selenium.WebDriver;
 import org.testng.annotations.*;
-import com.paxovision.execution.reporter.listener.ReporterTestListener;
-import com.paxovision.execution.reporter.service.ReporterService;
 
 import java.util.concurrent.TimeUnit;
 
@@ -24,6 +22,8 @@ import java.util.concurrent.TimeUnit;
         protected CreditAppPage creditAppPage;
         protected CustomersPage customersPage;
         protected SmartOrderPage smartOrderPage;
+        protected DocBriefcase docBriefcase;
+
 
 
         private ExtentManager report = ExtentManager.getInstance();  //THIS IS FOR EXTENT MANAGER REPORTER
@@ -59,6 +59,7 @@ import java.util.concurrent.TimeUnit;
             customersPage = new CustomersPage();
             catalogPage = new CatalogPage();
             smartOrderPage = new SmartOrderPage();
+            docBriefcase = new DocBriefcase();
 
 
             driver.get("https://portal.goya.com/omsdev/#/login");
@@ -78,6 +79,8 @@ import java.util.concurrent.TimeUnit;
             catalogPage = null;
             creditAppPage = null;
             createOrderPage = null;
+            smartOrderPage = null;
+            docBriefcase = null;
 
             DriverFactory.getInstance().removeDriver();
         }

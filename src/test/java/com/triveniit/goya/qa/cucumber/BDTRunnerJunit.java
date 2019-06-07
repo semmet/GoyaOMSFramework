@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
         //tags = { "@debug" },
 
           features =  {//"src/test/resources/features/LoginFunctionality.feature" ,
-                       //"src/test/resources/features/CreateOrder.feature",
+                       //"src/test/resources/features/CreateOrderTest.feature",
                        "src/test/resources/features/SmartOrder.feature"
 
                        },
