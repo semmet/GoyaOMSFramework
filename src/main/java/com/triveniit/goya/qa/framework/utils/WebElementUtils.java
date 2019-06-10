@@ -71,33 +71,33 @@ public class WebElementUtils extends SeleniumUtils {
            assertThat(actualText, CoreMatchers.containsString(textToVerify));
     }
 
-    public void verifyAlertMessage(String alertMessage){
-        delayFor(2000);
-        Alert alert = driver.switchTo().alert();
-        String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString(alertMessage));
-        delayFor(2000);
-        alert.accept();
+       public void verifyAlertMessage(String alertMessage){
+           delayFor(2000);
+           Alert alert = driver.switchTo().alert();
+           String alertText = alert.getText();
+           assertThat(alertText,CoreMatchers.containsString(alertMessage));
+           delayFor(2000);
+           alert.accept();
     }
 
 
-    public String[][] getCellTextArray(WebElement table){
-        String[][] tableText = null;
-        List<WebElement> rows = table.findElements(By.xpath("./tbody/tr"));
-        tableText = new String[rows.size()][];
-        for(int i = 0 ; i < rows.size(); i++){
-            WebElement row = rows.get(i);
-            List<WebElement> cols = row.findElements(By.tagName("td"));
-            tableText[i] = new String[cols.size()];
-            for(int j = 0; j < cols.size(); j++){
-                WebElement col = cols.get(j);
-                String text = col.getText();
-                tableText[i][j]=text;
+       public String[][] getCellTextArray(WebElement table){
+           String[][] tableText = null;
+           List<WebElement> rows = table.findElements(By.xpath("./tbody/tr"));
+           tableText = new String[rows.size()][];
+           for(int i = 0 ; i < rows.size(); i++){
+               WebElement row = rows.get(i);
+               List<WebElement> cols = row.findElements(By.tagName("td"));
+               tableText[i] = new String[cols.size()];
+               for(int j = 0; j < cols.size(); j++){
+                   WebElement col = cols.get(j);
+                   String text = col.getText();
+                   tableText[i][j]=text;
                 //System.out.println("Cell text [" + i + "," + j + "]: " + text);
             }
         }
 
-        return  tableText;
+           return  tableText;
     }
 
 

@@ -2,6 +2,7 @@ package com.triveniit.goya.qa.testscripts;
 
 import com.triveniit.goya.qa.framework.pages.CreateOrderPage;
 import com.triveniit.goya.qa.framework.scriptbase.ScriptBase;
+import com.triveniit.goya.qa.framework.utils.WebElementUtils;
 import org.openqa.selenium.Alert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -26,7 +27,7 @@ public class CreateOrderTest extends ScriptBase {
     public void userMustSelectCustomerToBeginOrder(){
         createOrderPage.enterItemCode();
         createOrderPage.addItem();
-        verifyAlertMessage("Please select customer.");
+        webElementUtils.verifyAlertMessage("Please select customer.");
     }
 
 
@@ -46,7 +47,7 @@ public class CreateOrderTest extends ScriptBase {
         createOrderPage.verifyItemAdded();
         createOrderPage.submitOrder();
         createOrderPage.confirmOrder();
-        verifyAlertMessage("Submitted Successfully");
+        webElementUtils.verifyAlertMessage("Submitted Successfully");
 
     }
 
@@ -95,7 +96,8 @@ public class CreateOrderTest extends ScriptBase {
     public void verifyCannotSubmitEmptyOrder(){
         createOrderPage.selectCustomer();
         createOrderPage.submitOrder();
-        verifyAlertMessage("No Items added.");
+        webElementUtils.verifyAlertMessage("No Items added.");
+
     }
 
     @Test
@@ -107,9 +109,9 @@ public class CreateOrderTest extends ScriptBase {
         createOrderPage.addAnotherItem();
         createOrderPage.verifyItemAdded();
         createOrderPage.deleteAllItems();
-        verifyAlertMessage("Delete All Items?");
+        webElementUtils.verifyAlertMessage("Delete All Items?");
         createOrderPage.submitOrder();
-        verifyAlertMessage("No Items added.");
+        webElementUtils.verifyAlertMessage("No Items added.");
 
     }
 
@@ -141,7 +143,7 @@ public class CreateOrderTest extends ScriptBase {
         createOrderPage.selectCustomer();
         createOrderPage.selectDeliveryDay();
         createOrderPage.selectNotDeliveryDay();
-        verifyAlertMessage("Day and Not Day can not be Same.");
+        webElementUtils.verifyAlertMessage("Day and Not Day can not be Same.");
     }
 
     @Test
@@ -150,7 +152,7 @@ public class CreateOrderTest extends ScriptBase {
         createOrderPage.enterItemCode();
         createOrderPage.enterInvalidItemQty();
         createOrderPage.addItem();
-        verifyAlertMessage("Please enter valid quantity.");
+        webElementUtils.verifyAlertMessage("Please enter valid quantity.");
     }
 
 
