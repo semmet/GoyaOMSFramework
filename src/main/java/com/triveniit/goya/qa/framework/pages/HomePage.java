@@ -43,35 +43,46 @@ public class HomePage extends PageBase {
     private WebElement brokerNotice;
 
 
-
-
-
     public HomePage() {
         super();
         PageFactory.initElements(driver, this);
     }
 
-    public void checkForBrokenLinks() throws Throwable {
-        List<WebElement> linksList = driver.findElements(By.tagName("a"));
-        List<WebElement> activeLinks = new ArrayList<>();
+    public void checkForBrokenLinks() {
+        List<WebElement> links = driver.findElements(By.tagName("a"));
 
-        for (int i = 0; i < linksList.size(); i++) {
-            //System.out.println(linksList.get(i).getAttribute("href"));
-            if (linksList.get(i).getAttribute("href") != null) {
-                activeLinks.add(linksList.get(i));
-            }
+        System.out.println("Total links are "+links.size());
+
+        for(int i=0; i<links.size(); i++) {
+            WebElement element = links.get(i);
+
+            String url=element.getAttribute("href");
+            verifyLink(url);
         }
-
-        for (int j = 0; j < activeLinks.size(); j++) {
-            HttpURLConnection connection = (HttpURLConnection) new URL(activeLinks.get(j).getAttribute("href")).openConnection();
-            connection.connect();
-            String response = connection.getResponseMessage();
-            connection.disconnect();
-            System.out.println(activeLinks.get(j).getAttribute("href")+"-->"+ response);
-        }
-
     }
 
+    public  void verifyLink(String urlLink) {
+        // may face exception "java.net.MalformedURLException". Keep code in try catch block to continue broken link analysis
+        try {
+
+            URL link = new URL(urlLink);
+
+            HttpURLConnection httpConn =(HttpURLConnection)link.openConnection();
+            httpConn.setConnectTimeout(2000);
+            httpConn.connect();
+
+            if(httpConn.getResponseCode()== 200) {
+                System.out.println(urlLink+" - "+httpConn.getResponseMessage());
+            }
+            if(httpConn.getResponseCode()== 404) {
+                System.out.println(urlLink+" - "+httpConn.getResponseMessage());
+            }
+        }
+        //getResponseCode method returns = IOException - if an error occurred connecting to the server.
+        catch (Exception e) {
+
+        }
+    }
 
     public void verifyHomePageURL() {
         delayFor(2000);
@@ -79,12 +90,12 @@ public class HomePage extends PageBase {
         Assert.assertEquals("https://portal.goya.com/omsdev/#/home", URL);
     }
 
-    public void verifyBrokerInfo(){
+    public void verifyBrokerInfo() {
         String broker = brokerInfo.getText();
         assertThat(broker, CoreMatchers.containsString("013506"));
     }
 
-    public void verifySalesAuthorInfo(){
+    public void verifySalesAuthorInfo() {
         String broker = salesAuthorInfo.getText();
         assertThat(broker, CoreMatchers.containsString("SalesAuthor1"));
     }
@@ -100,21 +111,20 @@ public class HomePage extends PageBase {
         creditAppLink.click();
     }
 
-    public void navigateToSmartOrderPage(){
+    public void navigateToSmartOrderPage() {
         smartOrderLink.click();
     }
 
-    public void navigateToDocBriefcase(){
+    public void navigateToDocBriefcase() {
         briefcaseLink.click();
     }
 
 
-
-    public void confirmSmartOrderAlert(){
+    public void confirmSmartOrderAlert() {
         delayFor(1000);
         Alert alert = driver.switchTo().alert();
         String alertText = alert.getText();
-        assertThat(alertText,CoreMatchers.containsString("Please select Customer"));
+        assertThat(alertText, CoreMatchers.containsString("Please select Customer"));
         alert.accept();
     }
 
@@ -128,14 +138,11 @@ public class HomePage extends PageBase {
         assertThat(customerInfo, CoreMatchers.containsString("712457"));
     }
 
-    public void navigateToContactSupport(){
+    public void navigateToContactSupport() {
         Select drpBroker = new Select(driver.findElement(By.xpath("//*[@class='btn-group']")));
         drpBroker.selectByVisibleText("Contact Support");
     }
 
-
-
-
-
 }
+
 

@@ -34,8 +34,7 @@ public class HomePageTestNG extends ScriptBase {
 
 
     @Test
-    public void checkBrokenLinks() throws Throwable {
-        delayFor(3000);
+    public void checkBrokenLinks() {
         homePage.checkForBrokenLinks();
     }
 
@@ -44,9 +43,6 @@ public class HomePageTestNG extends ScriptBase {
         homePage.navigateToSmartOrderPage();
         homePage.confirmSmartOrderAlert();
     }
-
-
-
 
 
 }
