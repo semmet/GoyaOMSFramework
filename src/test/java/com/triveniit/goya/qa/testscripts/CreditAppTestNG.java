@@ -87,8 +87,6 @@ public class CreditAppTestNG extends ScriptBase {
     }
 
 
-
-
     @DataProvider
     public static Object[][] creditAppExcelData(){
         Object[][] data = null;

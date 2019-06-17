@@ -184,7 +184,6 @@ public class CreditAppPage extends PageBase {
 
     }
 
-
     public void guaranteeScroll() {
 
         WebElement element = driver.findElement(By.xpath("//*[@id='Personal']"));

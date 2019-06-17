@@ -1,5 +1,7 @@
 package com.triveniit.goya.qa.framework.scriptbase;
 
+import com.paxovision.execution.reporter.listener.ReporterTestListener;
+import com.paxovision.execution.reporter.service.ReporterService;
 import com.triveniit.goya.qa.framework.pages.*;
 import com.triveniit.goya.qa.framework.utils.*;
 import org.openqa.selenium.WebDriver;
@@ -9,8 +11,8 @@ import java.util.concurrent.TimeUnit;
 
 
 
-    @Listeners({ExtentTestNGITestListener.class}) //THIS IS FOR EXTENT MANAGER REPORTER
-    //@Listeners({ReporterTestListener.class})    //PAXO REPORTER
+    //@Listeners({ExtentTestNGITestListener.class}) //THIS IS FOR EXTENT MANAGER REPORTER
+    @Listeners({ReporterTestListener.class})    //PAXO REPORTER
     public class ScriptBase extends WebElementUtils {
 
         protected WebDriver driver;
@@ -27,17 +29,17 @@ import java.util.concurrent.TimeUnit;
 
 
         private ExtentManager report = ExtentManager.getInstance();  //THIS IS FOR EXTENT MANAGER REPORTER
-        //protected ReporterService reporter = ReporterService.reporter();  //PAXO REPORTER
+        protected ReporterService reporter = ReporterService.reporter();  //PAXO REPORTER
 
 
         @BeforeClass
         public void beforeClass() throws Exception {
-            /*reporter.setReportPath(System.getProperty("user.dir") + "/test-output/htmlReport/");
+            reporter.setReportPath(System.getProperty("user.dir") + "/test-output/htmlReport/");
             reporter.setReportName("PaxoReport");
             reporter.setReportTitle("Paxo Functional Test");
-            reporter.setCreateUniqueFileName(true); */
+            reporter.setCreateUniqueFileName(true);
 
-            report = ExtentManager.getInstance();   //THIS IS FOR EXTENT MANAGER REPORTER
+            //report = ExtentManager.getInstance();   //THIS IS FOR EXTENT MANAGER REPORTER
         }
 
         @BeforeMethod
