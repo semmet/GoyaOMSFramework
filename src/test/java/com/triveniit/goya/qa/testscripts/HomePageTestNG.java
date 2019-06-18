@@ -33,12 +33,12 @@ public class HomePageTestNG extends ScriptBase {
 
 
 
-    @Test
+    @Test(description = "Verifies all links on the homepage are working properly")
     public void checkBrokenLinks() {
         homePage.checkForBrokenLinks();
     }
 
-    @Test
+    @Test(description = "Verifies user must first select a customer in order to use Smart Order")
     public void smartOrderNotEnabledWithoutCustomer(){
         homePage.navigateToSmartOrderPage();
         homePage.confirmSmartOrderAlert();

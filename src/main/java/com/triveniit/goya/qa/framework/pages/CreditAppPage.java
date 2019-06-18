@@ -225,7 +225,6 @@ public class CreditAppPage extends PageBase {
                 ele.click();
                 System.out.println(" Today's date was " + todayDate);
                 break;
-
             }
 
         }

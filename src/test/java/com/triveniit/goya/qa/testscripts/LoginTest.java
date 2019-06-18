@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.testscripts;
 
+import com.paxovision.execution.reporter.listener.ReporterTestListener;
 import com.triveniit.goya.qa.framework.pages.HomePage;
 import com.triveniit.goya.qa.framework.pages.LoginPage;
 import com.triveniit.goya.qa.framework.utils.*;
@@ -9,7 +10,8 @@ import org.testng.annotations.*;
 import java.util.concurrent.TimeUnit;
 
 
-    @Listeners({ExtentTestNGITestListener.class})
+    @Listeners({ExtentTestNGITestListener.class}) //Extent Reporter
+    //@Listeners({ReporterTestListener.class})    //PAXO REPORTER
 
     public class LoginTest extends WebElementUtils {
 
@@ -29,7 +31,7 @@ import java.util.concurrent.TimeUnit;
 
         @BeforeMethod
         @Parameters({"browserName"})
-        public void beforeMethod(@Optional(value = "") String browserName)  {
+        public void beforeMethod(@Optional(value = "chrome") String browserName)  {
             driver = DriverFactory.getInstance(browserName).getDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
