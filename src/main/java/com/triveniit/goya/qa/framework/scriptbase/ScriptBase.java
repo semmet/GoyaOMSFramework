@@ -37,7 +37,7 @@ import java.util.concurrent.TimeUnit;
             reporter.setReportPath(System.getProperty("user.dir") + "/test-output/htmlReport/");
             reporter.setReportName("PaxoReport");
             reporter.setReportTitle("Paxo Functional Test");
-            reporter.setCreateUniqueFileName(true);
+            reporter.setCreateUniqueFileName(false);
 
             //report = ExtentManager.getInstance();   //THIS IS FOR EXTENT MANAGER REPORTER
         }

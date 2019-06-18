@@ -23,14 +23,14 @@ public class DriverFactory {
     public static final String URL = "";
     public static final String LOCAL_GRID_URL = "";
 
-    private DriverFactory (){ }
+    private DriverFactory() {
+    }
 
-    public static DriverFactory getInstance()
-    {
+    public static DriverFactory getInstance() {
         if (instance == null) {
             instance = new DriverFactory();
         }
-            return instance;
+        return instance;
     }
 
     public static DriverFactory getInstance(String browserName) {
@@ -38,17 +38,17 @@ public class DriverFactory {
             instance = new DriverFactory();
         }
 
-        if(browserName.equalsIgnoreCase("chrome")){
+        if (browserName.equalsIgnoreCase("chrome")) {
             ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
             instance.driver.set(new ChromeDriver());
         }
 
-        else if (browserName.equalsIgnoreCase("firefox")){
+        else if (browserName.equalsIgnoreCase("firefox")) {
             FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
             instance.driver.set(new FirefoxDriver());
         }
 
-        else if(browserName.equalsIgnoreCase("cloud_chrome_64")) {
+        else if (browserName.equalsIgnoreCase("cloud_chrome_64")) {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability("browser", "Chrome");
             caps.setCapability("browser_version", "64.0");
@@ -63,7 +63,7 @@ public class DriverFactory {
             }
         }
 
-        else if(browserName.equalsIgnoreCase("cloud_ie_11")){
+        else if (browserName.equalsIgnoreCase("cloud_ie_11")) {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setCapability("browser", "IE");
             caps.setCapability("browser_version", "11.0");
@@ -77,7 +77,7 @@ public class DriverFactory {
             }
         }
 
-        else if(browserName.equalsIgnoreCase("grid_chrome_16")){
+        else if (browserName.equalsIgnoreCase("grid_chrome_16")) {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setPlatform(Platform.ANY);
             caps.setBrowserName("chrome");
@@ -88,7 +88,7 @@ public class DriverFactory {
             }
         }
 
-        else if(browserName.equalsIgnoreCase("grid_firefox_16")){
+        else if (browserName.equalsIgnoreCase("grid_firefox_16")) {
             DesiredCapabilities caps = new DesiredCapabilities();
             caps.setPlatform(Platform.ANY);
             caps.setBrowserName("firefox");
@@ -99,23 +99,13 @@ public class DriverFactory {
             }
         }
 
-        else if(browserName.equalsIgnoreCase("grid_ie_16")){
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setPlatform(Platform.ANY);
-            caps.setBrowserName("internet explorer");
-            try {
-                instance.driver.set(new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps));
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-        }
-
-             return instance;
+        return instance;
 
     }
 
-    ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>() // thread local driver object for webdriver
-    {
+        ThreadLocal<WebDriver> driver = new ThreadLocal<WebDriver>()  // thread local driver object for webdriver
+
+       {
         @Override
         protected WebDriver initialValue() {
             ChromeDriverManager.getInstance(DriverManagerType.CHROME).setup();
@@ -123,20 +113,21 @@ public class DriverFactory {
             //FirefoxDriverManager.getInstance(DriverManagerType.FIREFOX).setup();
             //return new FirefoxDriver();
 
-
         }
     };
 
-    public WebDriver getDriver() {
-        return driver.get();
+
+
+        public WebDriver getDriver() {
+            return driver.get();
+        }
+
+        public void removeDriver() {
+            driver.get().quit();
+            driver.remove();
+
+        }
+
+
     }
-
-    public void removeDriver() {
-        driver.get().quit();
-        driver.remove();
-
-    }
-
-
-}
 

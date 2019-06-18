@@ -3,12 +3,15 @@ package com.triveniit.goya.qa.framework.pages;
 
 
 import org.junit.Assert;
+import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
 
 import static org.hamcrest.Matchers.*;
 import static org.hamcrest.MatcherAssert.assertThat;
@@ -67,7 +70,7 @@ public class CreditAppPage extends PageBase {
     private WebElement guarantee;
     @FindBy(xpath = "//*[@id='agree']")
     private WebElement termsAgree;
-    @FindBy(id = "personalchk")
+    @FindBy(xpath = "//*[@id='personalchk']")
     private WebElement personalAgree;
     @FindBy(xpath = "//*[@ng-model='companyAddSame']")
     private WebElement billingAddress;
@@ -180,7 +183,7 @@ public class CreditAppPage extends PageBase {
         action.moveToElement(element).perform();
         JavascriptExecutor js = ((JavascriptExecutor) driver);
         js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
-        driver.findElement(By.id("agree")).click();
+        termsAgree.click();
 
     }
 
@@ -193,6 +196,12 @@ public class CreditAppPage extends PageBase {
         JavascriptExecutor js = ((JavascriptExecutor) driver);
         js.executeScript("arguments[0].scrollTo(0, arguments[0].scrollHeight)", element);
         personalAgree.click();
+    }
+
+    public void guaranteeClick(){
+        WebElement element = driver.findElement(By.xpath("//*[@id='personalchk']"));
+        JavascriptExecutor executor = (JavascriptExecutor)driver;
+        executor.executeScript("arguments[0].click();", element);
     }
 
     public void billingSame() { billingAddress.click(); }
@@ -249,9 +258,18 @@ public class CreditAppPage extends PageBase {
 
     }
 
-    public void verifySubmitButtonNotEnabled() {
-        Boolean buttonEnabled = saveButton.isEnabled();
-        Assert.assertFalse(buttonEnabled);
+    public void verifyMissingDataAlertPresent(){
+        WebDriverWait wait = new WebDriverWait(driver, 10 /*timeout in seconds*/);
+        if(wait.until(ExpectedConditions.alertIsPresent())==null){
+            System.out.println("alert was not present");
+        }
+        else
+        {
+            Alert alert = driver.switchTo().alert();
+            alert.accept();
+            System.out.println("alert was present and accepted");
+        }
+
     }
 
 }

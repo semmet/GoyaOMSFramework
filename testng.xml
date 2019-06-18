@@ -3,7 +3,7 @@
 
     <test name="Goya Full Test Suite">
 
-        <parameter name="browserName" value=""/>
+        <parameter name="browserName" value="chrome"/>
 
         <classes>
 

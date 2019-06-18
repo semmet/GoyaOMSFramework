@@ -81,7 +81,10 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.ownerName();
         creditAppPage.guarantorName();
         creditAppPage.salesBroker();
-        creditAppPage.verifySubmitButtonNotEnabled();
+        creditAppPage.submitApp();
+        //delayFor(5000);
+        //creditAppPage.verifySubmitButtonNotEnabled();
+        creditAppPage.verifyMissingDataAlertPresent();
 
 
     }

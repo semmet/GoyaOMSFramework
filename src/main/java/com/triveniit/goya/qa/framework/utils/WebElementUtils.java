@@ -81,7 +81,7 @@ public class WebElementUtils extends SeleniumUtils {
     }
 
 
-       public String[][] getCellTextArray(WebElement table){
+    public String[][] getCellTextArray(WebElement table){
            String[][] tableText = null;
            List<WebElement> rows = table.findElements(By.xpath("./tbody/tr"));
            tableText = new String[rows.size()][];
