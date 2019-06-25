@@ -49,24 +49,24 @@ import java.util.concurrent.TimeUnit;
 
 
 
-    @Test
-    public void verifyBrokerLoginSuccess(){
+    @Test (description = "Verifies successful broker login")
+    public void validBrokerLoginSuccess(){
         loginPage.login("013506","Pwd@013506");
         homePage.verifyHomePageURL();
         homePage.verifyBrokerInfo();
     }
 
 
-    @Test
-    public void verifySalesAuthorLoginSuccess(){
+    @Test (description = "Verifies successful SalesAuthor login")
+    public void validSalesAuthorLoginSuccess(){
         loginPage.login("salesauthor1","Pwd1@salesauthor1");
         homePage.verifyHomePageURL();
         homePage.verifySalesAuthorInfo();
     }
 
 
-    @Test(dataProvider = "goyaNegLoginExcelData")
-    public void verifyUserCannotLoginWithIncorrectData(String name, String password){
+    @Test(dataProvider = "goyaNegLoginExcelData", description = "Verifies user cannot login with invalid data")
+    public void invalidLoginDataTest (String name, String password){
         loginPage.loginExcelData(name, password);
         loginPage.verifyLoginNotSuccess();
     }

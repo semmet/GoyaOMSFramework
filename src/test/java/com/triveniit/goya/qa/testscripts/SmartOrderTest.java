@@ -29,7 +29,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCustInfo();
     }
 
-    @Test
+    @Test (description = "Verifies item is correctly added using Smart Order")
     public void addOneItemToOrder() {
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.verifyItemCount("1");
@@ -37,7 +37,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCartQty("1");
     }
 
-    @Test
+    @Test (description = "Verifies correct display of item count, case qty and cart total")
     public void addTwoDifferentItemsDiffQty(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(2000);
@@ -50,7 +50,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCartQty("3");
     }
 
-    @Test
+    @Test (description = "Verifies item qty may be adjusted using text")
     public void addItemByTextQty(){
         smartOrderPage.addItemQtyByText();
         delayFor(3000);
@@ -58,7 +58,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCartQty("10");
     }
 
-    @Test
+    @Test (description = "Verifies minus button lowers item qty")
     public void deletingItemUsingQtyButton(){
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.verifyItemCount("1");
@@ -67,7 +67,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyItemCount("0");
     }
 
-    @Test
+    @Test (description = "Verifies items may be deleted directly from cart")
     public void deletingItemfromCart(){
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.verifyItemCount("1");
@@ -77,7 +77,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyItemCount("0");
     }
 
-    @Test
+    @Test (description = "Verifies the correct qty of an item is displayed in cart")
     public void verifyCorrectItemInCart() {
         smartOrderPage.addItemByUPC("1105");
         delayFor(2000);
@@ -85,7 +85,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCartItem("1105");
     }
 
-    @Test
+    @Test (description = "Verifies an order is successfully submited from Smart Order")
     public void verifyUserCanSubmitOrder(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(1000);
@@ -98,12 +98,12 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.closeSubmitSuccessAlert();
     }
 
-    @Test
-    public void verifyMinusKeyDisabledWhenLandingOnSmartOrderPage(){
+    @Test (description = "Verifies the item minus button is not active unless items have been added")
+    public void verifyMinusKeyDisabled(){
         smartOrderPage.verifyMinusKeyDisabled();
     }
 
-    @Test
+    @Test (description = "Verifies that if all items are deleted minus key again is disabled")
     public void verifyMinusKeyDisabledAfterDeletingAllItemsFromCart(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(2000);
@@ -115,7 +115,7 @@ public class SmartOrderTest extends ScriptBase {
 
     }
 
-    @Test
+    @Test (description = "Verifies minus key cannot input a neg number")
     public void verifyMinusKeyCannotInputNeg(){
         smartOrderPage.addItemByUPC("1105");
         smartOrderPage.increaseItemQty();
@@ -124,7 +124,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyMinusKeyDisabled();
     }
 
-    @Test
+    @Test (description = "Verifies the delivery surcharge alert")
     public void verifyDeliveryChargeAlert(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(1000);
@@ -133,19 +133,19 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.confirmDeliveryCharge();
     }
 
-    @Test
+    @Test (description = "Verifies user will see alert when switching customers")
     public void verifySwitchCustAlert(){
         smartOrderPage.changeNewCustomer();
         delayFor(1000);
         smartOrderPage.switchCustAlert();
     }
 
-    @Test
-    public void verifySubmitOrderButtonDisableWhenLandingOnSOPage(){
+    @Test (description = "Verifies the submit order button is not active until items have been added")
+    public void verifySubmitOrderButtonDisable(){
         smartOrderPage.submitOrderButtonDisabled();
     }
 
-    @Test
+    @Test (description = "Verifies that if all items are deleted from cart submit order button will be disabled")
     public void verifySubmitOrderButtonDisableWhenCartEmpty(){
         smartOrderPage.addItemByUPC("1105");
         delayFor(1000);
