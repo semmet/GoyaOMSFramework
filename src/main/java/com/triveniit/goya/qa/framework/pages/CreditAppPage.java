@@ -198,12 +198,6 @@ public class CreditAppPage extends PageBase {
         personalAgree.click();
     }
 
-    public void guaranteeClick(){
-        WebElement element = driver.findElement(By.xpath("//*[@id='personalchk']"));
-        JavascriptExecutor executor = (JavascriptExecutor)driver;
-        executor.executeScript("arguments[0].click();", element);
-    }
-
     public void billingSame() { billingAddress.click(); }
 
     public void deliverySame() { deliveryAddress.click(); }

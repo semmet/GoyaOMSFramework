@@ -25,23 +25,14 @@ public class CreditAppTestNG extends ScriptBase {
     }
 
 
-    @Test
-    public void submitCreditApp()  {
+    @Test (dataProvider = "creditAppExcelData",description = "verifies full long-form submission")
+    public void submitCreditAppFull(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
+                                    String yearsBus, String inc, String insCo, String policy, String address,
+                                    String city, String state, String zip)  {
 
-        creditAppPage.enterCorpName();
-        creditAppPage.enterStoreName();
-        creditAppPage.enterTaxId();
-        creditAppPage.enterTelNo();
-        creditAppPage.email();
-        creditAppPage.yearsAtLocation();
-        creditAppPage.yearsInBusiness();
-        creditAppPage.yearInc();
-        creditAppPage.insuranceCo();
-        creditAppPage.policyName();
-        creditAppPage.streetAddress();
-        creditAppPage.coCity();
-        creditAppPage.coState();
-        creditAppPage.coZip();
+        creditAppPage.creditExcelData( corpName, storeName, taxID, telNo, yearsLoc,yearsBus,
+                inc, insCo, policy, address, city, state, zip );
+
         creditAppPage.billingSame();
         creditAppPage.deliverySame();
         creditAppPage.businessType();
@@ -57,12 +48,11 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.salesBroker();
         creditAppPage.submitApp();
         creditAppPage.acceptAlert();
-
     }
 
 
-    @Test(dataProvider = "creditAppExcelData")
-    public void verifyCantSubmitCreditAppWithReqDataMissing(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
+    @Test(dataProvider = "creditAppExcelData2", description = "Verifies all required fields are needed to blitz submit form")
+    public void verifyReqDataBlitz(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
                                   String yearsBus, String inc, String insCo, String policy, String address,
                                   String city, String state, String zip ){
 
@@ -71,23 +61,35 @@ public class CreditAppTestNG extends ScriptBase {
         creditAppPage.billingSame();
         creditAppPage.deliverySame();
         creditAppPage.businessType();
-        creditAppPage.clickCreditFormButton();
-        creditAppPage.termsScroll();
-        creditAppPage.guaranteeScroll();
-        creditAppPage.submitDate();
-        creditAppPage.creditManager();
-        creditAppPage.corpName();
-        creditAppPage.guarantor();
-        creditAppPage.ownerName();
-        creditAppPage.guarantorName();
-        creditAppPage.salesBroker();
         creditAppPage.submitApp();
-        //delayFor(5000);
-        //creditAppPage.verifySubmitButtonNotEnabled();
         creditAppPage.verifyMissingDataAlertPresent();
-
-
     }
+
+
+    @Test (dataProvider = "creditAppExcelData",description = "Verifies all required fields are needed to blitz submit form")
+    public void blankBillingAndDeliveryAddress(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
+                                    String yearsBus, String inc, String insCo, String policy, String address,
+                                    String city, String state, String zip) {
+
+        creditAppPage.creditExcelData(corpName, storeName, taxID, telNo, yearsLoc, yearsBus,
+                inc, insCo, policy, address, city, state, zip);
+        creditAppPage.submitApp();
+        creditAppPage.verifyMissingDataAlertPresent();
+    }
+
+    @Test (dataProvider = "creditAppExcelData",description = "Verifies all required fields are needed to blitz submit form")
+    public void blankDeliveryAddress(String corpName, String storeName, String taxID, String telNo, String yearsLoc,
+                                               String yearsBus, String inc, String insCo, String policy, String address,
+                                               String city, String state, String zip) {
+
+        creditAppPage.creditExcelData(corpName, storeName, taxID, telNo, yearsLoc, yearsBus,
+                inc, insCo, policy, address, city, state, zip);
+        creditAppPage.billingSame();
+        creditAppPage.submitApp();
+        creditAppPage.verifyMissingDataAlertPresent();
+    }
+
+
 
 
     @DataProvider
@@ -97,6 +99,16 @@ public class CreditAppTestNG extends ScriptBase {
 
         ExcelReader reader = new ExcelReader(dataFile);
         data = reader.getExcelSheetData("Sheet1",true);
+        return data;
+    }
+
+    @DataProvider
+    public static Object[][] creditAppExcelData2(){
+        Object[][] data = null;
+        String dataFile = System.getProperty("user.dir") + "/src/test/resources/GoyaCreditAppData.xlsx";
+
+        ExcelReader reader = new ExcelReader(dataFile);
+        data = reader.getExcelSheetData("Sheet2",true);
         return data;
     }
 

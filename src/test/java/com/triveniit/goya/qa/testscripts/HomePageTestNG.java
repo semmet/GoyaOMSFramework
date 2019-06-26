@@ -44,7 +44,6 @@ public class HomePageTestNG extends ScriptBase {
         homePage.confirmSmartOrderAlert();
     }
 
-
 }
 
 
