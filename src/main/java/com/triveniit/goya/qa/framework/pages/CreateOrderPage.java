@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.pages;
 
+import com.paxovision.execution.annotations.LogReport;
 import com.triveniit.goya.qa.framework.utils.SeleniumUtils;
 import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.*;
@@ -73,7 +74,7 @@ public class CreateOrderPage extends PageBase{
         assertThat(url, CoreMatchers.containsString("https://portal.goya.com/omsdev/#/order-entry"));
     }
 
-
+    @LogReport(name = "selectCustomer",description = "Select customer from dropdown menu")
     public void selectCustomer() {
 
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", customerSelect);
@@ -87,26 +88,32 @@ public class CreateOrderPage extends PageBase{
 
     }
 
+    @LogReport(name = "enterItemCode",description = "Enter product code of item")
     public void enterItemCode(){
         typeText(itemCodeTextBox, "1105");
     }
 
+    @LogReport(name = "restrictedItem",description = "Enter an item that the customer has blocked")
     public void enterRestrictedItem(){
         typeText(itemCodeTextBox, "1107");
     }
 
+    @LogReport(name = "invalidItem",description = "Enter invalid product code")
     public void enterInvalidItemCode() {
         typeText(itemCodeTextBox, "XXXX");
     }
 
+   @LogReport(name = "addItem",description = "Add item to order")
     public void addItem(){
         click(addItem);
     }
 
+    @LogReport(name = "invalidItemQty",description = "Try to add invalid number as item qty")
     public void enterInvalidItemQty(){
         typeText(itemCaseQty,"-10");
     }
 
+    @LogReport(name = "addAnotherItem",description = "Add second item to order")
     public void addAnotherItem(){
         typeText(itemCodeTextBox,"2161");
         click(addItem);
@@ -137,7 +144,6 @@ public class CreateOrderPage extends PageBase{
 
 
     public void verifyItemInTable() {
-
         delayFor(2000);
         WebElement table = driver.findElement(By.xpath("//*[@class='table over-x']"));
         String tableText[][] = getCellTextArray(table);

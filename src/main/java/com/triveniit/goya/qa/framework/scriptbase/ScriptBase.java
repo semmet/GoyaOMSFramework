@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.scriptbase;
 
+import com.paxovision.execution.reporter.interceptor.ProxyGenerator;
 import com.paxovision.execution.reporter.listener.ReporterTestListener;
 import com.paxovision.execution.reporter.service.ReporterService;
 import com.triveniit.goya.qa.framework.pages.*;
@@ -53,11 +54,13 @@ import java.util.concurrent.TimeUnit;
             driver.manage().window().maximize();
 
 
-            webElementUtils = new WebElementUtils();
+            //webElementUtils = new WebElementUtils();
+            webElementUtils = ProxyGenerator.getEnhancedObject(WebElementUtils.class);
             homePage = new HomePage();
             loginPage = new LoginPage();
             creditAppPage = new CreditAppPage();
-            createOrderPage = new CreateOrderPage();
+            //createOrderPage = new CreateOrderPage();
+            createOrderPage = ProxyGenerator.getEnhancedObject(CreateOrderPage.class);
             customersPage = new CustomersPage();
             catalogPage = new CatalogPage();
             smartOrderPage = new SmartOrderPage();

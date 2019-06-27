@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.utils;
 
+import com.paxovision.execution.annotations.LogReport;
 import cucumber.api.java.eo.Se;
 import org.hamcrest.CoreMatchers;
 import org.openqa.selenium.Alert;
@@ -71,6 +72,7 @@ public class WebElementUtils extends SeleniumUtils {
            assertThat(actualText, CoreMatchers.containsString(textToVerify));
     }
 
+       @LogReport(name = "verifyAlertMessage", description = "Confirm correct alert message is displayed")
        public void verifyAlertMessage(String alertMessage){
            delayFor(2000);
            Alert alert = driver.switchTo().alert();
