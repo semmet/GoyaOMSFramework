@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.pages;
 
+import com.paxovision.execution.annotations.LogReport;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.By;
@@ -68,6 +69,7 @@ public class SmartOrderPage extends PageBase {
         PageFactory.initElements(driver, this);
     }
 
+    @LogReport(name = "verifyURL",description = "Smart Order Page URL should display")
     public void verifySmartOrderURL() {
         delayFor(2000);
         String title = driver.getCurrentUrl();
@@ -75,76 +77,96 @@ public class SmartOrderPage extends PageBase {
 
     }
 
+    @LogReport(name = "customerInfo",description = "Correct customer ID should display")
     public void verifyCustInfo() {
         String custInfo = custInfoFieldBox.getText();
         assertThat(custInfo, CoreMatchers.containsString("712457"));
     }
 
+
+    @LogReport(name = "itemUPC",description = "Correct item should be added to order")
     public void addItemByUPC(String itemUPC){
          searchByUPC.sendKeys(itemUPC);
          delayFor(2000);
          addItem.click();
     }
 
+    @LogReport(name = "submitOrder",description = "Click on Submit order")
     public void submitOrder(){ submitOrderButton.click(); }
 
+    @LogReport(name = "submitButtonEnabled",description = "Submit Order button should be enabled")
     public void submitOrderButtonEnabled(){
         Boolean buttonEnabled = submitOrderButton.isEnabled();
         Assert.assertTrue(buttonEnabled);
     }
 
+    @LogReport(name = "submitButtonDisabled",description = "Submit Order button should be disabled")
     public void submitOrderButtonDisabled(){
         Boolean buttonEnabled = submitOrderButton.isEnabled();
         Assert.assertFalse(buttonEnabled);
     }
 
+    @LogReport(name = "submitOrderAlert",description = "Click on Submit")
     public void submitOrderAlert() { submitOrderAlert.click(); }
 
+    @LogReport(name = "confirmSubmit",description = "Click on Yes to confirm order")
     public void confirmSubmit(){ confirmSubmitOrder.click(); }
 
+    @LogReport(name = "closeAlert",description = "Successful Order alert should display")
     public void closeSubmitSuccessAlert(){closeSuccessfulSubmitAlert.click(); }
 
+    @LogReport(name = "clearSearch",description = "Clear search filter box")
     public void clearUPCSearch(){ removeUPCSearch.click(); }
 
-
+    @LogReport(name = "minusQtyKey",description = "click on minus qty key")
     public void reduceItemQty(){ reduceItemQty.click(); }
 
+    @LogReport(name = "minusKeyDisable",description = "Minus qty key should be disabled")
     public void verifyMinusKeyDisabled(){
         Boolean keyEnabled = reduceItemQty.isEnabled();
         Assert.assertFalse(keyEnabled);
     }
 
+    @LogReport(name = "minusQtyKey",description = "Minus qty key should be enabled")
     public void verifyMinusKeyEnabled(){
         Boolean keyEnabled = reduceItemQty.isEnabled();
         Assert.assertTrue(keyEnabled);
     }
 
+    @LogReport(name = "addItem",description = "Add item to order")
     public void increaseItemQty(){
         addItem.click();
     }
 
 
+    @LogReport(name = "itemCount",description = "Correct number item count should display")
     public void verifyItemCount(String textToVerify) {
         delayFor(2000);
         String numberOfItems = itemCount.getText();
         assertThat(numberOfItems, CoreMatchers.containsString(textToVerify));
     }
 
+    @LogReport(name = "caseQty",description = "Correct number case qty should display")
     public void verifyCaseTotal(String textToVerify) {
         String numberOfCases = caseTotal.getText();
         assertThat(numberOfCases, CoreMatchers.containsString(textToVerify));
     }
 
+    @LogReport(name = "cartQty",description = "Correct number item cases should display")
     public void verifyCartQty(String textToVerify) {
         String casesInCart = cartQty.getText();
         assertThat(casesInCart, CoreMatchers.containsString(textToVerify));
     }
 
+
+    @LogReport(name = "cartItem",description = "Correct item should be shown in cart")
     public void verifyCartItem(String itemToVerify){
         String itemInCart = cartItemNo.getText();
         assertThat(itemInCart, CoreMatchers.containsString(itemToVerify));
     }
 
+
+    @LogReport(name = "textQtyFunction",description = "Correct number should be accepted via text")
     public void addItemQtyByText() {
         WebElement qtyText = driver.findElement(By.xpath("(//*[@ng-model='row.entity.Count'])[2]"));
         qtyText.clear();
@@ -153,15 +175,20 @@ public class SmartOrderPage extends PageBase {
         driver.findElement(By.xpath("(//button[contains(text(),'+')])[2]")).click();
     }
 
+    @LogReport(name = "clickCart",description = "Contents of cart should display")
     public void openCart(){ cartButton.click(); }
 
+    @LogReport(name = "clickDelete",description = "Item should be deleted from cart")
     public void deleteItemfromCart(){ cartDeleteItem.click(); }
 
+
+    @LogReport(name = "deliveryCharge",description = "Delivery surcharge should display in alert")
     public void confirmDeliveryCharge(){
         Boolean deliveryCharge = deliveryChargeAlert.isDisplayed();
         Assert.assertTrue(deliveryCharge);
     }
 
+    @LogReport(name = "switchCustomer",description = "User switches to new customer")
     public void changeNewCustomer() {
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", customerSelect);
         Actions actions = new Actions(driver);
@@ -172,16 +199,11 @@ public class SmartOrderPage extends PageBase {
         actions.build().perform();
     }
 
+    @LogReport(name = "customerAlert",description = "Switch Customer alert should display")
     public void switchCustAlert(){
         String custAlert = switchCustAlert.getText();
         assertThat(custAlert, CoreMatchers.containsString("change customers?"));
     }
-
-
-
-
-
-
 
 
 }

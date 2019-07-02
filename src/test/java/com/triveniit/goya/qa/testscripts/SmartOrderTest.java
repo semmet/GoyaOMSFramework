@@ -24,10 +24,8 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifySmartOrderURL();
     }
 
-    @Test
-    public void verifyCorrectCustomerInfo(){
-        smartOrderPage.verifyCustInfo();
-    }
+    @Test (description = "Verifies that the correct customer info is displayed")
+    public void verifyCorrectCustomerInfo(){ smartOrderPage.verifyCustInfo(); }
 
     @Test (description = "Verifies item is correctly added using Smart Order")
     public void addOneItemToOrder() {
@@ -50,7 +48,7 @@ public class SmartOrderTest extends ScriptBase {
         smartOrderPage.verifyCartQty("3");
     }
 
-    @Test (description = "Verifies item qty may be adjusted using text")
+    @Test (description = "Verifies item qty may be adjusted using text function")
     public void addItemByTextQty(){
         smartOrderPage.addItemQtyByText();
         delayFor(3000);

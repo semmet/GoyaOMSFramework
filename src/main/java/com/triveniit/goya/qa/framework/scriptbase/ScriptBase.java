@@ -40,12 +40,12 @@ import java.util.concurrent.TimeUnit;
             reporter.setReportTitle("Paxo Functional Test");
             reporter.setCreateUniqueFileName(false);
 
-            //report = ExtentManager.getInstance();   //THIS IS FOR EXTENT MANAGER REPORTER
+            report = ExtentManager.getInstance();   //THIS IS FOR EXTENT MANAGER REPORTER
         }
 
         @BeforeMethod
         @Parameters({"browserName"})
-        public void beforeMethod(@Optional(value = "") String browserName) throws Exception {
+        public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception {
             driver = DriverFactory.getInstance(browserName).getDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);
@@ -63,7 +63,7 @@ import java.util.concurrent.TimeUnit;
             createOrderPage = ProxyGenerator.getEnhancedObject(CreateOrderPage.class);
             customersPage = new CustomersPage();
             catalogPage = new CatalogPage();
-            smartOrderPage = new SmartOrderPage();
+            smartOrderPage = ProxyGenerator.getEnhancedObject(SmartOrderPage.class);
             docBriefcase = new DocBriefcase();
 
 

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suite name="Goya QA Full Test Suite">
 
-    <test name="Goya Full Test Suite">
+    <test name="Goya Full Test Suite Chrome">
 
-        <parameter name="browserName" value=""/>
+        <parameter name="browserName" value="chrome"/>
 
         <classes>
 
@@ -14,5 +14,24 @@
             <class name="com.triveniit.goya.qa.testscripts.CreditAppTestNG"/>
 
         </classes>
+
     </test>
+
+    <test name="Goya Full Test Suite Firefox">
+
+        <parameter name="browserName" value="firefox"/>
+
+        <classes>
+
+            <class name="com.triveniit.goya.qa.testscripts.HomePageTestNG"/>
+            <class name="com.triveniit.goya.qa.testscripts.LoginTest"/>
+            <class name="com.triveniit.goya.qa.testscripts.SmartOrderTest"/>
+            <class name="com.triveniit.goya.qa.testscripts.CreateOrderTest"/>
+            <class name="com.triveniit.goya.qa.testscripts.CreditAppTestNG"/>
+
+        </classes>
+
+    </test>
+
+
 </suite>

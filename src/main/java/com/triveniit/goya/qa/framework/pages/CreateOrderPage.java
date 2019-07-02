@@ -67,7 +67,7 @@ public class CreateOrderPage extends PageBase{
         PageFactory.initElements(driver,this);
     }
 
-
+    @LogReport(name = "verifyURL",description = "Order Page URL should display")
     public void verifyOrderPageDisplay(){
         delayFor(2000);
         String url = driver.getCurrentUrl();
@@ -103,7 +103,7 @@ public class CreateOrderPage extends PageBase{
         typeText(itemCodeTextBox, "XXXX");
     }
 
-   @LogReport(name = "addItem",description = "Add item to order")
+   @LogReport(name = "addItem",description = "Click Add item to order")
     public void addItem(){
         click(addItem);
     }
@@ -119,30 +119,36 @@ public class CreateOrderPage extends PageBase{
         click(addItem);
     }
 
+    @LogReport(name = "deleteItem",description = "Click Delete item from order")
     public void deleteItem(){click(deleteItem);}
 
+    @LogReport(name = "itemAdded",description = "Item Added alert message should display")
     public void verifyItemAdded(){
         delayFor(1000);
         String alertText = alertMsg.getText();
         assertThat(alertText, CoreMatchers.containsString("Added !"));
     }
 
+    @LogReport(name = "itemNotFound",description = "Item Not Found alert should display")
     public void verifyItemNotFound(){
         String alertText = alertMsg.getText();
         Assert.assertEquals(alertText, "Item Not Found.");
     }
 
+    @LogReport(name = "restrictedItem",description = "Restricted Item alert should display")
     public void verifyRestrictedItem() {
         delayFor(1000);
         String alertText = alertMsg.getText();
         assertThat(alertText, CoreMatchers.containsString("Restricted Item"));
     }
 
+    @LogReport(name = "searchItem",description = "click on Search Item")
     public void clickSearchItem(){
         searchItemBox.click();
     }
 
 
+    @LogReport(name = "verifyItem",description = "Added item should display in table")
     public void verifyItemInTable() {
         delayFor(2000);
         WebElement table = driver.findElement(By.xpath("//*[@class='table over-x']"));
@@ -152,36 +158,43 @@ public class CreateOrderPage extends PageBase{
 
     }
 
+    @LogReport(name = "submitOrder",description = "Click on Submit order")
     public void submitOrder(){
         submitOrder.click();
     }
 
+    @LogReport(name = "confirmOrder",description = "Click on Confirm Submit")
     public void confirmOrder(){
         submitConfirm.click();
     }
 
+    @LogReport(name = "deliverySurcharge",description = "Delivery Surcharge alert should display")
     public void verifyDeliverySurchargeAlert(){
         delayFor(1000);
         String alertText = deliverySurchargeAlert.getText();
         assertThat(alertText, CoreMatchers.containsString("$10 delivery charge"));
     }
 
-
+    @LogReport(name = "deleteAll",description = "Click Delete All items")
     public void deleteAllItems(){
         click(deleteAll);
     }
 
 
+    @LogReport(name = "collectBalance",description = "Type in amount of balance owed collected")
     public void collectBalance(){
         typeText(collectionAmount,"100.00");
     }
 
+
+    @LogReport(name = "verifyBalanceAmount",description = "Correct amount should display")
     public void verifyCorrectAmountCollected(){
         waitForElementTextToBe(By.xpath("//*[@class='col-md-8 newpad ng-binding'][contains(text(),'$100.00')]"),"$100.00");
         String collectedAmt = collectionAmountAlert.getText();
         Assert.assertEquals(collectedAmt,"$100.00");
     }
 
+    @LogReport(name = "enterPromoCode",description = "Enter promo code from dropdown menu")
     public void enterPromoCode(){
         ((JavascriptExecutor)driver).executeScript("arguments[0].click();", promoCodeBox);
 
@@ -192,18 +205,21 @@ public class CreateOrderPage extends PageBase{
         actions.build().perform();
     }
 
+    @LogReport(name = "confirm Promo",description = "Correct promo code should display in popup")
     public void confirmPromoAdded(){
         delayFor(2000);
         String promoType = promoCodeAlert.getText();
         assertThat(promoType,CoreMatchers.containsString("25"));
     }
 
+    @LogReport(name = "deliveryDay",description = "Enter desired day for delivery")
     public void selectDeliveryDay(){
         WebElement element1 = selectDay;
         Select select = new Select(element1);
         select.selectByVisibleText("Mon");
     }
 
+    @LogReport(name = "noDeliveryDay",description = "Enter desired day for no-delivery")
     public void selectNotDeliveryDay() {
         WebElement element1 = selectNotDay;
         Select select = new Select(element1);
