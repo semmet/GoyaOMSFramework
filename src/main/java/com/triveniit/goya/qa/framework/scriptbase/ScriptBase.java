@@ -45,7 +45,7 @@ import java.util.concurrent.TimeUnit;
 
         @BeforeMethod
         @Parameters({"browserName"})
-        public void beforeMethod(@Optional(value = "chrome") String browserName) throws Exception {
+        public void beforeMethod(@Optional(value = "") String browserName) throws Exception {
             driver = DriverFactory.getInstance(browserName).getDriver();
             driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
             driver.manage().timeouts().pageLoadTimeout(30, TimeUnit.SECONDS);

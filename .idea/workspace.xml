@@ -3,13 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="2b543a0a-e0c4-4c9f-842a-e8dc2989fab6" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/CreateOrderPage.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/utils/WebElementUtils.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/utils/WebElementUtils.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/SmartOrderPage.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/pages/SmartOrderPage.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/test-classes/com/triveniit/goya/qa/testscripts/SmartOrderTest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/test-classes/com/triveniit/goya/qa/testscripts/SmartOrderTest.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/testng.xml" beforeDir="false" afterPath="$PROJECT_DIR$/testng.xml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -28,8 +25,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="425">
-              <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+            <state relative-caret-position="255">
+              <caret line="42" column="89" lean-forward="true" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,8 +61,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/testng.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+            <state relative-caret-position="595">
+              <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
             </state>
           </provider>
         </entry>
@@ -133,9 +130,9 @@
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/CreateOrderPage.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/SmartOrderTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/pages/SmartOrderPage.java" />
-        <option value="$PROJECT_DIR$/testng.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java" />
+        <option value="$PROJECT_DIR$/testng.xml" />
       </list>
     </option>
   </component>
@@ -235,18 +232,6 @@
               <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
               <item name="test-output" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="htmlReport" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="GoyaOMSFramework" type="b2602c69:ProjectViewProjectNode" />
-              <item name="GoyaOMSFramework" type="462c0819:PsiDirectoryNode" />
-              <item name="test-output" type="462c0819:PsiDirectoryNode" />
-              <item name="paxoreports" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
@@ -275,7 +260,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="TestNG.LoginTest">
+  <component name="RunManager" selected="TestNG.C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml">
     <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" type="TestNG" temporary="true" nameIsGenerated="true">
       <module name="GoyaOMSFramework" />
       <option name="SUITE_NAME" value="$PROJECT_DIR$/testng.xml" />
@@ -359,8 +344,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" />
+        <item itemvalue="TestNG.LoginTest" />
         <item itemvalue="TestNG.CreateOrderTest.balanceOwedCollect" />
         <item itemvalue="TestNG.CreateOrderTest.userEntersInvalidUPCForItem" />
         <item itemvalue="TestNG.CreateOrderTest.userMustFirstSelectCustomer" />
@@ -714,13 +699,17 @@
       <option name="project" value="LOCAL" />
       <updated>1561670792364</updated>
     </task>
-    <option name="localTasksCounter" value="49" />
+    <task id="LOCAL-00049" summary="daily work save">
+      <created>1562098215697</created>
+      <option name="number" value="00049" />
+      <option name="presentableId" value="LOCAL-00049" />
+      <option name="project" value="LOCAL" />
+      <updated>1562098215697</updated>
+    </task>
+    <option name="localTasksCounter" value="50" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="CreateOrderTest_balanceOwedCollect - 2019.07.01 at 12h 40m 55s.xml">
-      <configuration name="CreateOrderTest.balanceOwedCollect" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="LoginTest - 2019.07.02 at 15h 26m 49s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
@@ -748,6 +737,9 @@
     <history-entry file="LoginTest - 2019.07.02 at 16h 04m 27s.xml">
       <configuration name="LoginTest" configurationId="TestNG" />
     </history-entry>
+    <history-entry file="C__Users_Steve_Emmet_IdeaProjects_GoyaOMSFramework_testng_xml - 2019.07.02 at 16h 13m 28s.xml">
+      <configuration name="C:/Users/Steve Emmet/IdeaProjects/GoyaOMSFramework/testng.xml" configurationId="TestNG" />
+    </history-entry>
   </component>
   <component name="TodoView" selected-index="1">
     <todo-panel id="selected-file">
@@ -760,7 +752,6 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.24939272" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
@@ -1229,13 +1220,6 @@
     <entry file="file://$PROJECT_DIR$/test-output/htmlReport/PaxoReport.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/testng.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/triveniit/goya/qa/testscripts/LoginTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="204">
@@ -1246,10 +1230,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/testng.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="35" lean-forward="true" selection-start-line="35" selection-end-line="35" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/triveniit/goya/qa/framework/scriptbase/ScriptBase.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="425">
-          <caret line="34" lean-forward="true" selection-start-line="34" selection-end-line="34" />
+        <state relative-caret-position="255">
+          <caret line="42" column="89" lean-forward="true" selection-start-line="42" selection-start-column="89" selection-end-line="42" selection-end-column="89" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
