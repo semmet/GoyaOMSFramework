@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.pages;
 
+import com.paxovision.execution.annotations.LogReport;
 import org.junit.Assert;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
@@ -22,7 +23,7 @@ public class CustomersPage extends PageBase{
         PageFactory.initElements(driver,this);
     }
 
-
+    @LogReport(name = "verifyURL",description = "Customer Page URL should display")
     public void verifyCustomersPageUrl() {
 
     delayFor(2000);
@@ -30,9 +31,10 @@ public class CustomersPage extends PageBase{
     Assert.assertEquals("https://portal.goya.com/omsdev/#/customer-details",title);
    }
 
-   public void selectCustomer(){
 
-       WebElement element = driver.findElement(By.xpath("(//*[@type='radio'][@name='1'])[4]"));
+    @LogReport(name = "selectCustomer",description = "Select customer from list")
+   public void selectCustomer(){
+        WebElement element = driver.findElement(By.xpath("(//*[@type='radio'][@name='1'])[4]"));
        element.click();
    }
 
@@ -42,13 +44,14 @@ public class CustomersPage extends PageBase{
 
     }
 
-
+    @LogReport(name = "clickSelect",description = "Click on Select button")
     public void selectButton() {
        selectButton.click();
        }
 
 
-   public void alertConfirm(){
+    @LogReport(name = "confirmCustomer",description = "Click on alert to confirm customer selection")
+    public void alertConfirm(){
        ((JavascriptExecutor)driver).executeScript("arguments[0].click();", alertProceed);
 
     }

@@ -56,13 +56,19 @@ import java.util.concurrent.TimeUnit;
 
             //webElementUtils = new WebElementUtils();
             webElementUtils = ProxyGenerator.getEnhancedObject(WebElementUtils.class);
-            homePage = new HomePage();
-            loginPage = new LoginPage();
-            creditAppPage = new CreditAppPage();
+            //homePage = new HomePage();
+            homePage = ProxyGenerator.getEnhancedObject(HomePage.class);
+            //loginPage = new LoginPage();
+            loginPage = ProxyGenerator.getEnhancedObject(LoginPage.class);
+            //creditAppPage = new CreditAppPage();
+            creditAppPage = ProxyGenerator.getEnhancedObject(CreditAppPage.class);
             //createOrderPage = new CreateOrderPage();
             createOrderPage = ProxyGenerator.getEnhancedObject(CreateOrderPage.class);
-            customersPage = new CustomersPage();
-            catalogPage = new CatalogPage();
+            //customersPage = new CustomersPage();
+            customersPage = ProxyGenerator.getEnhancedObject(CustomersPage.class);
+            //catalogPage = new CatalogPage();
+            catalogPage = ProxyGenerator.getEnhancedObject(CatalogPage.class);
+            //smartOrderPage = new SmartOrderPage();
             smartOrderPage = ProxyGenerator.getEnhancedObject(SmartOrderPage.class);
             docBriefcase = new DocBriefcase();
 

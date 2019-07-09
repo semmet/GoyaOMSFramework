@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.pages;
 
+import com.paxovision.execution.annotations.LogReport;
 import org.hamcrest.CoreMatchers;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
@@ -84,42 +85,48 @@ public class HomePage extends PageBase {
         }
     }
 
+    @LogReport(name = "verifyURL",description = "Home Page URL should display")
     public void verifyHomePageURL() {
         delayFor(2000);
         String URL = driver.getCurrentUrl();
         Assert.assertEquals("https://portal.goya.com/omsdev/#/home", URL);
     }
 
+    @LogReport(name = "brokerLogin",description = "Correct broker id should display")
     public void verifyBrokerInfo() {
         String broker = brokerInfo.getText();
         assertThat(broker, CoreMatchers.containsString("013506"));
     }
 
+    @LogReport(name = "salesauthorLogin",description = "Correct salesauthor id should display")
     public void verifySalesAuthorInfo() {
         String broker = salesAuthorInfo.getText();
         assertThat(broker, CoreMatchers.containsString("SalesAuthor1"));
     }
 
-
+    @LogReport(name = "clickOnCreateOrderLink",description = "Create Order page should display")
     public void navigateToCreateOrderPage() {
-
         delayFor(1000);
         createOrderLink.click();
     }
 
+    @LogReport(name = "clickOnCreditAppLink",description = "Credit App page should display")
     public void navigateToCreditAppPage() {
         creditAppLink.click();
     }
 
+    @LogReport(name = "clickOnSmartOrderLink",description = "Smart Order page should display")
     public void navigateToSmartOrderPage() {
         smartOrderLink.click();
     }
 
+    @LogReport(name = "clickOnBriefcaseLink",description = "Briefcase page should display")
     public void navigateToDocBriefcase() {
         briefcaseLink.click();
     }
 
 
+    @LogReport(name = "smartOrderAlert",description = "Please Select Customer alert should display")
     public void confirmSmartOrderAlert() {
         delayFor(1000);
         Alert alert = driver.switchTo().alert();
@@ -128,11 +135,13 @@ public class HomePage extends PageBase {
         alert.accept();
     }
 
+    @LogReport(name = "clickOnCustomersLink",description = "Customers page should display")
     public void navigateToCustomersPage() {
         waitForVisibilityOfElement(customersLink);
         customersLink.click();
     }
 
+    @LogReport(name = "customerInfo",description = "Correct customer info should display")
     public void verifyCustomerInfo() {
         String customerInfo = customerBanner.getText();
         assertThat(customerInfo, CoreMatchers.containsString("712457"));

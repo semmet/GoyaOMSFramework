@@ -1,5 +1,6 @@
 package com.triveniit.goya.qa.framework.pages;
 
+import com.paxovision.execution.annotations.LogReport;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.How;
@@ -31,20 +32,21 @@ public class LoginPage extends PageBase {
         return  alertMsg;
     }
 
-
+    @LogReport(name = "userLoginToApp",description = "User enters valid name and password")
     public void login(String name, String password){
         typeText(userName, name);
         typeText(passwordTextbox, password);
         click(loginButton);
     }
 
+    @LogReport(name = "invalidDataLogin",description = "User enters invalid combo of data")
     public void loginExcelData(String name, String password){
         typeText(userName, name);
         typeText(passwordTextbox, password);
         click(loginButton);
     }
 
-
+    @LogReport(name = "verifyAlertMessage",description = "Invalid data alert should display")
     public void verifyLoginNotSuccess(){
         String successText = getAlertMsg().getText();
         assertThat(successText, containsString("Incorrect"));

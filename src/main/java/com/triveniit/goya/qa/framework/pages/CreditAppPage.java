@@ -2,6 +2,7 @@ package com.triveniit.goya.qa.framework.pages;
 
 
 
+import com.paxovision.execution.annotations.LogReport;
 import org.junit.Assert;
 import org.openqa.selenium.Alert;
 import org.openqa.selenium.By;
@@ -174,7 +175,7 @@ public class CreditAppPage extends PageBase {
         typeText(brokerName, "Sales Broker");
     }
 
-
+    @LogReport(name = "termsScroll",description = "Scroll to bottom of Terms and click Accept")
     public void termsScroll() {
 
         WebElement element = driver.findElement(By.xpath("//*[@id='Terms']"));
@@ -187,6 +188,7 @@ public class CreditAppPage extends PageBase {
 
     }
 
+    @LogReport(name = "guaranteeScroll",description = "Scroll to bottom of Guarantee and click Accept")
     public void guaranteeScroll() {
 
         WebElement element = driver.findElement(By.xpath("//*[@id='Personal']"));
@@ -198,14 +200,19 @@ public class CreditAppPage extends PageBase {
         personalAgree.click();
     }
 
+    @LogReport(name = "enterBilling",description = "Enter billing address")
     public void billingSame() { billingAddress.click(); }
 
+    @LogReport(name = "enterDelivery",description = "Enter delivery address")
     public void deliverySame() { deliveryAddress.click(); }
 
+    @LogReport(name = "businessType",description = "Click on type of business")
     public void businessType() { individOwner.click(); }
 
+    @LogReport(name = "selectCreditForm",description = "Click on Credit Form button")
     public void clickCreditFormButton() { creditFormButton.click(); }
 
+    @LogReport(name = "selectDate",description = "Click on today's date")
     public void submitDate() {
 
         String todayDate = String.valueOf((Calendar.getInstance()).get(Calendar.DAY_OF_MONTH));
@@ -225,8 +232,10 @@ public class CreditAppPage extends PageBase {
 
     }
 
+    @LogReport(name = "clickSave",description = "Click on Save button")
     public void submitApp() { saveButton.click(); }
 
+    @LogReport(name = "acceptAlert",description = "Confirm application submit")
     public void acceptAlert() {
 
         ((JavascriptExecutor) driver).executeScript("arguments[0].click();", alertConfirmSubmit);
@@ -251,8 +260,9 @@ public class CreditAppPage extends PageBase {
 
     }
 
+    @LogReport(name = "missingDataAlert",description = "Alert for missing req data should display")
     public void verifyMissingDataAlertPresent(){
-        WebDriverWait wait = new WebDriverWait(driver, 10 /*timeout in seconds*/);
+        WebDriverWait wait = new WebDriverWait(driver, 10);
         if(wait.until(ExpectedConditions.alertIsPresent())==null){
             System.out.println("alert was not present");
         }

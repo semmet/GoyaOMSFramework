@@ -21,7 +21,6 @@ public class DriverFactory {
     public static final String USERNAME = "steveemmet1";
     public static final String AUTOMATE_KEY = "iNtzP7DphwtmGfqeypik";
     public static final String URL = "";
-    public static final String LOCAL_GRID_URL = "";
 
     private DriverFactory() {
     }
@@ -63,40 +62,19 @@ public class DriverFactory {
             }
         }
 
-        else if (browserName.equalsIgnoreCase("cloud_ie_11")) {
+        else if(browserName.equalsIgnoreCase("cloud_firefox_64")){
             DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setCapability("browser", "IE");
-            caps.setCapability("browser_version", "11.0");
+            caps.setCapability("browser", "Firefox");
+            caps.setCapability("browser_version", "64.0");
             caps.setCapability("os", "Windows");
             caps.setCapability("os_version", "7");
             caps.setCapability("resolution", "1920x1080");
+
             try {
                 instance.driver.set(new RemoteWebDriver(new URL(URL), caps));
             } catch (MalformedURLException e) {
                 e.printStackTrace();
-            }
-        }
-
-        else if (browserName.equalsIgnoreCase("grid_chrome_16")) {
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setPlatform(Platform.ANY);
-            caps.setBrowserName("chrome");
-            try {
-                instance.driver.set(new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps));
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
-        }
-
-        else if (browserName.equalsIgnoreCase("grid_firefox_16")) {
-            DesiredCapabilities caps = new DesiredCapabilities();
-            caps.setPlatform(Platform.ANY);
-            caps.setBrowserName("firefox");
-            try {
-                instance.driver.set(new RemoteWebDriver(new URL(LOCAL_GRID_URL), caps));
-            } catch (MalformedURLException e) {
-                e.printStackTrace();
-            }
+           }
         }
 
         return instance;
